@@ -1,1 +1,0 @@
-# Research of Sakura AI Engine Models for Go

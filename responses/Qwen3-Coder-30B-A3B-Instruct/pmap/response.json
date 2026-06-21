@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-ec610c30db8a40769e5461dc848390e9",
+  "object": "chat.completion",
+  "created": 1782002983,
+  "model": "Qwen3-Coder-30B-A3B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage pmap\n\nimport (\n\t\"context\"\n\t\"errors\"\n\t\"sync\"\n)\n\n// ParallelMapOrdered applies fn to each element of input in parallel,\n// preserving the original order of elements in the output.\n// It limits concurrency to the specified number of workers.\nfunc ParallelMapOrdered(\n\tctx context.Context,\n\tinput []int,\n\tworkers int,\n\tfn func(context.Context, int) (int, error),\n) ([]int, error) {\n\tif workers <= 0 {\n\t\treturn nil, errors.New(\"workers must be positive\")\n\t}\n\tif fn == nil {\n\t\treturn nil, errors.New(\"function cannot be nil\")\n\t}\n\n\tif len(input) == 0 {\n\t\treturn []int{}, nil\n\t}\n\n\ttype result struct {\n\t\tindex int\n\t\tvalue int\n\t\terr   error\n\t}\n\n\tresults := make([]result, len(input))\n\tch := make(chan struct {\n\t\tindex int\n\t\tvalue int\n\t\terr   error\n\t}, workers)\n\n\tvar wg sync.WaitGroup\n\tvar mu sync.Mutex\n\tvar firstErr error\n\tvar cancelled bool\n\n\t// Start workers\n\tfor i := 0; i < workers; i++ {\n\t\twg.Add(1)\n\t\tgo func() {\n\t\t\tdefer wg.Done()\n\t\t\tfor {\n\t\t\t\tselect {\n\t\t\t\tcase <-ctx.Done():\n\t\t\t\t\treturn\n\t\t\t\tdefault:\n\t\t\t\t\t// Try to get work\n\t\t\t\t\tselect {\n\t\t\t\t\tcase <-ctx.Done():\n\t\t\t\t\t\treturn\n\t\t\t\t\tdefault:\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}()\n\t}\n\n\t// Process items\n\tfor i, item := range input {\n\t\twg.Add(1)\n\t\tgo func(index int, value int) {\n\t\t\tdefer wg.Done()\n\t\t\t\n\t\t\t// Handle panics\n\t\t\tfunc() {\n\t\t\t\tdefer func() {\n\t\t\t\t\tif r := recover(); r != nil {\n\t\t\t\t\t\tch <- struct {\n\t\t\t\t\t\t\tindex int\n\t\t\t\t\t\t\tvalue int\n\t\t\t\t\t\t\terr   error\n\t\t\t\t\t\t}{index: index, value: 0, err: errors.New(\"panic in function: \" + string(r.(string)))}\n\t\t\t\t\t}\n\t\t\t\t}()\n\t\t\t\t\n\t\t\t\tresult, err := fn(ctx, value)\n\t\t\t\tch <- struct {\n\t\t\t\t\tindex int\n\t\t\t\t\tvalue int\n\t\t\t\t\terr   error\n\t\t\t\t}{index: index, value: result, err: err}\n\t\t\t}()\n\t\t}(i, item)\n\t}\n\n\t// Collect results\n\tfor i := 0; i < len(input); i++ {\n\t\tselect {\n\t\tcase <-ctx.Done():\n\t\t\tcancelled = true\n\t\t\tgoto done\n\t\tcase res := <-ch:\n\t\t\tmu.Lock()\n\t\t\tif firstErr == nil && res.err != nil {\n\t\t\t\tfirstErr = res.err\n\t\t\t}\n\t\t\tresults[res.index] = res\n\t\t\tmu.Unlock()\n\t\t}\n\t}\n\ndone:\n\t// Cancel remaining work\n\tif cancelled || firstErr != nil {\n\t\t// Wait for all goroutines to finish\n\t\twg.Wait()\n\t\tif firstErr != nil {\n\t\t\treturn nil, firstErr\n\t\t}\n\t\treturn nil, ctx.Err()\n\t}\n\n\t// Wait for all goroutines to finish\n\twg.Wait()\n\n\t// Check for errors and build result\n\tif firstErr != nil {\n\t\treturn nil, firstErr\n\t}\n\n\toutput := make([]int, len(input))\n\tfor _, res := range results {\n\t\tif res.err != nil {\n\t\t\treturn nil, res.err\n\t\t}\n\t\toutput[res.index] = res.value\n\t}\n\n\treturn output, nil\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 227,
+    "total_tokens": 940,
+    "completion_tokens": 713,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

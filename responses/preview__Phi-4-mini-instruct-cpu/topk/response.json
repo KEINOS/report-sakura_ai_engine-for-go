@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-cb2b45240cb94d99b1d4d92097663996",
+  "object": "chat.completion",
+  "created": 1782002694,
+  "model": "preview/Phi-4-mini-instruct-cpu",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage topk\n\nimport (\n\t\"sort\"\n)\n\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn []string{}\n\t}\n\n\twordCount := make(map[string]int)\n\tfor _, word := range words {\n\t\twordCount[word]++\n\t}\n\n\ttype kv struct {\n\t\tword  string\n\t\tcount int\n\t}\n\n\tvar items []kv\n\tfor word, count := range wordCount {\n\t\titems = append(items, kv{word, count})\n\t}\n\n\tsort.Slice(items, func(i, j int) bool {\n\t\tif items[i].count == items[j].count {\n\t\t\treturn items[i].word < items[j].word\n\t\t}\n\t\treturn items[i].count > items[j].count\n\t})\n\n\tresult := make([]string, 0, k)\n\tfor i := 0; i < k && i < len(items); i++ {\n\t\tresult = append(result, items[i].word)\n\t}\n\n\treturn result\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": 200020,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 144,
+    "total_tokens": 361,
+    "completion_tokens": 217,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

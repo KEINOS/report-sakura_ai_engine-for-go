@@ -1,0 +1,29 @@
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapValidation
+--- PASS: TestParallelMapValidation (0.00s)
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapParentCancellation
+panic: boom
+
+goroutine 149 [running]:
+benchmark/pmap.TestParallelMapPanicBecomesError.func1({0xc0000142d0?, 0x0?}, 0x2)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-okiwrswf/solution_test.go:84 +0x60
+benchmark/pmap.ParallelMapOrdered.func1(0x0?, 0x2)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-okiwrswf/solution.go:49 +0xc0
+created by benchmark/pmap.ParallelMapOrdered in goroutine 10
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-okiwrswf/solution.go:42 +0x1d8
+FAIL	benchmark/pmap	0.391s
+FAIL

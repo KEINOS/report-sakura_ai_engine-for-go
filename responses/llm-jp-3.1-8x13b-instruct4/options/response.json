@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-d8c20b27fd7447a7ade9376a1a3671b5",
+  "object": "chat.completion",
+  "created": 1782002686,
+  "model": "llm-jp-3.1-8x13b-instruct4",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "以下は、指定された要件に基づいて実装された `ParseOptions` 関数です。この関数は、Go 1.26 のパッケージオプションを使用して完全な Go ソースファイルを返します。\n\n```go\npackage main\n\nimport (\n\t\"errors\"\n\t\"fmt\"\n\t\"strconv\"\n\t\"strings\"\n)\n\n// Options contains the parsed options from the spec string.\ntype Options struct {\n\tLimit  *int\n\tLabels map[string]string\n}\n\n// ParseError is an error that implements error and Unwrap.\ntype ParseError struct {\n\tField   string\n\tValue   string\n\tErr     error\n\tUnwrap  error\n\tUnwrapf string\n}\n\nfunc (e ParseError) Error() string {\n\treturn fmt.Sprintf(\"ParseError{Field: %s, Value: %s, Err: %v, Unwrap: %v, Unwrapf: %s}\", e.Field, e.Value, e.Err, e.Unwrap, e.Unwrapf)\n}\n\nfunc (e ParseError) Unwrap() error {\n\treturn e.Err\n}\n\nfunc (e ParseError) Unwrapf() string {\n\treturn e.Unwrapf\n}\n\n// ParseOptions parses the spec string and returns the Options.\nfunc ParseOptions(spec string, cause error) (Options, error) {\n\tvar (\n\t\tlimit int\n\t\tlabels map[string]string\n\t\terr    error\n\t)\n\n\t// Split spec into fields\n\tfields := strings.Split(spec, \",\")\n\n\t// Parse limit\n\tif len(fields) > 0 {\n\t\tfield := fields[0]\n\t\tif strings.HasPrefix(field, \"limit=\") {\n\t\t\tvalue, err := strconv.Atoi(field[6:])\n\t\t\tif err != nil {\n\t\t\t\treturn Options{}, ParseError{Field: \"limit\", Value: field, Err: err}\n\t\t\t}\n\t\t\tif value < 1 || value > 1000 {\n\t\t\t\treturn Options{}, ParseError{Field: \"limit\", Value: field, Err: errors.New(\"limit must be between 1 and 1000\")}\n\t\t\t}\n\t\t\tlimit = &value\n\t\t}\n\t}\n\n\t// Parse labels\n\tif len(fields) > 0 {\n\t\tfield := fields[0]\n\t\tif strings.HasPrefix(field, \"label=\") {\n\t\t\tparts := strings.Split(field[6:], \"=\")\n\t\t\tif len(parts) != 2 {\n\t\t\t\treturn Options{}, ParseError{Field: \"label\", Value: field, Err: errors.New(\"invalid label format\")}\n\t\t\t}\n\t\t\tlabels[parts[0]] = parts[1]\n\t\t}\n\t}\n\n\t// Check for cause error\n\tif cause != nil {\n\t\tif pe, ok := cause.(*ParseError); ok {\n\t\t\treturn Options{Limit: limit, Labels: labels}, pe\n\t\t}\n\t\treturn Options{Limit: limit, Labels: labels}, cause\n\t}\n\n\treturn Options{Limit: limit, Labels: labels}, nil\n}\n\nfunc main() {\n\tspec := \"limit=100,label=key1=value1,label=key2=value2\"\n\tcause := errors.New(\"some cause error\")\n\n\toptions, err := ParseOptions(spec, cause)\n\tif err != nil {\n\t\tfmt.Println(\"Error:\", err)\n\t} else {\n\t\tfmt.Println(\"Options:\", options)\n\t}\n}\n```\n\nこの実装では、`ParseOptions` 関数が指定された仕様文字列を解析し、オプション構造体を返します。また、エラーが発生した場合は、`ParseError` を返します。エラーが原因に含まれている場合、そのエラーをそのまま返します。",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 322,
+    "total_tokens": 1219,
+    "completion_tokens": 897,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

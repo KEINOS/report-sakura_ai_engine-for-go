@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-66e765343f1b4e5a8d7427de14765b5b",
+  "object": "chat.completion",
+  "created": 1782003244,
+  "model": "preview/Qwen3-VL-30B-A3B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage pmap\n\nimport (\n\t\"context\"\n\t\"errors\"\n\t\"runtime\"\n\t\"sync\"\n)\n\nfunc ParallelMapOrdered(\n\tctx context.Context,\n\tinput []int,\n\tworkers int,\n\tfn func(context.Context, int) (int, error),\n) ([]int, error) {\n\tif fn == nil {\n\t\treturn nil, errors.New(\"function cannot be nil\")\n\t}\n\tif workers <= 0 {\n\t\treturn nil, errors.New(\"workers must be positive\")\n\t}\n\n\tif len(input) == 0 {\n\t\treturn []int{}, nil\n\t}\n\n\t// Use at most the number of input elements as workers\n\tworkers = min(workers, len(input))\n\n\t// Channel to receive results in order\n\tresultCh := make(chan result, len(input))\n\t// Channel to signal completion\n\tdoneCh := make(chan struct{})\n\t// Wait group for goroutines\n\tvar wg sync.WaitGroup\n\t// Mutex for result ordering\n\tvar mu sync.Mutex\n\t// Store results in order\n\tresults := make([]int, len(input))\n\t// Track which results are ready\n\tready := make([]bool, len(input))\n\t// Track the next expected index\n\tnextIndex := 0\n\t// Error channel\n\terrCh := make(chan error, 1)\n\n\t// Start worker goroutines\n\tfor i := 0; i < workers; i++ {\n\t\twg.Add(1)\n\t\tgo func() {\n\t\t\tdefer wg.Done()\n\t\t\tfor {\n\t\t\t\tselect {\n\t\t\t\tcase <-ctx.Done():\n\t\t\t\t\treturn\n\t\t\t\tcase idx, ok := <-resultCh:\n\t\t\t\t\tif !ok {\n\t\t\t\t\t\treturn\n\t\t\t\t\t}\n\t\t\t\t\t// Process the result\n\t\t\t\t\tmu.Lock()\n\t\t\t\t\tif !ready[idx] {\n\t\t\t\t\t\t// Store result in order\n\t\t\t\t\t\tresults[idx] = idx\n\t\t\t\t\t\tready[idx] = true\n\t\t\t\t\t\t// Check if we have all results\n\t\t\t\t\t\tfor nextIndex < len(input) && ready[nextIndex] {\n\t\t\t\t\t\t\tnextIndex++\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tmu.Unlock()\n\t\t\t\t}\n\t\t\t}\n\t\t}()\n\t}\n\n\t// Start processing\n\tgo func() {\n\t\tdefer close(resultCh)\n\t\tdefer close(doneCh)\n\t\tdefer wg.Wait()\n\n\t\t// Process each input\n\t\tfor i, val := range input {\n\t\t\tselect {\n\t\t\tcase <-ctx.Done():\n\t\t\t\treturn\n\t\t\tcase resultCh <- result{i, val}:\n\t\t\t}\n\t\t}\n\t}()\n\n\t// Wait for all results or error\n\tfor {\n\t\tselect {\n\t\tcase <-ctx.Done():\n\t\t\treturn nil, ctx.Err()\n\t\tcase err := <-errCh:\n\t\t\treturn nil, err\n\t\tcase <-doneCh:\n\t\t\t// All workers done, check if we have all results\n\t\t\tif nextIndex == len(input) {\n\t\t\t\treturn results, nil\n\t\t\t}\n\t\t\t// Should not happen, but return what we have\n\t\t\treturn results, nil\n\t\t}\n\t}\n}\n\n// result represents a result from a worker\ntype result struct {\n\tindex int\n\tvalue int\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 227,
+    "total_tokens": 850,
+    "completion_tokens": 623,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

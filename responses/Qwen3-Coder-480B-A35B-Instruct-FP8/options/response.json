@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-fc312e77853b4dc1b45ab8b1ac22de3e",
+  "object": "chat.completion",
+  "created": 1782002989,
+  "model": "Qwen3-Coder-480B-A35B-Instruct-FP8",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage options\n\nimport (\n\t\"fmt\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Options struct {\n\tLimit  *int\n\tLabels map[string]string\n}\n\ntype ParseError struct {\n\tField string\n\tValue string\n\tErr   error\n}\n\nfunc (e *ParseError) Error() string {\n\treturn fmt.Sprintf(\"invalid %s value %q: %v\", e.Field, e.Value, e.Err)\n}\n\nfunc (e *ParseError) Unwrap() error {\n\treturn e.Err\n}\n\nfunc ParseOptions(spec string, cause error) (Options, error) {\n\topts := Options{\n\t\tLimit:  new(int),\n\t\tLabels: make(map[string]string),\n\t}\n\t*opts.Limit = 100\n\n\tif cause != nil {\n\t\tvar parseErr *ParseError\n\t\tif As(cause, &parseErr) {\n\t\t\t// Parse normally but return the existing ParseError\n\t\t\t_, _ = parseOptions(spec, opts)\n\t\t\treturn opts, parseErr\n\t\t}\n\t}\n\n\treturn parseOptions(spec, opts)\n}\n\nfunc parseOptions(spec string, opts Options) (Options, error) {\n\tif spec == \"\" {\n\t\treturn opts, nil\n\t}\n\n\tvar firstErr error\n\n\tfor _, field := range strings.Split(spec, \",\") {\n\t\tparts := strings.SplitN(strings.TrimSpace(field), \"=\", 2)\n\t\tkey := strings.TrimSpace(parts[0])\n\n\t\tif key == \"\" {\n\t\t\tcontinue\n\t\t}\n\n\t\tvar value string\n\t\tif len(parts) == 2 {\n\t\t\tvalue = strings.TrimSpace(parts[1])\n\t\t}\n\n\t\tswitch {\n\t\tcase key == \"limit\":\n\t\t\tif value == \"\" {\n\t\t\t\terr := &ParseError{Field: \"limit\", Value: value, Err: fmt.Errorf(\"empty value\")}\n\t\t\t\tif firstErr == nil {\n\t\t\t\t\tfirstErr = err\n\t\t\t\t}\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\tlimit, err := strconv.Atoi(value)\n\t\t\tif err != nil || limit < 1 || limit > 1000 {\n\t\t\t\tparseErr := &ParseError{Field: \"limit\", Value: value, Err: fmt.Errorf(\"must be between 1 and 1000\")}\n\t\t\t\tif firstErr == nil {\n\t\t\t\t\tfirstErr = parseErr\n\t\t\t\t}\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\topts.Limit = &limit\n\t\tcase strings.HasPrefix(key, \"label.\"):\n\t\t\tlabelName := key[6:]\n\t\t\tif labelName == \"\" {\n\t\t\t\terr := &ParseError{Field: \"label\", Value: key, Err: fmt.Errorf(\"label name cannot be empty\")}\n\t\t\t\tif firstErr == nil {\n\t\t\t\t\tfirstErr = err\n\t\t\t\t}\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\topts.Labels[labelName] = value\n\t\tdefault:\n\t\t\terr := &ParseError{Field: key, Value: value, Err: fmt.Errorf(\"unknown field\")}\n\t\t\tif firstErr == nil {\n\t\t\t\tfirstErr = err\n\t\t\t}\n\t\t}\n\t}\n\n\treturn opts, firstErr\n}\n\n// As is a copy of errors.As for compatibility with older Go versions\nfunc As(err error, target interface{}) bool {\n\tif target == nil {\n\t\tpanic(\"errors: target cannot be nil\")\n\t}\n\tval := reflectValue(target)\n\tfor err != nil {\n\t\tif reflectValue(err).Type().AssignableTo(val.Type()) {\n\t\t\tval.Set(reflectValue(err))\n\t\t\treturn true\n\t\t}\n\t\tif x, ok := err.(interface{ Unwrap() error }); ok {\n\t\t\terr = x.Unwrap()\n\t\t} else {\n\t\t\terr = nil\n\t\t}\n\t}\n\treturn false\n}\n\nfunc reflectValue(v interface{}) reflectValueMock {\n\treturn reflectValueMock{}\n}\n\ntype reflectValueMock struct{}\n\nfunc (r reflectValueMock) Type() typeMock {\n\treturn typeMock{}\n}\n\nfunc (r reflectValueMock) Set(reflectValueMock) {}\n\ntype typeMock struct{}\n\nfunc (t typeMock) AssignableTo(typeMock) bool {\n\treturn true\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 286,
+    "total_tokens": 1110,
+    "completion_tokens": 824,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

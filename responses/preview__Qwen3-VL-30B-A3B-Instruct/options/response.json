@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-58f66a9e28484661af0fcd4a7479170f",
+  "object": "chat.completion",
+  "created": 1782003113,
+  "model": "preview/Qwen3-VL-30B-A3B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage options\n\nimport (\n\t\"errors\"\n\t\"fmt\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Options struct {\n\tLimit  *int\n\tLabels map[string]string\n}\n\ntype ParseError struct {\n\tField string\n\tValue string\n\tErr   error\n}\n\nfunc (e *ParseError) Error() string {\n\tif e.Err != nil {\n\t\treturn fmt.Sprintf(\"%s: %s (value: %s)\", e.Field, e.Err.Error(), e.Value)\n\t}\n\treturn fmt.Sprintf(\"%s: invalid value %q\", e.Field, e.Value)\n}\n\nfunc (e *ParseError) Unwrap() error {\n\treturn e.Err\n}\n\nfunc ParseOptions(spec string, cause error) (Options, error) {\n\t// If cause contains a ParseError, return it directly\n\tif cause != nil {\n\t\tif _, ok := cause.(*ParseError); ok {\n\t\t\t// Parse the spec normally, but return the original ParseError\n\t\t\topts, _ := parseSpec(spec)\n\t\t\treturn opts, cause\n\t\t}\n\t\t// Check if cause wraps a ParseError\n\t\tif err := errors.Unwrap(cause); err != nil {\n\t\t\tif _, ok := err.(*ParseError); ok {\n\t\t\t\topts, _ := parseSpec(spec)\n\t\t\t\treturn opts, cause\n\t\t\t}\n\t\t}\n\t}\n\n\t// Parse the spec\n\topts, err := parseSpec(spec)\n\tif err != nil {\n\t\treturn opts, err\n\t}\n\n\treturn opts, nil\n}\n\nfunc parseSpec(spec string) (Options, error) {\n\tvar opts Options\n\topts.Limit = new(int)\n\t*opts.Limit = 100 // default limit\n\topts.Labels = make(map[string]string)\n\n\tif spec == \"\" {\n\t\treturn opts, nil\n\t}\n\n\t// Split by commas and trim spaces\n\tparts := strings.Split(spec, \",\")\n\tfor _, part := range parts {\n\t\tpart = strings.TrimSpace(part)\n\t\tif part == \"\" {\n\t\t\tcontinue\n\t\t}\n\n\t\t// Split by first equals sign\n\t\tpair := strings.SplitN(part, \"=\", 2)\n\t\tif len(pair) != 2 {\n\t\t\t// Invalid syntax\n\t\t\treturn opts, &ParseError{Field: \"syntax\", Value: part, Err: errors.New(\"invalid syntax\")}\n\t\t}\n\n\t\tkey := strings.TrimSpace(pair[0])\n\t\tvalue := strings.TrimSpace(pair[1])\n\n\t\tswitch key {\n\t\tcase \"limit\":\n\t\t\tif value == \"\" {\n\t\t\t\treturn opts, &ParseError{Field: \"limit\", Value: value, Err: errors.New(\"empty limit\")}\n\t\t\t}\n\t\t\tlimit, err := strconv.Atoi(value)\n\t\t\tif err != nil {\n\t\t\t\treturn opts, &ParseError{Field: \"limit\", Value: value, Err: err}\n\t\t\t}\n\t\t\tif limit < 1 || limit > 1000 {\n\t\t\t\treturn opts, &ParseError{Field: \"limit\", Value: value, Err: errors.New(\"limit must be between 1 and 1000\")}\n\t\t\t}\n\t\t\topts.Limit = &limit\n\t\tcase \"label\":\n\t\t\t// label.NAME\n\t\t\tif value == \"\" {\n\t\t\t\treturn opts, &ParseError{Field: \"label\", Value: value, Err: errors.New(\"empty label value\")}\n\t\t\t}\n\t\t\t// Check if key is label.NAME\n\t\t\tif !strings.HasPrefix(key, \"label.\") {\n\t\t\t\treturn opts, &ParseError{Field: \"label\", Value: key, Err: errors.New(\"invalid label key\")}\n\t\t\t}\n\t\t\tname := key[6:] // remove \"label.\"\n\t\t\tif name == \"\" {\n\t\t\t\treturn opts, &ParseError{Field: \"label\", Value: key, Err: errors.New(\"label name cannot be empty\")}\n\t\t\t}\n\t\t\topts.Labels[name] = value\n\t\tdefault:\n\t\t\t// Unknown field\n\t\t\treturn opts, &ParseError{Field: key, Value: value, Err: errors.New(\"unknown field\")}\n\t\t}\n\t}\n\n\treturn opts, nil\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 286,
+    "total_tokens": 1121,
+    "completion_tokens": 835,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

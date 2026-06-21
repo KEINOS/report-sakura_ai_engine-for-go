@@ -1,0 +1,5 @@
+config:
+  line-length: false
+  single-title: false
+  first-line-heading: false
+  no-inline-html: false

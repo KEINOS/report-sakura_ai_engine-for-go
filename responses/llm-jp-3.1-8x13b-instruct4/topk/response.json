@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-47eab512325944ffb6143798cc2c135e",
+  "object": "chat.completion",
+  "created": 1782002845,
+  "model": "llm-jp-3.1-8x13b-instruct4",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "package topk\n\nimport (\n\t\"sort\"\n)\n\n// TopKFrequent returns at most k unique words with the highest frequency.\n// In case of equal frequencies, words are ordered in ascending lexical order.\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn []string{}\n\t}\n\n\twordCount := make(map[string]int)\n\tfor _, word := range words {\n\t\twordCount[word]++\n\t}\n\n\tvar topK []string\n\tvar freqList []struct {\n\t\tword   string\n\t\tfreq   int\n\t\tisBest bool\n\t}\n\n\tfor word, freq := range wordCount {\n\t\ttopK = append(topK, word)\n\t\tfreqList = append(freqList, struct {\n\t\t\tword   string\n\t\t\tfreq   int\n\t\t\tisBest bool\n\t\t}{word, freq, freq == maxFreq(wordCount)})\n\t}\n\n\tsort.Slice(freqList, func(i, j int) bool {\n\t\tif freqList[i].isBest != freqList[j].isBest {\n\t\t\treturn freqList[i].isBest\n\t\t}\n\t\treturn freqList[i].word < freqList[j].word\n\t})\n\n\treturn topK[:k]\n}\n\nfunc maxFreq(m map[string]int) int {\n\tmax := 0\n\tfor freq := range m {\n\t\tif freq > max {\n\t\t\tmax = freq\n\t\t}\n\t}\n\treturn max\n}\n\n// This implementation avoids sorting all input occurrences by using a map\n// to count the frequency of each word and then creating a list of words\n// with their frequencies and a flag indicating if they are the maximum\n// frequency. This list is then sorted based on the frequency and lexical order.\n// Finally, the top k elements are returned.\n\n// Note: The sort.Slice function is used instead of sort.SliceStable to avoid\n// the additional overhead of sort.SliceStable, which is not required in this case\n// since we are not sorting based on multiple fields and the lexical order is\n// sufficient for breaking ties.",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 174,
+    "total_tokens": 722,
+    "completion_tokens": 548,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-21",
+  "notes": "Aggregate values retained from the first run before its temporary directory was removed.",
+  "models": {
+    "preview/Qwen3-0.6B-cpu": {"passed": 0, "requirements": 19, "median_seconds": 11.8755, "modern_tasks": 0, "price": 0.04},
+    "preview/Phi-4-mini-instruct-cpu": {"passed": 9, "requirements": 19, "median_seconds": 43.8257, "modern_tasks": 1, "price": 0.04},
+    "preview/Phi-4-multimodal-instruct": {"passed": 10, "requirements": 19, "median_seconds": 2.0372, "modern_tasks": 1, "price": 0.40},
+    "preview/Qwen3-VL-30B-A3B-Instruct": {"passed": 3, "requirements": 19, "median_seconds": 4.0933, "modern_tasks": 0, "price": 0.40},
+    "gpt-oss-120b": {"passed": 18, "requirements": 19, "median_seconds": 8.8771, "modern_tasks": 0, "price": 0.90},
+    "Qwen3-Coder-30B-A3B-Instruct": {"passed": 0, "requirements": 19, "median_seconds": 3.6832, "modern_tasks": 0, "price": 0.90},
+    "llm-jp-3.1-8x13b-instruct4": {"passed": 0, "requirements": 19, "median_seconds": 7.1331, "modern_tasks": 0, "price": 0.90},
+    "preview/Qwen3.6-35B-A3B": {"passed": 18, "requirements": 19, "median_seconds": 50.6809, "modern_tasks": 1, "price": 1.80},
+    "Qwen3-Coder-480B-A35B-Instruct-FP8": {"passed": 17, "requirements": 19, "median_seconds": 8.5575, "modern_tasks": 0, "price": 2.80},
+    "preview/Kimi-K2.6": {"passed": 13, "requirements": 19, "median_seconds": 151.6334, "modern_tasks": 2, "price": 3.60}
+  },
+  "quality_pareto_front": [
+    "gpt-oss-120b",
+    "preview/Qwen3.6-35B-A3B",
+    "Qwen3-Coder-480B-A35B-Instruct-FP8"
+  ]
+}
