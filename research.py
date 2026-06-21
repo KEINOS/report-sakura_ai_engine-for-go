@@ -20,8 +20,8 @@ ROOT = Path(__file__).resolve().parent
 FIXTURES = ROOT / "fixtures"
 PROMPTS = ROOT / "prompts"
 RUN_NUMBER = int(os.getenv("RESEARCH_RUN", "2"))
-RESPONSES = ROOT / ("responses" if RUN_NUMBER == 2 else f"responses-run{RUN_NUMBER}")
-LOGS = ROOT / ("logs" if RUN_NUMBER == 2 else f"logs-run{RUN_NUMBER}")
+RESPONSES = ROOT / f"responses-run{RUN_NUMBER}"
+LOGS = ROOT / f"logs-run{RUN_NUMBER}"
 API = "https://api.ai.sakura.ad.jp/v1"
 HERMES_PYTHON = Path("/opt/homebrew/Cellar/hermes-agent/2026.6.5/libexec/bin/python")
 
@@ -537,7 +537,7 @@ def summarize() -> None:
     if RUN_NUMBER != 2:
         return
 
-    baseline = json.loads((ROOT / "baseline_run1.json").read_text(encoding="utf-8"))
+    baseline = json.loads((ROOT / "run1-summary.json").read_text(encoding="utf-8"))
     lines = [
         "# First-run versus second-run comparison",
         "",

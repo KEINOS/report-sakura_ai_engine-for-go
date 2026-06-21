@@ -59,7 +59,7 @@ Practical choices:
 ## Reproducibility caveat
 
 Run 1 raw responses were deleted with the previous temporary directory.
-Therefore `baseline_run1.json` contains the retained aggregate measurements,
+Therefore `run1-summary.json` contains the retained aggregate measurements,
 while run 2 includes complete prompts, responses, source, and logs.
 
 Large changes in Kimi and gpt-oss despite identical prompts and temperature
