@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-d463ebdc4e60445e9597b8f0cf666de4",
+  "object": "chat.completion",
+  "created": 1782024887,
+  "model": "gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage topk\n\nimport (\n\t\"container/heap\"\n\t\"sort\"\n)\n\n// TopKFrequent returns at most k unique words from the input slice ordered by\n// descending frequency. Words with the same frequency are ordered by ascending\n// lexical order. If k <= 0 or words is empty, a non‑nil empty slice is returned.\n// The input slice is never modified.\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn []string{}\n\t}\n\n\t// Count frequencies.\n\tfreq := make(map[string]int, len(words))\n\tfor _, w := range words {\n\t\tfreq[w]++\n\t}\n\n\t// Min‑heap that keeps the current top‑k entries.\n\th := &minHeap{}\n\theap.Init(h)\n\n\tfor w, c := range freq {\n\t\theap.Push(h, entry{word: w, freq: c})\n\t\tif h.Len() > k {\n\t\t\theap.Pop(h) // discard the worst entry\n\t\t}\n\t}\n\n\t// Extract heap contents.\n\ttop := make([]entry, h.Len())\n\tfor i := len(top) - 1; i >= 0; i-- {\n\t\ttop[i] = heap.Pop(h).(entry)\n\t}\n\n\t// Final ordering: descending frequency, then ascending lexical order.\n\tsort.Slice(top, func(i, j int) bool {\n\t\tif top[i].freq != top[j].freq {\n\t\t\treturn top[i].freq > top[j].freq\n\t\t}\n\t\treturn top[i].word < top[j].word\n\t})\n\n\t// Build result slice.\n\tres := make([]string, len(top))\n\tfor i, e := range top {\n\t\tres[i] = e.word\n\t}\n\treturn res\n}\n\n// entry stores a word together with its frequency.\ntype entry struct {\n\tword string\n\tfreq int\n}\n\n// minHeap implements a heap where the \"worst\" element (smallest frequency,\n// and for ties the lexicographically largest word) is at the root.\ntype minHeap []entry\n\nfunc (h minHeap) Len() int { return len(h) }\n\nfunc (h minHeap) Less(i, j int) bool {\n\tif h[i].freq != h[j].freq {\n\t\treturn h[i].freq < h[j].freq // smaller frequency is worse\n\t}\n\t// For equal frequency, larger word is worse (so it gets popped first).\n\treturn h[i].word > h[j].word\n}\n\nfunc (h minHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }\n\nfunc (h *minHeap) Push(x any) {\n\t*h = append(*h, x.(entry))\n}\n\nfunc (h *minHeap) Pop() any {\n\told := *h\n\tn := len(old)\n\tx := old[n-1]\n\t*h = old[:n-1]\n\treturn x\n}\n```\n",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": "We need to write a Go file with package topk, implement TopKFrequent(words []string, k int) []string meeting requirements.\n\nWe need to avoid sorting all occurrences; we can count frequencies using map, then use a min-heap of size k to keep top k. For tie-breaking: higher frequency first, if same frequency then lexical order ascending. Since we need descending frequency output, we can use a min-heap where the \"worst\" element is smallest frequency, and for equal frequency, larger lexical order (since we want to keep smaller lexical order). So heap less function: a is \"less\" than b if freq[a] < freq[b] or freq equal and word[a] > word[b] (since we want to pop the worst). Then after building heap, we extract elements into slice and sort them according to final order: descending freq, ascending lexical. Since heap size <= k, sorting that small slice is fine.\n\nEdge cases: k <=0 => return empty slice (non-nil). If k > number of unique words, we return all unique words.\n\nDo not mutate words: we only read.\n\nImplementation details: define a struct entry {word string; freq int}. Implement heap.Interface.\n\nComplexities: O(N) to count, O(U log k) for heap where U unique words.\n\nReturn slice of strings.\n\nMake sure to import container/heap, sort.\n\nWrite code with Go 1.26 compatibility.\n\nLet's craft final code.\n\n"
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 212,
+    "total_tokens": 1136,
+    "completion_tokens": 924,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

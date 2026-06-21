@@ -1,0 +1,25 @@
+{
+  "model": "preview/Kimi-K2.6",
+  "task": "pmap",
+  "status": 200,
+  "elapsed_seconds": 165.71720762504265,
+  "usage": {
+    "prompt_tokens": 222,
+    "total_tokens": 16606,
+    "completion_tokens": 16384,
+    "prompt_tokens_details": null
+  },
+  "finish_reason": "length",
+  "message_keys": [
+    "role",
+    "content",
+    "refusal",
+    "annotations",
+    "audio",
+    "function_call",
+    "tool_calls",
+    "reasoning"
+  ],
+  "reasoning_chars": 71226,
+  "error": "empty content"
+}

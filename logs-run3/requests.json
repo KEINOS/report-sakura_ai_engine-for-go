@@ -1,0 +1,723 @@
+[
+  {
+    "model": "llm-jp-3.1-8x13b-instruct4",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 7.750787582946941,
+    "usage": {
+      "prompt_tokens": 322,
+      "total_tokens": 1219,
+      "completion_tokens": 897,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Phi-4-mini-instruct-cpu",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 26.712402374949306,
+    "usage": {
+      "prompt_tokens": 144,
+      "total_tokens": 361,
+      "completion_tokens": 217,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Qwen3.6-35B-A3B",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 38.84798199986108,
+    "usage": {
+      "prompt_tokens": 164,
+      "total_tokens": 5858,
+      "completion_tokens": 5694,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning"
+    ],
+    "reasoning_chars": 17585
+  },
+  {
+    "model": "preview/Qwen3.6-35B-A3B",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 50.559382874984294,
+    "usage": {
+      "prompt_tokens": 307,
+      "total_tokens": 7817,
+      "completion_tokens": 7510,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning"
+    ],
+    "reasoning_chars": 26196
+  },
+  {
+    "model": "Qwen3-Coder-480B-A35B-Instruct-FP8",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 8.458240540931001,
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 889,
+      "completion_tokens": 662,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "Qwen3-Coder-480B-A35B-Instruct-FP8",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 6.096225082874298,
+    "usage": {
+      "prompt_tokens": 153,
+      "total_tokens": 620,
+      "completion_tokens": 467,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "gpt-oss-120b",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 12.600058333948255,
+    "usage": {
+      "prompt_tokens": 342,
+      "total_tokens": 3237,
+      "completion_tokens": 2895,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Qwen3-0.6B-cpu",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 15.474795958027244,
+    "usage": {
+      "prompt_tokens": 290,
+      "total_tokens": 681,
+      "completion_tokens": 391,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "llm-jp-3.1-8x13b-instruct4",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 4.447820292087272,
+    "usage": {
+      "prompt_tokens": 174,
+      "total_tokens": 722,
+      "completion_tokens": 548,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Kimi-K2.6",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 51.970868833130226,
+    "usage": {
+      "prompt_tokens": 149,
+      "total_tokens": 4767,
+      "completion_tokens": 4618,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning"
+    ],
+    "reasoning_chars": 15020
+  },
+  {
+    "model": "preview/Qwen3-VL-30B-A3B-Instruct",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 3.842608541948721,
+    "usage": {
+      "prompt_tokens": 153,
+      "total_tokens": 759,
+      "completion_tokens": 606,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Phi-4-mini-instruct-cpu",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 49.58384733297862,
+    "usage": {
+      "prompt_tokens": 274,
+      "total_tokens": 773,
+      "completion_tokens": 499,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "Qwen3-Coder-30B-A3B-Instruct",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 4.299238624982536,
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 940,
+      "completion_tokens": 713,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Phi-4-multimodal-instruct",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 2.0368442910257727,
+    "usage": {
+      "prompt_tokens": 217,
+      "total_tokens": 537,
+      "completion_tokens": 320,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "Qwen3-Coder-480B-A35B-Instruct-FP8",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 9.532370459055528,
+    "usage": {
+      "prompt_tokens": 286,
+      "total_tokens": 1045,
+      "completion_tokens": 759,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Phi-4-multimodal-instruct",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 3.2404703330248594,
+    "usage": {
+      "prompt_tokens": 274,
+      "total_tokens": 816,
+      "completion_tokens": 542,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Kimi-K2.6",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 103.58503700001165,
+    "usage": {
+      "prompt_tokens": 279,
+      "total_tokens": 9617,
+      "completion_tokens": 9338,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning"
+    ],
+    "reasoning_chars": 34935
+  },
+  {
+    "model": "Qwen3-Coder-30B-A3B-Instruct",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 3.2385097090154886,
+    "usage": {
+      "prompt_tokens": 153,
+      "total_tokens": 676,
+      "completion_tokens": 523,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Qwen3-VL-30B-A3B-Instruct",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 5.254713041940704,
+    "usage": {
+      "prompt_tokens": 286,
+      "total_tokens": 1121,
+      "completion_tokens": 835,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Kimi-K2.6",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 165.71720762504265,
+    "usage": {
+      "prompt_tokens": 222,
+      "total_tokens": 16606,
+      "completion_tokens": 16384,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "length",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning"
+    ],
+    "reasoning_chars": 71226,
+    "error": "empty content"
+  },
+  {
+    "model": "preview/Phi-4-multimodal-instruct",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 1.4372895408887416,
+    "usage": {
+      "prompt_tokens": 144,
+      "total_tokens": 361,
+      "completion_tokens": 217,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Qwen3-0.6B-cpu",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 8.108347499975935,
+    "usage": {
+      "prompt_tokens": 157,
+      "total_tokens": 356,
+      "completion_tokens": 199,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Qwen3-VL-30B-A3B-Instruct",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 4.056714709149674,
+    "usage": {
+      "prompt_tokens": 227,
+      "total_tokens": 850,
+      "completion_tokens": 623,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "gpt-oss-120b",
+    "task": "topk",
+    "status": 200,
+    "elapsed_seconds": 4.134415750158951,
+    "usage": {
+      "prompt_tokens": 212,
+      "total_tokens": 1136,
+      "completion_tokens": 924,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "gpt-oss-120b",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 8.59950862498954,
+    "usage": {
+      "prompt_tokens": 285,
+      "total_tokens": 2253,
+      "completion_tokens": 1968,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "Qwen3-Coder-30B-A3B-Instruct",
+    "task": "options",
+    "status": 200,
+    "elapsed_seconds": 4.0411112499423325,
+    "usage": {
+      "prompt_tokens": 286,
+      "total_tokens": 910,
+      "completion_tokens": 624,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Qwen3-0.6B-cpu",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 10.27521533309482,
+    "usage": {
+      "prompt_tokens": 231,
+      "total_tokens": 490,
+      "completion_tokens": 259,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Phi-4-mini-instruct-cpu",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 37.39080954180099,
+    "usage": {
+      "prompt_tokens": 217,
+      "total_tokens": 589,
+      "completion_tokens": 372,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  },
+  {
+    "model": "preview/Qwen3.6-35B-A3B",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 53.57746770908125,
+    "usage": {
+      "prompt_tokens": 247,
+      "total_tokens": 8183,
+      "completion_tokens": 7936,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning"
+    ],
+    "reasoning_chars": 29197
+  },
+  {
+    "model": "llm-jp-3.1-8x13b-instruct4",
+    "task": "pmap",
+    "status": 200,
+    "elapsed_seconds": 7.754963916959241,
+    "usage": {
+      "prompt_tokens": 267,
+      "total_tokens": 1146,
+      "completion_tokens": 879,
+      "prompt_tokens_details": null
+    },
+    "finish_reason": "stop",
+    "message_keys": [
+      "role",
+      "content",
+      "refusal",
+      "annotations",
+      "audio",
+      "function_call",
+      "tool_calls",
+      "reasoning_content"
+    ],
+    "reasoning_chars": 0
+  }
+]

@@ -19,8 +19,9 @@ import httpx
 ROOT = Path(__file__).resolve().parent
 FIXTURES = ROOT / "fixtures"
 PROMPTS = ROOT / "prompts"
-RESPONSES = ROOT / "responses"
-LOGS = ROOT / "logs"
+RUN_NUMBER = int(os.getenv("RESEARCH_RUN", "2"))
+RESPONSES = ROOT / ("responses" if RUN_NUMBER == 2 else f"responses-run{RUN_NUMBER}")
+LOGS = ROOT / ("logs" if RUN_NUMBER == 2 else f"logs-run{RUN_NUMBER}")
 API = "https://api.ai.sakura.ad.jp/v1"
 HERMES_PYTHON = Path("/opt/homebrew/Cellar/hermes-agent/2026.6.5/libexec/bin/python")
 
@@ -529,9 +530,12 @@ def summarize() -> None:
         "pareto_front": front,
         "quality_pareto_front": quality_front,
     }
-    (ROOT / "run2-summary.json").write_text(
+    (ROOT / f"run{RUN_NUMBER}-summary.json").write_text(
         json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+
+    if RUN_NUMBER != 2:
+        return
 
     baseline = json.loads((ROOT / "baseline_run1.json").read_text(encoding="utf-8"))
     lines = [

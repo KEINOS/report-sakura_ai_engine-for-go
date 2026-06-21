@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-4a8f755478c54471a8bfa40b3721f9dd",
+  "object": "chat.completion",
+  "created": 1782024451,
+  "model": "preview/Qwen3-0.6B-cpu",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage main\n\nimport (\n\t\"errors\"\n\t\"fmt\"\n\t\"strings\"\n)\n\n// Options represents the parsed configuration options\ntype Options struct {\n\tLimit  *int\n\tLabels map[string]string\n}\n\n// ParseOptions parses a configuration string into Options and returns an error\nfunc ParseOptions(spec string, cause error) (Options, error) {\n\t// Trim spaces from the spec\n\tspec = strings.TrimSpace(spec)\n\n\t// Split the spec into key-value pairs\n\tparts := strings.Fields(spec)\n\tif len(parts) == 0 {\n\t\treturn Options{}, nil\n\t}\n\n\t// Process each key-value pair\n\tvar options Options\n\tfor _, pair := range parts {\n\t\tkey, value := strings.Split(pair, \"=\")\n\t\tif key == \"\" || value == \"\" {\n\t\t\tcontinue\n\t\t}\n\n\t\t// Trim spaces from key and value\n\t\tkey = strings.TrimSpace(key)\n\t\tvalue = strings.TrimSpace(value)\n\n\t\t// Check if the key is one of the supported fields\n\t\tif key == \"limit\" || key == \"label.NAME\" {\n\t\t\t// Handle limit\n\t\t\tif key == \"limit\" {\n\t\t\t\tlimit, err := strconv.Atoi(value)\n\t\t\t\tif err != nil {\n\t\t\t\t\treturn Options{}, fmt.Errorf(\"invalid limit: %d\", limit)\n\t\t\t\t}\n\t\t\t\tif limit < 1 || limit > 1000 {\n\t\t\t\t\treturn Options{}, fmt.Errorf(\"invalid limit: %d\", limit)\n\t\t\t\t}\n\t\t\t\toptions.Limit = &limit\n\t\t\t} else {\n\t\t\t\t// Handle label.NAME\n\t\t\t\tif len(value) > 0 {\n\t\t\t\t\toptions.Labels[value] = options.Labels[value] || value\n\t\t\t\t}\n\t\t\t}\n\t\t} else {\n\t\t\t// Unknown field or invalid key\n\t\t\treturn Options{}, fmt.Errorf(\"invalid field: %s\", key)\n\t\t}\n\t}\n\n\treturn options, nil\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 290,
+    "total_tokens": 681,
+    "completion_tokens": 391,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

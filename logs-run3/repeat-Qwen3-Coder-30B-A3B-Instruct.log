@@ -1,0 +1,138 @@
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+panic: test timed out after 1m30s
+	running tests:
+		TestParallelMapDoesNotLeakObviousGoroutines (1m30s)
+
+goroutine 49 [running]:
+testing.(*M).startAlarm.func1()
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2802 +0x498
+created by time.goFunc
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/time/sleep.go:215 +0x44
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc00013c008, {0x104aee4b4, 0x2b}, 0x104c6f648)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2109 +0x7dc
+testing.runTests.func1(0xc00013c008)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2585 +0x78
+testing.tRunner(0xc00013c008, 0xc00010fab8)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2036 +0x168
+testing.runTests({0x104ae5ee6, 0xe}, {0x104ae5ee6, 0xe}, 0xc000010030, {0x104c9c5a0, 0x6, 0x6}, {0xc00007c8c0?, 0xc000112180?, ...})
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2583 +0x7a4
+testing.(*M).Run(0xc00007e140)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2443 +0xb3c
+main.main()
+	_testmain.go:58 +0x104
+
+goroutine 4 [chan receive]:
+testing.(*T).Parallel(0xc00013c248)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:1803 +0x344
+benchmark/pmap.TestParallelMapOrdered(0xc00013c248)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution_test.go:16 +0x30
+testing.tRunner(0xc00013c248, 0x104c6f650)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2036 +0x168
+created by testing.(*T).Run in goroutine 1
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2101 +0x7c0
+
+goroutine 5 [chan receive]:
+testing.(*T).Parallel(0xc00013c488)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:1803 +0x344
+benchmark/pmap.TestParallelMapValidation(0xc00013c488)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution_test.go:31 +0x30
+testing.tRunner(0xc00013c488, 0x104c6f668)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2036 +0x168
+created by testing.(*T).Run in goroutine 1
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2101 +0x7c0
+
+goroutine 6 [chan receive]:
+testing.(*T).Parallel(0xc00013c6c8)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:1803 +0x344
+benchmark/pmap.TestParallelMapCancelsAndWaits(0xc00013c6c8)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution_test.go:46 +0x34
+testing.tRunner(0xc00013c6c8, 0x104c6f640)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2036 +0x168
+created by testing.(*T).Run in goroutine 1
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2101 +0x7c0
+
+goroutine 7 [chan receive]:
+testing.(*T).Parallel(0xc00013c908)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:1803 +0x344
+benchmark/pmap.TestParallelMapPanicBecomesError(0xc00013c908)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution_test.go:81 +0x30
+testing.tRunner(0xc00013c908, 0x104c6f658)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2036 +0x168
+created by testing.(*T).Run in goroutine 1
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2101 +0x7c0
+
+goroutine 8 [chan receive]:
+testing.(*T).Parallel(0xc00013cb48)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:1803 +0x344
+benchmark/pmap.TestParallelMapParentCancellation(0xc00013cb48)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution_test.go:94 +0x30
+testing.tRunner(0xc00013cb48, 0x104c6f660)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2036 +0x168
+created by testing.(*T).Run in goroutine 1
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2101 +0x7c0
+
+goroutine 9 [sync.WaitGroup.Wait]:
+sync.runtime_SemacquireWaitGroup(0xc000181c28?, 0x80?)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/runtime/sema.go:114 +0x38
+sync.(*WaitGroup).Wait(0xc000012400)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/sync/waitgroup.go:206 +0xb8
+benchmark/pmap.ParallelMapOrdered({0x104c71f88, 0xc000014370}, {0xc000181e38, 0x4, 0xc00013c180?}, 0x4, 0x104c6f6f8)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:116 +0x634
+benchmark/pmap.TestParallelMapDoesNotLeakObviousGoroutines(0xc00013cd88)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution_test.go:108 +0xbc
+testing.tRunner(0xc00013cd88, 0x104c6f648)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2036 +0x168
+created by testing.(*T).Run in goroutine 1
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/testing/testing.go:2101 +0x7c0
+
+goroutine 10 [runnable]:
+context.(*cancelCtx).Done(0xc000014370)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/context/context.go:448 +0x184
+benchmark/pmap.ParallelMapOrdered.func1()
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:54 +0x94
+created by benchmark/pmap.ParallelMapOrdered in goroutine 9
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:50 +0x200
+
+goroutine 11 [runnable]:
+sync/atomic.(*Value).Load(0xc000014388)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/sync/atomic/value.go:36 +0x78
+context.(*cancelCtx).Done(0xc000014370)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/context/context.go:449 +0x40
+benchmark/pmap.ParallelMapOrdered.func1()
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:54 +0x94
+created by benchmark/pmap.ParallelMapOrdered in goroutine 9
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:50 +0x200
+
+goroutine 12 [runnable]:
+sync/atomic.(*Value).Load(0xc000014388)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/sync/atomic/value.go:28 +0xbc
+context.(*cancelCtx).Done(0xc000014370)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/context/context.go:449 +0x40
+benchmark/pmap.ParallelMapOrdered.func1()
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:59 +0xb4
+created by benchmark/pmap.ParallelMapOrdered in goroutine 9
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:50 +0x200
+
+goroutine 13 [runnable]:
+sync/atomic.(*Value).Load(0xc000014388)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/sync/atomic/value.go:36 +0x78
+context.(*cancelCtx).Done(0xc000014370)
+	/opt/homebrew/Cellar/go/1.26.4/libexec/src/context/context.go:449 +0x40
+benchmark/pmap.ParallelMapOrdered.func1()
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:59 +0xb4
+created by benchmark/pmap.ParallelMapOrdered in goroutine 9
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-dlq35_i5/solution.go:50 +0x200
+FAIL	benchmark/pmap	90.357s
+FAIL

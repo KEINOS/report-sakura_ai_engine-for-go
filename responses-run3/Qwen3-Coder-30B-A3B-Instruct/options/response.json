@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-88687dd1c55c409987a10d23a4c3e5c1",
+  "object": "chat.completion",
+  "created": 1782024899,
+  "model": "Qwen3-Coder-30B-A3B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage options\n\nimport (\n\t\"fmt\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Options struct {\n\tLimit  *int\n\tLabels map[string]string\n}\n\ntype ParseError struct {\n\tField string\n\tValue string\n\tErr   error\n}\n\nfunc (e *ParseError) Error() string {\n\treturn fmt.Sprintf(\"invalid %s=%q: %v\", e.Field, e.Value, e.Err)\n}\n\nfunc (e *ParseError) Unwrap() error {\n\treturn e.Err\n}\n\nfunc ParseOptions(spec string, cause error) (Options, error) {\n\t// Check if cause is already a ParseError\n\tvar parseErr *ParseError\n\tif errors.As(cause, &parseErr) {\n\t\t// If so, we'll return it as-is after parsing\n\t}\n\n\topts := Options{\n\t\tLimit:  new(int), // Default limit is 100\n\t\tLabels: make(map[string]string),\n\t}\n\t*opts.Limit = 100\n\n\tif spec == \"\" {\n\t\treturn opts, parseErr\n\t}\n\n\tparts := strings.Split(spec, \",\")\n\tfor _, part := range parts {\n\t\tpart = strings.TrimSpace(part)\n\t\tif part == \"\" {\n\t\t\tcontinue\n\t\t}\n\n\t\tkv := strings.SplitN(part, \"=\", 2)\n\t\tif len(kv) != 2 {\n\t\t\terr := &ParseError{\n\t\t\t\tField: \"field\",\n\t\t\t\tValue: part,\n\t\t\t\tErr:   fmt.Errorf(\"missing '='\"),\n\t\t\t}\n\t\t\treturn opts, err\n\t\t}\n\n\t\tkey := strings.TrimSpace(kv[0])\n\t\tvalue := strings.TrimSpace(kv[1])\n\n\t\tswitch {\n\t\tcase key == \"limit\":\n\t\t\tlimit, err := strconv.Atoi(value)\n\t\t\tif err != nil {\n\t\t\t\terr = &ParseError{\n\t\t\t\t\tField: \"limit\",\n\t\t\t\t\tValue: value,\n\t\t\t\t\tErr:   fmt.Errorf(\"not an integer\"),\n\t\t\t\t}\n\t\t\t\treturn opts, err\n\t\t\t}\n\t\t\tif limit < 1 || limit > 1000 {\n\t\t\t\terr = &ParseError{\n\t\t\t\t\tField: \"limit\",\n\t\t\t\t\tValue: value,\n\t\t\t\t\tErr:   fmt.Errorf(\"must be between 1 and 1000\"),\n\t\t\t\t}\n\t\t\t\treturn opts, err\n\t\t\t}\n\t\t\topts.Limit = &limit\n\t\tcase strings.HasPrefix(key, \"label.\"):\n\t\t\tname := strings.TrimPrefix(key, \"label.\")\n\t\t\tif name == \"\" {\n\t\t\t\terr := &ParseError{\n\t\t\t\t\tField: \"label\",\n\t\t\t\t\tValue: key,\n\t\t\t\t\tErr:   fmt.Errorf(\"empty name\"),\n\t\t\t\t}\n\t\t\t\treturn opts, err\n\t\t\t}\n\t\t\topts.Labels[name] = value\n\t\tdefault:\n\t\t\terr := &ParseError{\n\t\t\t\tField: \"field\",\n\t\t\t\tValue: key,\n\t\t\t\tErr:   fmt.Errorf(\"unknown field\"),\n\t\t\t}\n\t\t\treturn opts, err\n\t\t}\n\t}\n\n\tif parseErr != nil {\n\t\treturn opts, parseErr\n\t}\n\treturn opts, nil\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 286,
+    "total_tokens": 910,
+    "completion_tokens": 624,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}
