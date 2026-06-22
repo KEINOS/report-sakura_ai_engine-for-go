@@ -6,13 +6,13 @@ lastmod: 2026-06-22
 type: "blog"
 draft: false
 tags:
-	- go
-	- llm
-	- benchmark
-	- sakura-ai
-	- sakura-ai-engine
+  - go
+  - llm
+  - benchmark
+  - sakura-ai
+  - sakura-ai-engine
 categories:
-	- research
+  - research
 ---
 
 # Sakura AI Engine：AI モデルの Go コーディング能力比較
