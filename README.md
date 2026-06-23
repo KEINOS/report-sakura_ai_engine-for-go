@@ -299,7 +299,7 @@ AI Agent（検証では [Hermes Agent](https://hermes-agent.nousresearch.com/)�
 
 ```bash
 PYTHON=/path/to/python-with-httpx
-SAKURA_AI_TOKEN="your:sakana/ai+token+here"
+SAKURA_AI_TOKEN="your:sakura-ai-engine/api+token+here"
 RESEARCH_RUN=6 "$PYTHON" research.py all
 ```
 
