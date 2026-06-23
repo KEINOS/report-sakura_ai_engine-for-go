@@ -19,7 +19,7 @@ categories:
 
 ## 概要
 
-AI Agent で利用する Go コーディングモデルを選定するため、**[さくらの AI Engine](https://manual.sakura.ad.jp/cloud/manual-ai-engine.html)（以下 Sakura AI）が提供する 10 モデルを比較・評価した**。
+AI Agent で利用する学習モデルで、 Go 言語（golang 以下 go）のコーディング向けモデルを選定するため、**[さくらの AI Engine](https://manual.sakura.ad.jp/cloud/manual-ai-engine.html)（以下 Sakura AI）が提供する 10 モデルを比較・評価した**。
 
 AI Agent やハーネスによる会話履歴、メモリー、自己学習コンテキストの影響を避けるため、Sakura AI の OpenAI API 互換エンドポイントへ各モデルを直接リクエストし、初回の Go コード生成能力を測定した。
 
