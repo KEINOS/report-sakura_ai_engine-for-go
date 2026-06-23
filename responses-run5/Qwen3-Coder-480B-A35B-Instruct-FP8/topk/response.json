@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-482fffc5ed9e4e6bb3c5d39b5a29d2c3",
+  "object": "chat.completion",
+  "created": 1782144164,
+  "model": "Qwen3-Coder-480B-A35B-Instruct-FP8",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage topk\n\nimport (\n\t\"container/heap\"\n)\n\n// wordFreq holds a word and its frequency\ntype wordFreq struct {\n\tword  string\n\tcount int\n}\n\n// freqHeap implements heap.Interface for wordFreq items\n// Orders by ascending frequency, then descending lexicographical order\ntype freqHeap []*wordFreq\n\nfunc (h freqHeap) Len() int { return len(h) }\n\nfunc (h freqHeap) Less(i, j int) bool {\n\tif h[i].count == h[j].count {\n\t\treturn h[i].word > h[j].word // reverse for min-heap based on lex order\n\t}\n\treturn h[i].count < h[j].count // min-heap based on count\n}\n\nfunc (h freqHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }\n\nfunc (h *freqHeap) Push(x interface{}) {\n\t*h = append(*h, x.(*wordFreq))\n}\n\nfunc (h *freqHeap) Pop() interface{} {\n\told := *h\n\tn := len(old)\n\titem := old[n-1]\n\t*h = old[0 : n-1]\n\treturn item\n}\n\n// TopKFrequent returns at most k unique words ordered by descending frequency,\n// with ties broken by ascending lexical order.\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn []string{}\n\t}\n\n\t// Count frequencies\n\tfreqMap := make(map[string]int, len(words))\n\tfor _, word := range words {\n\t\tfreqMap[word]++\n\t}\n\n\t// Use a min-heap of size k to track top k elements\n\th := &freqHeap{}\n\theap.Init(h)\n\n\tfor word, count := range freqMap {\n\t\theap.Push(h, &wordFreq{word, count})\n\t\tif h.Len() > k {\n\t\t\theap.Pop(h)\n\t\t}\n\t}\n\n\t// Extract results in correct order\n\tresult := make([]string, h.Len())\n\tfor i := len(result) - 1; i >= 0; i-- {\n\t\tresult[i] = heap.Pop(h).(*wordFreq).word\n\t}\n\n\treturn result\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 153,
+    "total_tokens": 620,
+    "completion_tokens": 467,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

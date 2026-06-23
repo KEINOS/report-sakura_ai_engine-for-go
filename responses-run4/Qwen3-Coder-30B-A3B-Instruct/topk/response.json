@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-c37ac399f3414bf3a7e36b0139b18836",
+  "object": "chat.completion",
+  "created": 1782143439,
+  "model": "Qwen3-Coder-30B-A3B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage topk\n\nimport (\n\t\"container/heap\"\n\t\"sort\"\n)\n\n// TopKFrequent returns the k most frequent words, ordered by frequency (desc)\n// and then lexicographically (asc) for ties.\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn []string{}\n\t}\n\n\t// Count frequencies\n\tfreq := make(map[string]int)\n\tfor _, word := range words {\n\t\tfreq[word]++\n\t}\n\n\t// Use a min-heap to keep track of top k elements\n\th := &minHeap{}\n\theap.Init(h)\n\n\tfor word, count := range freq {\n\t\tif h.Len() < k {\n\t\t\theap.Push(h, item{word, count})\n\t\t} else if count > h.Peek().count || (count == h.Peek().count && word < h.Peek().word) {\n\t\t\theap.Pop(h)\n\t\t\theap.Push(h, item{word, count})\n\t\t}\n\t}\n\n\t// Extract results and reverse to get descending order\n\tresult := make([]string, h.Len())\n\tfor i := h.Len() - 1; i >= 0; i-- {\n\t\tresult[i] = heap.Pop(h).(item).word\n\t}\n\n\treturn result\n}\n\n// item represents a word and its frequency\ntype item struct {\n\tword  string\n\tcount int\n}\n\n// minHeap implements heap.Interface with min-heap behavior\n// Items are ordered by count (ascending), then by word (ascending)\ntype minHeap struct {\n\titems []item\n}\n\nfunc (h *minHeap) Len() int           { return len(h.items) }\nfunc (h *minHeap) Less(i, j int) bool { return h.items[i].count < h.items[j].count || (h.items[i].count == h.items[j].count && h.items[i].word > h.items[j].word) }\nfunc (h *minHeap) Swap(i, j int)      { h.items[i], h.items[j] = h.items[j], h.items[i] }\n\nfunc (h *minHeap) Push(x interface{}) {\n\th.items = append(h.items, x.(item))\n}\n\nfunc (h *minHeap) Pop() interface{} {\n\told := h.items\n\tn := len(old)\n\tx := old[n-1]\n\th.items = old[0 : n-1]\n\treturn x\n}\n\nfunc (h *minHeap) Peek() item {\n\treturn h.items[0]\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 153,
+    "total_tokens": 677,
+    "completion_tokens": 524,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

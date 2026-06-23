@@ -12,6 +12,7 @@ import subprocess
 import sys
 import tempfile
 import time
+from datetime import date
 from pathlib import Path
 
 import httpx
@@ -525,7 +526,7 @@ def summarize() -> None:
         )
     ]
     output = {
-        "date": "2026-06-21",
+        "date": date.today().isoformat(),
         "models": summary,
         "pareto_front": front,
         "quality_pareto_front": quality_front,

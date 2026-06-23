@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-2d6b82c81dbc43cc898bd9818fc64f28",
+  "object": "chat.completion",
+  "created": 1782144737,
+  "model": "gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage topk\n\nimport (\n\t\"container/heap\"\n\t\"sort\"\n)\n\n// TopKFrequent returns at most k unique words from the input slice ordered by\n// descending frequency. Words with the same frequency are ordered by ascending\n// lexical order. If k <= 0 or the input slice is empty, a non‑nil empty slice is\n// returned. The input slice is never mutated.\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn make([]string, 0)\n\t}\n\n\t// Count frequencies.\n\tfreq := make(map[string]int, len(words))\n\tfor _, w := range words {\n\t\tfreq[w]++\n\t}\n\n\t// Min‑heap that keeps the current k best items.\n\th := &minHeap{}\n\theap.Init(h)\n\n\t// Helper to decide if a is better than b.\n\tbetter := func(a, b item) bool {\n\t\tif a.freq != b.freq {\n\t\t\treturn a.freq > b.freq // higher frequency is better\n\t\t}\n\t\treturn a.word < b.word // lexicographically smaller is better\n\t}\n\n\t// Populate the heap with at most k elements.\n\tfor w, f := range freq {\n\t\tit := item{word: w, freq: f}\n\t\tif h.Len() < k {\n\t\t\theap.Push(h, it)\n\t\t\tcontinue\n\t\t}\n\t\tif better(it, (*h)[0]) {\n\t\t\t(*h)[0] = it\n\t\t\theap.Fix(h, 0)\n\t\t}\n\t}\n\n\t// Extract heap contents.\n\tresItems := make([]item, h.Len())\n\tfor i := range resItems {\n\t\tresItems[i] = heap.Pop(h).(item)\n\t}\n\n\t// Sort by descending frequency, then ascending lexical order.\n\tsort.Slice(resItems, func(i, j int) bool {\n\t\tif resItems[i].freq != resItems[j].freq {\n\t\t\treturn resItems[i].freq > resItems[j].freq\n\t\t}\n\t\treturn resItems[i].word < resItems[j].word\n\t})\n\n\t// Build the result slice.\n\tout := make([]string, len(resItems))\n\tfor i, it := range resItems {\n\t\tout[i] = it.word\n\t}\n\treturn out\n}\n\n// item stores a word together with its frequency.\ntype item struct {\n\tword string\n\tfreq int\n}\n\n// minHeap implements a min‑heap where the \"worst\" element (lowest frequency,\n// and for ties the lexicographically largest word) is at the root.\ntype minHeap []item\n\nfunc (h minHeap) Len() int { return len(h) }\n\nfunc (h minHeap) Less(i, j int) bool {\n\tif h[i].freq != h[j].freq {\n\t\treturn h[i].freq < h[j].freq // lower frequency is \"less\"\n\t}\n\treturn h[i].word > h[j].word // larger word is \"less\" (worse)\n}\n\nfunc (h minHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }\n\nfunc (h *minHeap) Push(x interface{}) {\n\t*h = append(*h, x.(item))\n}\n\nfunc (h *minHeap) Pop() interface{} {\n\told := *h\n\tn := len(old)\n\tit := old[n-1]\n\t*h = old[:n-1]\n\treturn it\n}\n```\n",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": "We need to write a Go source file with package topk, containing function TopKFrequent(words []string, k int) []string meeting requirements.\n\nWe need to avoid sorting all occurrences; we can use a min-heap of size k to keep top k elements based on frequency and lexical order. Steps:\n\n- Count frequencies using map[string]int.\n- If k <= 0, return empty slice (non-nil). Also if words empty, return empty slice.\n- Use a heap (container/heap) with custom type that implements heap.Interface. The heap will be a min-heap where the \"less\" function defines that element a is less than b if:\n   - freq[a] < freq[b] OR (freq equal && word a > word b) because we want to pop the smallest frequency, and for ties we want the lexicographically larger word to be considered smaller (since we want to keep lexicographically smaller words in top). Actually we need to keep top k by descending freq, ascending lexical. So min-heap should keep the worst among current top k at root, so we can compare new candidate: if candidate is better (higher freq, or same freq but smaller lexical) than root, we replace.\n\nDefine struct Item { word string; freq int }.\n\nDefine type MinHeap []Item.\n\nLess(i,j) returns true if heap[i] is \"worse\" than heap[j] (i.e., lower freq, or same freq and larger word). So root is worst.\n\nImplementation:\n\nfunc (h MinHeap) Len() int { return len(h) }\nfunc (h MinHeap) Less(i,j int) bool {\n    if h[i].freq != h[j].freq {\n        return h[i].freq < h[j].freq // lower freq is less (worse)\n    }\n    return h[i].word > h[j].word // lexicographically larger is less (worse)\n}\nfunc (h MinHeap) Swap(i,j int) { h[i], h[j] = h[j], h[i] }\n\nPush/Pop using pointer receiver.\n\nAfter building heap: iterate over map entries. For each item:\n- if heap size < k: push.\n- else if item is better than heap[0] (i.e., !Less(item, heap[0])? Actually we need to compare: if item is better (higher freq, or same freq and smaller word) than root, then replace root: heap[0] = item; heap.Fix(0).\n\nDefine a function better(a,b Item) bool: returns true if a is better than b (higher freq, or same freq and smaller word). So if better(item, heap[0]) then replace.\n\nAfter processing, we have heap of up to k items, but not sorted. Need to output slice sorted by descending freq, ascending lexical. So we can extract items into slice, sort using sort.Slice with comparator: higher freq first, if equal lower lexical.\n\nReturn slice of words.\n\nEdge Cases: k may be larger than number of unique words; we just return all unique words sorted accordingly.\n\nComplexities: O(N + U log k) where U unique words.\n\nMake sure not to mutate input slice; we only read.\n\nReturn non-nil empty slice: make([]string,0).\n\nNow produce Go file.\n\nNeed to import container/heap, sort.\n\nWrite package topk.\n\nWrite function TopKFrequent.\n\nWrite internal types.\n\nMake sure to comment.\n\nNow produce final answer."
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 212,
+    "total_tokens": 1658,
+    "completion_tokens": 1446,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

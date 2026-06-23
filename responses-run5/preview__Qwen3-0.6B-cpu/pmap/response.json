@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-0a2f79dcc1244d86a7269db6168a05c5",
+  "object": "chat.completion",
+  "created": 1782144756,
+  "model": "preview/Qwen3-0.6B-cpu",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage pmap\n\nimport (\n\t\"errors\"\n\t\"fmt\"\n\t\"sync\"\n)\n\n// ParallelMapOrdered implements the ParallelMapOrdered function\nfunc ParallelMapOrdered(\n\tctx context.Context,\n\tinput []int,\n\tworkers int,\n\tfn func(context.Context, int) (int, error),\n) ([]int, error) {\n\tif workers <= 0 || workers == 0 {\n\t\treturn nil, errors.New(\"number of workers cannot be zero or negative\")\n\t}\n\n\tif input == nil {\n\t\treturn nil, errors.New(\"input cannot be nil\")\n\t}\n\n\tvar results []int\n\tvar wg sync.WaitGroup\n\n\tfor i := 0; i < len(input); i++ {\n\t\twg.Add(1)\n\t\tgo func() {\n\t\t\tdefer wg.Done()\n\t\t\tresult, err := fn(ctx, i)\n\t\t\tif err != nil {\n\t\t\t\tif errors.Is(err, fmt.Errorf(\"panic\")) {\n\t\t\t\t\tresults = append(results, result)\n\t\t\t\t} else {\n\t\t\t\t\tresults = append(results, result)\n\t\t\t\t\tif err != nil {\n\t\t\t\t\t\tresults = append(results, err)\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}()\n\t}\n\n\twg.Wait()\n\n\tif len(results) == 0 {\n\t\treturn results, nil\n\t}\n\n\treturn results, nil\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 231,
+    "total_tokens": 490,
+    "completion_tokens": 259,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

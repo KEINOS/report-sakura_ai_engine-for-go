@@ -1,172 +1,261 @@
-# Graph Report - .  (2026-06-22)
+# Graph Report - .  (2026-06-23)
 
 ## Corpus Check
-- 141 files · ~117,072 words
+
+- 269 files · ~237,031 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1803 nodes · 1789 edges · 165 communities (142 shown, 23 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.78)
+
+- 2825 nodes · 3386 edges · 260 communities (212 shown, 48 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.75)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Options Parser Tests|Options Parser Tests]]
-- [[_COMMUNITY_Parallel Map Tests|Parallel Map Tests]]
-- [[_COMMUNITY_Top K Tests|Top K Tests]]
-- [[_COMMUNITY_Run 2 Logs|Run 2 Logs]]
-- [[_COMMUNITY_Run 3 Logs|Run 3 Logs]]
-- [[_COMMUNITY_Benchmark Harness|Benchmark Harness]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-30B-A3B-Instruct options|Run 2 Qwen3-Coder-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-30B-A3B-Instruct options|Run 2 Qwen3-Coder-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-30B-A3B-Instruct pmap|Run 2 Qwen3-Coder-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-30B-A3B-Instruct pmap|Run 2 Qwen3-Coder-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-30B-A3B-Instruct topk|Run 2 Qwen3-Coder-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-30B-A3B-Instruct topk|Run 2 Qwen3-Coder-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-480B-A35B options|Run 2 Qwen3-Coder-480B-A35B options]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-480B-A35B options|Run 2 Qwen3-Coder-480B-A35B options]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-480B-A35B pmap|Run 2 Qwen3-Coder-480B-A35B pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-480B-A35B pmap|Run 2 Qwen3-Coder-480B-A35B pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-480B-A35B topk|Run 2 Qwen3-Coder-480B-A35B topk]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-480B-A35B topk|Run 2 Qwen3-Coder-480B-A35B topk]]
-- [[_COMMUNITY_Run 2 gpt-oss-120b options|Run 2 gpt-oss-120b options]]
-- [[_COMMUNITY_Run 2 gpt-oss-120b options|Run 2 gpt-oss-120b options]]
-- [[_COMMUNITY_Run 2 gpt-oss-120b pmap|Run 2 gpt-oss-120b pmap]]
-- [[_COMMUNITY_Run 2 gpt-oss-120b pmap|Run 2 gpt-oss-120b pmap]]
-- [[_COMMUNITY_Run 2 gpt-oss-120b topk|Run 2 gpt-oss-120b topk]]
-- [[_COMMUNITY_Run 2 gpt-oss-120b topk|Run 2 gpt-oss-120b topk]]
-- [[_COMMUNITY_Run 2 llm-jp-3.1-8x13b4 options|Run 2 llm-jp-3.1-8x13b4 options]]
-- [[_COMMUNITY_Run 2 llm-jp-3.1-8x13b4 options|Run 2 llm-jp-3.1-8x13b4 options]]
-- [[_COMMUNITY_Run 2 llm-jp-3.1-8x13b4 pmap|Run 2 llm-jp-3.1-8x13b4 pmap]]
-- [[_COMMUNITY_Run 2 llm-jp-3.1-8x13b4 pmap|Run 2 llm-jp-3.1-8x13b4 pmap]]
-- [[_COMMUNITY_Run 2 llm-jp-3.1-8x13b4 topk|Run 2 llm-jp-3.1-8x13b4 topk]]
-- [[_COMMUNITY_Run 2 llm-jp-3.1-8x13b4 topk|Run 2 llm-jp-3.1-8x13b4 topk]]
-- [[_COMMUNITY_Run 2 Kimi-K2.6 options|Run 2 Kimi-K2.6 options]]
-- [[_COMMUNITY_Run 2 Kimi-K2.6 options|Run 2 Kimi-K2.6 options]]
-- [[_COMMUNITY_Run 2 Kimi-K2.6 pmap|Run 2 Kimi-K2.6 pmap]]
-- [[_COMMUNITY_Run 2 Kimi-K2.6 pmap|Run 2 Kimi-K2.6 pmap]]
-- [[_COMMUNITY_Run 2 Kimi-K2.6 topk|Run 2 Kimi-K2.6 topk]]
-- [[_COMMUNITY_Run 2 Kimi-K2.6 topk|Run 2 Kimi-K2.6 topk]]
-- [[_COMMUNITY_Run 2 Phi-4-mini options|Run 2 Phi-4-mini options]]
-- [[_COMMUNITY_Run 2 Phi-4-mini options|Run 2 Phi-4-mini options]]
-- [[_COMMUNITY_Run 2 Phi-4-mini pmap|Run 2 Phi-4-mini pmap]]
-- [[_COMMUNITY_Run 2 Phi-4-mini pmap|Run 2 Phi-4-mini pmap]]
-- [[_COMMUNITY_Run 2 Phi-4-mini topk|Run 2 Phi-4-mini topk]]
-- [[_COMMUNITY_Run 2 Phi-4-multimodal options|Run 2 Phi-4-multimodal options]]
-- [[_COMMUNITY_Run 2 Phi-4-multimodal options|Run 2 Phi-4-multimodal options]]
-- [[_COMMUNITY_Run 2 Phi-4-multimodal pmap|Run 2 Phi-4-multimodal pmap]]
-- [[_COMMUNITY_Run 2 Phi-4-multimodal pmap|Run 2 Phi-4-multimodal pmap]]
-- [[_COMMUNITY_Run 2 Phi-4-multimodal topk|Run 2 Phi-4-multimodal topk]]
-- [[_COMMUNITY_Run 2 Qwen3-0.6B-cpu options|Run 2 Qwen3-0.6B-cpu options]]
-- [[_COMMUNITY_Run 2 Qwen3-0.6B-cpu options|Run 2 Qwen3-0.6B-cpu options]]
-- [[_COMMUNITY_Run 2 Qwen3-0.6B-cpu pmap|Run 2 Qwen3-0.6B-cpu pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-0.6B-cpu pmap|Run 2 Qwen3-0.6B-cpu pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-0.6B-cpu topk|Run 2 Qwen3-0.6B-cpu topk]]
-- [[_COMMUNITY_Run 2 Qwen3-VL-30B-A3B-Instruct options|Run 2 Qwen3-VL-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 2 Qwen3-VL-30B-A3B-Instruct options|Run 2 Qwen3-VL-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 2 Qwen3-VL-30B-A3B-Instruct pmap|Run 2 Qwen3-VL-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-VL-30B-A3B-Instruct pmap|Run 2 Qwen3-VL-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 2 Qwen3-VL-30B-A3B-Instruct topk|Run 2 Qwen3-VL-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 2 Qwen3-VL-30B-A3B-Instruct topk|Run 2 Qwen3-VL-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 2 Qwen3.6-35B-A3B options|Run 2 Qwen3.6-35B-A3B options]]
-- [[_COMMUNITY_Run 2 Qwen3.6-35B-A3B options|Run 2 Qwen3.6-35B-A3B options]]
-- [[_COMMUNITY_Run 2 Qwen3.6-35B-A3B pmap|Run 2 Qwen3.6-35B-A3B pmap]]
-- [[_COMMUNITY_Run 2 Qwen3.6-35B-A3B pmap|Run 2 Qwen3.6-35B-A3B pmap]]
-- [[_COMMUNITY_Run 2 Qwen3.6-35B-A3B topk|Run 2 Qwen3.6-35B-A3B topk]]
-- [[_COMMUNITY_Run 2 Qwen3.6-35B-A3B topk|Run 2 Qwen3.6-35B-A3B topk]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-30B-A3B-Instruct options|Run 3 Qwen3-Coder-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-30B-A3B-Instruct options|Run 3 Qwen3-Coder-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-30B-A3B-Instruct pmap|Run 3 Qwen3-Coder-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-30B-A3B-Instruct pmap|Run 3 Qwen3-Coder-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-30B-A3B-Instruct topk|Run 3 Qwen3-Coder-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-30B-A3B-Instruct topk|Run 3 Qwen3-Coder-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-480B-A35B options|Run 3 Qwen3-Coder-480B-A35B options]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-480B-A35B options|Run 3 Qwen3-Coder-480B-A35B options]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-480B-A35B pmap|Run 3 Qwen3-Coder-480B-A35B pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-480B-A35B pmap|Run 3 Qwen3-Coder-480B-A35B pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-480B-A35B topk|Run 3 Qwen3-Coder-480B-A35B topk]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-480B-A35B topk|Run 3 Qwen3-Coder-480B-A35B topk]]
-- [[_COMMUNITY_Run 3 gpt-oss-120b options|Run 3 gpt-oss-120b options]]
-- [[_COMMUNITY_Run 3 gpt-oss-120b options|Run 3 gpt-oss-120b options]]
-- [[_COMMUNITY_Run 3 gpt-oss-120b pmap|Run 3 gpt-oss-120b pmap]]
-- [[_COMMUNITY_Run 3 gpt-oss-120b pmap|Run 3 gpt-oss-120b pmap]]
-- [[_COMMUNITY_Run 3 gpt-oss-120b topk|Run 3 gpt-oss-120b topk]]
-- [[_COMMUNITY_Run 3 gpt-oss-120b topk|Run 3 gpt-oss-120b topk]]
-- [[_COMMUNITY_Run 3 llm-jp-3.1-8x13b4 options|Run 3 llm-jp-3.1-8x13b4 options]]
-- [[_COMMUNITY_Run 3 llm-jp-3.1-8x13b4 options|Run 3 llm-jp-3.1-8x13b4 options]]
-- [[_COMMUNITY_Run 3 llm-jp-3.1-8x13b4 pmap|Run 3 llm-jp-3.1-8x13b4 pmap]]
-- [[_COMMUNITY_Run 3 llm-jp-3.1-8x13b4 pmap|Run 3 llm-jp-3.1-8x13b4 pmap]]
-- [[_COMMUNITY_Run 3 llm-jp-3.1-8x13b4 topk|Run 3 llm-jp-3.1-8x13b4 topk]]
-- [[_COMMUNITY_Run 3 llm-jp-3.1-8x13b4 topk|Run 3 llm-jp-3.1-8x13b4 topk]]
-- [[_COMMUNITY_Run 3 Kimi-K2.6 options|Run 3 Kimi-K2.6 options]]
-- [[_COMMUNITY_Run 3 Kimi-K2.6 options|Run 3 Kimi-K2.6 options]]
-- [[_COMMUNITY_Run 3 Kimi-K2.6 pmap|Run 3 Kimi-K2.6 pmap]]
-- [[_COMMUNITY_Run 3 Kimi-K2.6 pmap|Run 3 Kimi-K2.6 pmap]]
-- [[_COMMUNITY_Run 3 Kimi-K2.6 topk|Run 3 Kimi-K2.6 topk]]
-- [[_COMMUNITY_Run 3 Kimi-K2.6 topk|Run 3 Kimi-K2.6 topk]]
-- [[_COMMUNITY_Run 3 Phi-4-mini options|Run 3 Phi-4-mini options]]
-- [[_COMMUNITY_Run 3 Phi-4-mini options|Run 3 Phi-4-mini options]]
-- [[_COMMUNITY_Run 3 Phi-4-mini pmap|Run 3 Phi-4-mini pmap]]
-- [[_COMMUNITY_Run 3 Phi-4-mini pmap|Run 3 Phi-4-mini pmap]]
-- [[_COMMUNITY_Run 3 Phi-4-mini topk|Run 3 Phi-4-mini topk]]
-- [[_COMMUNITY_Run 3 Phi-4-multimodal options|Run 3 Phi-4-multimodal options]]
-- [[_COMMUNITY_Run 3 Phi-4-multimodal options|Run 3 Phi-4-multimodal options]]
-- [[_COMMUNITY_Run 3 Phi-4-multimodal pmap|Run 3 Phi-4-multimodal pmap]]
-- [[_COMMUNITY_Run 3 Phi-4-multimodal pmap|Run 3 Phi-4-multimodal pmap]]
-- [[_COMMUNITY_Run 3 Phi-4-multimodal topk|Run 3 Phi-4-multimodal topk]]
-- [[_COMMUNITY_Run 3 Qwen3-0.6B-cpu options|Run 3 Qwen3-0.6B-cpu options]]
-- [[_COMMUNITY_Run 3 Qwen3-0.6B-cpu options|Run 3 Qwen3-0.6B-cpu options]]
-- [[_COMMUNITY_Run 3 Qwen3-0.6B-cpu pmap|Run 3 Qwen3-0.6B-cpu pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-0.6B-cpu pmap|Run 3 Qwen3-0.6B-cpu pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-0.6B-cpu topk|Run 3 Qwen3-0.6B-cpu topk]]
-- [[_COMMUNITY_Run 3 Qwen3-VL-30B-A3B-Instruct options|Run 3 Qwen3-VL-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 3 Qwen3-VL-30B-A3B-Instruct options|Run 3 Qwen3-VL-30B-A3B-Instruct options]]
-- [[_COMMUNITY_Run 3 Qwen3-VL-30B-A3B-Instruct pmap|Run 3 Qwen3-VL-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-VL-30B-A3B-Instruct pmap|Run 3 Qwen3-VL-30B-A3B-Instruct pmap]]
-- [[_COMMUNITY_Run 3 Qwen3-VL-30B-A3B-Instruct topk|Run 3 Qwen3-VL-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 3 Qwen3-VL-30B-A3B-Instruct topk|Run 3 Qwen3-VL-30B-A3B-Instruct topk]]
-- [[_COMMUNITY_Run 3 Qwen3.6-35B-A3B options|Run 3 Qwen3.6-35B-A3B options]]
-- [[_COMMUNITY_Run 3 Qwen3.6-35B-A3B options|Run 3 Qwen3.6-35B-A3B options]]
-- [[_COMMUNITY_Run 3 Qwen3.6-35B-A3B pmap|Run 3 Qwen3.6-35B-A3B pmap]]
-- [[_COMMUNITY_Run 3 Qwen3.6-35B-A3B pmap|Run 3 Qwen3.6-35B-A3B pmap]]
-- [[_COMMUNITY_Run 3 Qwen3.6-35B-A3B topk|Run 3 Qwen3.6-35B-A3B topk]]
-- [[_COMMUNITY_Run 3 Qwen3.6-35B-A3B topk|Run 3 Qwen3.6-35B-A3B topk]]
-- [[_COMMUNITY_Run 1 Summary|Run 1 Summary]]
-- [[_COMMUNITY_Run 1 Qwen3-0.6B-cpu Metrics|Run 1 Qwen3-0.6B-cpu Metrics]]
-- [[_COMMUNITY_Run 1 Phi-4-mini Metrics|Run 1 Phi-4-mini Metrics]]
-- [[_COMMUNITY_Run 1 Phi-4-multimodal Metrics|Run 1 Phi-4-multimodal Metrics]]
-- [[_COMMUNITY_Run 1 Qwen3-VL-30B-A3B-Instruct Metrics|Run 1 Qwen3-VL-30B-A3B-Instruct Metrics]]
-- [[_COMMUNITY_Run 1 gpt-oss-120b Metrics|Run 1 gpt-oss-120b Metrics]]
-- [[_COMMUNITY_Run 1 Qwen3-Coder-30B-A3B-Instruct Metrics|Run 1 Qwen3-Coder-30B-A3B-Instruct Metrics]]
-- [[_COMMUNITY_Run 1 llm-jp-3.1-8x13b4 Metrics|Run 1 llm-jp-3.1-8x13b4 Metrics]]
-- [[_COMMUNITY_Run 1 Qwen3.6-35B-A3B Metrics|Run 1 Qwen3.6-35B-A3B Metrics]]
-- [[_COMMUNITY_Run 1 Qwen3-Coder-480B-A35B Metrics|Run 1 Qwen3-Coder-480B-A35B Metrics]]
-- [[_COMMUNITY_Run 1 Kimi-K2.6 Metrics|Run 1 Kimi-K2.6 Metrics]]
-- [[_COMMUNITY_Run 2 Summary|Run 2 Summary]]
-- [[_COMMUNITY_Run 2 Qwen3-0.6B-cpu Metrics|Run 2 Qwen3-0.6B-cpu Metrics]]
-- [[_COMMUNITY_Run 2 Phi-4-mini Metrics|Run 2 Phi-4-mini Metrics]]
-- [[_COMMUNITY_Run 2 Phi-4-multimodal Metrics|Run 2 Phi-4-multimodal Metrics]]
-- [[_COMMUNITY_Run 2 Qwen3-VL-30B-A3B-Instruct Metrics|Run 2 Qwen3-VL-30B-A3B-Instruct Metrics]]
-- [[_COMMUNITY_Run 2 gpt-oss-120b Metrics|Run 2 gpt-oss-120b Metrics]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-30B-A3B-Instruct Metrics|Run 2 Qwen3-Coder-30B-A3B-Instruct Metrics]]
-- [[_COMMUNITY_Run 2 llm-jp-3.1-8x13b4 Metrics|Run 2 llm-jp-3.1-8x13b4 Metrics]]
-- [[_COMMUNITY_Run 2 Qwen3.6-35B-A3B Metrics|Run 2 Qwen3.6-35B-A3B Metrics]]
-- [[_COMMUNITY_Run 2 Qwen3-Coder-480B-A35B Metrics|Run 2 Qwen3-Coder-480B-A35B Metrics]]
-- [[_COMMUNITY_Run 2 Kimi-K2.6 Metrics|Run 2 Kimi-K2.6 Metrics]]
-- [[_COMMUNITY_Run 3 Summary|Run 3 Summary]]
-- [[_COMMUNITY_Run 3 Qwen3-0.6B-cpu Metrics|Run 3 Qwen3-0.6B-cpu Metrics]]
-- [[_COMMUNITY_Run 3 Phi-4-mini Metrics|Run 3 Phi-4-mini Metrics]]
-- [[_COMMUNITY_Run 3 Phi-4-multimodal Metrics|Run 3 Phi-4-multimodal Metrics]]
-- [[_COMMUNITY_Run 3 Qwen3-VL-30B-A3B-Instruct Metrics|Run 3 Qwen3-VL-30B-A3B-Instruct Metrics]]
-- [[_COMMUNITY_Run 3 gpt-oss-120b Metrics|Run 3 gpt-oss-120b Metrics]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-30B-A3B-Instruct Metrics|Run 3 Qwen3-Coder-30B-A3B-Instruct Metrics]]
-- [[_COMMUNITY_Run 3 llm-jp-3.1-8x13b4 Metrics|Run 3 llm-jp-3.1-8x13b4 Metrics]]
-- [[_COMMUNITY_Run 3 Qwen3.6-35B-A3B Metrics|Run 3 Qwen3.6-35B-A3B Metrics]]
-- [[_COMMUNITY_Run 3 Qwen3-Coder-480B-A35B Metrics|Run 3 Qwen3-Coder-480B-A35B Metrics]]
-- [[_COMMUNITY_Run 3 Kimi-K2.6 Metrics|Run 3 Kimi-K2.6 Metrics]]
-- [[_COMMUNITY_Benchmark Findings|Benchmark Findings]]
-- [[_COMMUNITY_Benchmark Findings|Benchmark Findings]]
+
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_gpt-oss-120b|gpt-oss-120b]]
+- [[_COMMUNITY_gpt-oss-120b|gpt-oss-120b]]
+- [[_COMMUNITY_gpt-oss-120b|gpt-oss-120b]]
+- [[_COMMUNITY_gpt-oss-120b|gpt-oss-120b]]
+- [[_COMMUNITY_models|models]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_response.json|response.json]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_repeat-summary.json|repeat-summary.json]]
+- [[_COMMUNITY_repeat-summary.json|repeat-summary.json]]
+- [[_COMMUNITY_solution_test.go|solution_test.go]]
+- [[_COMMUNITY_repeat-summary.json|repeat-summary.json]]
+- [[_COMMUNITY_repeat-summary.json|repeat-summary.json]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_freqHeap|freqHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_freqHeap|freqHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_freqHeap|freqHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_freqHeap|freqHeap]]
+- [[_COMMUNITY_solution_test.go|solution_test.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_minHeap|minHeap]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_Five-run comparison|Five-run comparison]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_ParseError|ParseError]]
+- [[_COMMUNITY_solution_test.go|solution_test.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_Options|Options]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_Options|Options]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_Options|Options]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_solution.go|solution.go]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_Options|Options]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_ParallelMapOrdered()|ParallelMapOrdered()]]
+- [[_COMMUNITY_Findings second run|Findings: second run]]
 
 ## God Nodes (most connected - your core abstractions)
+
 1. `preview/Qwen3-0.6B-cpu` - 15 edges
 2. `preview/Phi-4-mini-instruct-cpu` - 15 edges
 3. `preview/Phi-4-multimodal-instruct` - 15 edges
@@ -179,573 +268,1009 @@
 10. `preview/Kimi-K2.6` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Sakura.AI Go コーディングモデル比較調査` --references--> `Three-run comparison`  [EXTRACTED]
+
+- `第2回 成果物一覧 (file-manifest)` --references--> `Findings: second run`  [INFERRED]
+  logs-run2/file-manifest.txt → FINDINGS.md
+- `Sakura AI Go five-run benchmark report` --references--> `Five-run comparison`  [EXTRACTED]
   README.md → comparison.md
-- `Sakura.AI Go コーディングモデル比較調査` --references--> `ParseOptions 課題`  [EXTRACTED]
-  README.md → prompts/options.md
-- `Sakura.AI Go コーディングモデル比較調査` --references--> `ParallelMapOrdered 課題`  [EXTRACTED]
-  README.md → prompts/pmap.md
-- `Sakura.AI Go コーディングモデル比較調査` --references--> `TopKFrequent 課題`  [EXTRACTED]
-  README.md → prompts/topk.md
-- `Three-run comparison` --conceptually_related_to--> `Findings: second run`  [INFERRED]
-  comparison.md → FINDINGS.md
+- `Five-run comparison` --references--> `gpt-oss five-run variation`  [EXTRACTED]
+  comparison.md → README.md
+- `Five-run comparison` --references--> `Kimi five-run variation`  [EXTRACTED]
+  comparison.md → README.md
+- `Five-run comparison` --references--> `Qwen3.6 five-run stability`  [EXTRACTED]
+  comparison.md → README.md
 
 ## Import Cycles
+
 - None detected.
 
 ## Hyperedges (group relationships)
-- **評価3課題** — prompts_topk_task, prompts_pmap_task, prompts_options_task [EXTRACTED 0.90]
-- **品質ゲート通過 Pareto front モデル** — readme_model_qwen36_35b, readme_model_qwen3coder_480b, readme_model_kimi_k26 [EXTRACTED 0.85]
 
-## Communities (165 total, 23 thin omitted)
+- **Five-run high-quality model findings** — readme_qwen36_stability, readme_qwen3coder480_balance, readme_kimi_variation, readme_gptoss_variation [EXTRACTED 1.00]
 
-### Community 98 - "Options Parser Tests"
-Cohesion: 0.36
-Nodes (7): TestParseOptions(), T, TestParseOptionsErrors(), TestParseOptionsTypedCause(), TestParseErrorContract(), BenchmarkParseOptions(), B
+## Communities (260 total, 48 thin omitted)
 
-### Community 86 - "Parallel Map Tests"
-Cohesion: 0.31
-Nodes (9): TestParallelMapOrdered(), T, TestParallelMapValidation(), TestParallelMapCancelsAndWaits(), TestParallelMapPanicBecomesError(), TestParallelMapParentCancellation(), TestParallelMapDoesNotLeakObviousGoroutines(), BenchmarkParallelMapOrdered() (+1 more)
+### Community 0 - "response.json"
 
-### Community 127 - "Top K Tests"
-Cohesion: 0.40
-Nodes (4): TestTopKFrequent(), T, BenchmarkTopKFrequent(), B
+Cohesion: 0.05
+Nodes (39): elapsed_seconds, error, finish_reason, message_keys, model, reasoning_chars, status, task (+31 more)
 
-### Community 0 - "Run 2 Logs"
-Cohesion: 0.08
-Nodes (25): Qwen3-Coder-30B-A3B-Instruct, ok, returncode, stdout, stderr, Qwen3-Coder-480B-A35B-Instruct-FP8, ok, returncode (+17 more)
+### Community 1 - "gpt-oss-120b"
 
-### Community 1 - "Run 3 Logs"
-Cohesion: 0.08
-Nodes (25): Qwen3-Coder-30B-A3B-Instruct, ok, returncode, stdout, stderr, Qwen3-Coder-480B-A35B-Instruct-FP8, ok, returncode (+17 more)
-
-### Community 14 - "Benchmark Harness"
-Cohesion: 0.28
-Nodes (15): safe(), prepare(), resolve_token(), extract_code(), max_tokens(), generate(), command(), Path (+7 more)
-
-### Community 33 - "Run 2 Qwen3-Coder-30B-A3B-Instruct options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 113 - "Run 2 Qwen3-Coder-30B-A3B-Instruct options"
-Cohesion: 0.40
-Nodes (3): Options, ParseError, ParseOptions()
-
-### Community 34 - "Run 2 Qwen3-Coder-30B-A3B-Instruct pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 35 - "Run 2 Qwen3-Coder-30B-A3B-Instruct topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 88 - "Run 2 Qwen3-Coder-30B-A3B-Instruct topk"
-Cohesion: 0.33
-Nodes (3): TopKFrequent(), item, minHeap
-
-### Community 36 - "Run 2 Qwen3-Coder-480B-A35B options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 63 - "Run 2 Qwen3-Coder-480B-A35B options"
-Cohesion: 0.19
-Nodes (9): Options, ParseError, ParseOptions(), As(), reflectValue(), reflectValueMock, reflectValueMock, typeMock (+1 more)
-
-### Community 37 - "Run 2 Qwen3-Coder-480B-A35B pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 38 - "Run 2 Qwen3-Coder-480B-A35B topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 93 - "Run 2 Qwen3-Coder-480B-A35B topk"
-Cohesion: 0.31
-Nodes (3): wordFreq, freqHeap, TopKFrequent()
-
-### Community 15 - "Run 2 gpt-oss-120b options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 103 - "Run 2 gpt-oss-120b options"
-Cohesion: 0.43
-Nodes (4): Options, ParseError, ParseOptions(), findParseError()
-
-### Community 16 - "Run 2 gpt-oss-120b pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 17 - "Run 2 gpt-oss-120b topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 87 - "Run 2 gpt-oss-120b topk"
-Cohesion: 0.31
-Nodes (4): TopKFrequent(), entry, better(), minHeap
-
-### Community 18 - "Run 2 llm-jp-3.1-8x13b4 options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 99 - "Run 2 llm-jp-3.1-8x13b4 options"
 Cohesion: 0.32
-Nodes (4): Options, ParseError, ParseOptions(), main()
+Nodes (31): date, pareto_front, quality_pareto_front, date, completion_tokens, effectiveness, functionality, loc (+23 more)
 
-### Community 19 - "Run 2 llm-jp-3.1-8x13b4 pmap"
+### Community 2 - "gpt-oss-120b"
+
+Cohesion: 0.38
+Nodes (28): date, completion_tokens, effectiveness, functionality, loc, modern, modern_tasks, passed (+20 more)
+
+### Community 3 - "gpt-oss-120b"
+
+Cohesion: 0.38
+Nodes (28): date, completion_tokens, effectiveness, functionality, loc, modern, modern_tasks, passed (+20 more)
+
+### Community 4 - "gpt-oss-120b"
+
+Cohesion: 0.50
+Nodes (25): completion_tokens, effectiveness, functionality, loc, modern, modern_tasks, passed, pmap_passed (+17 more)
+
+### Community 5 - "models"
+
+Cohesion: 0.34
+Nodes (19): date, median_seconds, modern_tasks, passed, price, requirements, models, gpt-oss-120b (+11 more)
+
+### Community 6 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 7 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 8 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 9 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 10 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 11 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 12 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 13 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 14 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 15 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 16 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 17 - "response.json"
+
+Cohesion: 0.11
+Nodes (17): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_routed_experts (+9 more)
+
+### Community 18 - "response.json"
+
 Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
 
-### Community 20 - "Run 2 llm-jp-3.1-8x13b4 topk"
+### Community 19 - "response.json"
+
 Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
 
-### Community 8 - "Run 2 Kimi-K2.6 options"
+### Community 20 - "response.json"
+
 Cohesion: 0.12
-Nodes (16): id, object, created, model, choices, service_tier, system_fingerprint, usage (+8 more)
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
 
-### Community 104 - "Run 2 Kimi-K2.6 options"
-Cohesion: 0.48
-Nodes (4): Options, ParseError, ParseOptions(), parse()
+### Community 21 - "response.json"
 
-### Community 9 - "Run 2 Kimi-K2.6 pmap"
 Cohesion: 0.12
-Nodes (16): id, object, created, model, choices, service_tier, system_fingerprint, usage (+8 more)
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
 
-### Community 10 - "Run 2 Kimi-K2.6 topk"
+### Community 22 - "response.json"
+
 Cohesion: 0.12
-Nodes (16): id, object, created, model, choices, service_tier, system_fingerprint, usage (+8 more)
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
 
-### Community 91 - "Run 2 Kimi-K2.6 topk"
+### Community 23 - "response.json"
+
+Cohesion: 0.12
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
+
+### Community 24 - "response.json"
+
+Cohesion: 0.12
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
+
+### Community 25 - "response.json"
+
+Cohesion: 0.12
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
+
+### Community 26 - "response.json"
+
+Cohesion: 0.12
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
+
+### Community 27 - "response.json"
+
+Cohesion: 0.12
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
+
+### Community 28 - "response.json"
+
+Cohesion: 0.12
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
+
+### Community 29 - "response.json"
+
+Cohesion: 0.12
+Nodes (16): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_text (+8 more)
+
+### Community 30 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 31 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 32 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 33 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 34 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 35 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 36 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 37 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 38 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 39 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 40 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 41 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 42 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 43 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 44 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 45 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 46 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 47 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 48 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 49 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 50 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 51 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 52 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 53 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 54 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 55 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 56 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 57 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 58 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 59 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 60 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 61 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 62 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 63 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 64 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 65 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 66 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 67 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 68 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 69 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 70 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 71 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 72 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 73 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 74 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 75 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 76 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 77 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 78 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 79 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 80 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 81 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 82 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 83 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 84 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 85 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 86 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 87 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 88 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 89 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 90 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 91 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 92 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 93 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 94 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 95 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 96 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 97 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 98 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 99 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 100 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 101 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 102 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 103 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 104 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 105 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 106 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 107 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 108 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 109 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 110 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 111 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 112 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 113 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 114 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 115 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 116 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 117 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 118 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 119 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 120 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 121 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 122 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 123 - "response.json"
+
+Cohesion: 0.12
+Nodes (15): choices, created, id, kv_transfer_params, model, object, prompt_logprobs, prompt_token_ids (+7 more)
+
+### Community 124 - "solution.go"
+
+Cohesion: 0.26
+Nodes (7): reflectValue(), reflectValueMock, Options, ParseError, As(), ParseOptions(), typeMock
+
+### Community 125 - "repeat-summary.json"
+
+Cohesion: 0.53
+Nodes (11): gpt-oss-120b, ok, returncode, stderr, stdout, preview/Kimi-K2.6, preview/Phi-4-mini-instruct-cpu, preview/Phi-4-multimodal-instruct (+3 more)
+
+### Community 126 - "repeat-summary.json"
+
+Cohesion: 0.53
+Nodes (11): gpt-oss-120b, ok, returncode, stderr, stdout, preview/Kimi-K2.6, preview/Phi-4-mini-instruct-cpu, preview/Phi-4-multimodal-instruct (+3 more)
+
+### Community 127 - "solution_test.go"
+
+Cohesion: 0.31
+Nodes (9): B, T, BenchmarkParallelMapOrdered(), TestParallelMapCancelsAndWaits(), TestParallelMapDoesNotLeakObviousGoroutines(), TestParallelMapOrdered(), TestParallelMapPanicBecomesError(), TestParallelMapParentCancellation() (+1 more)
+
+### Community 128 - "repeat-summary.json"
+
+Cohesion: 0.56
+Nodes (9): preview/Kimi-K2.6, ok, returncode, stderr, stdout, preview/Phi-4-mini-instruct-cpu, preview/Qwen3.6-35B-A3B, Qwen3-Coder-30B-A3B-Instruct (+1 more)
+
+### Community 129 - "repeat-summary.json"
+
+Cohesion: 0.56
+Nodes (9): preview/Phi-4-mini-instruct-cpu, preview/Phi-4-multimodal-instruct, preview/Qwen3.6-35B-A3B, ok, returncode, stderr, stdout, Qwen3-Coder-30B-A3B-Instruct (+1 more)
+
+### Community 130 - "minHeap"
+
+Cohesion: 0.31
+Nodes (4): entry, minHeap, TopKFrequent(), better()
+
+### Community 131 - "minHeap"
+
+Cohesion: 0.33
+Nodes (3): item, minHeap, TopKFrequent()
+
+### Community 132 - "minHeap"
+
+Cohesion: 0.33
+Nodes (3): item, minHeap, TopKFrequent()
+
+### Community 133 - "minHeap"
+
+Cohesion: 0.33
+Nodes (3): item, minHeap, TopKFrequent()
+
+### Community 134 - "minHeap"
+
+Cohesion: 0.33
+Nodes (3): item, minHeap, TopKFrequent()
+
+### Community 135 - "minHeap"
+
 Cohesion: 0.31
 Nodes (3): item, minHeap, TopKFrequent()
 
-### Community 21 - "Run 2 Phi-4-mini options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 136 - "minHeap"
 
-### Community 105 - "Run 2 Phi-4-mini options"
-Cohesion: 0.38
-Nodes (4): Options, ParseError, ParseOptions(), main()
-
-### Community 22 - "Run 2 Phi-4-mini pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 23 - "Run 2 Phi-4-mini topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 24 - "Run 2 Phi-4-multimodal options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 106 - "Run 2 Phi-4-multimodal options"
-Cohesion: 0.38
-Nodes (4): Options, ParseError, ParseOptions(), main()
-
-### Community 25 - "Run 2 Phi-4-multimodal pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 26 - "Run 2 Phi-4-multimodal topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 27 - "Run 2 Qwen3-0.6B-cpu options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 28 - "Run 2 Qwen3-0.6B-cpu pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 29 - "Run 2 Qwen3-0.6B-cpu topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 30 - "Run 2 Qwen3-VL-30B-A3B-Instruct options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 107 - "Run 2 Qwen3-VL-30B-A3B-Instruct options"
-Cohesion: 0.48
-Nodes (4): Options, ParseError, ParseOptions(), parseSpec()
-
-### Community 31 - "Run 2 Qwen3-VL-30B-A3B-Instruct pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 132 - "Run 2 Qwen3-VL-30B-A3B-Instruct pmap"
-Cohesion: 0.50
-Nodes (3): ParallelMapOrdered(), Context, result
-
-### Community 32 - "Run 2 Qwen3-VL-30B-A3B-Instruct topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 2 - "Run 2 Qwen3.6-35B-A3B options"
-Cohesion: 0.11
-Nodes (17): id, object, created, prompt_routed_experts, model, choices, service_tier, system_fingerprint (+9 more)
-
-### Community 112 - "Run 2 Qwen3.6-35B-A3B options"
-Cohesion: 0.40
-Nodes (3): Options, ParseError, ParseOptions()
-
-### Community 3 - "Run 2 Qwen3.6-35B-A3B pmap"
-Cohesion: 0.11
-Nodes (17): id, object, created, prompt_routed_experts, model, choices, service_tier, system_fingerprint (+9 more)
-
-### Community 4 - "Run 2 Qwen3.6-35B-A3B topk"
-Cohesion: 0.11
-Nodes (17): id, object, created, prompt_routed_experts, model, choices, service_tier, system_fingerprint (+9 more)
-
-### Community 92 - "Run 2 Qwen3.6-35B-A3B topk"
 Cohesion: 0.31
-Nodes (3): wordCount, minHeap, TopKFrequent()
+Nodes (3): minHeap, TopKFrequent(), wordCount
 
-### Community 57 - "Run 3 Qwen3-Coder-30B-A3B-Instruct options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 137 - "freqHeap"
 
-### Community 116 - "Run 3 Qwen3-Coder-30B-A3B-Instruct options"
-Cohesion: 0.40
-Nodes (3): Options, ParseError, ParseOptions()
-
-### Community 58 - "Run 3 Qwen3-Coder-30B-A3B-Instruct pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 59 - "Run 3 Qwen3-Coder-30B-A3B-Instruct topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 89 - "Run 3 Qwen3-Coder-30B-A3B-Instruct topk"
-Cohesion: 0.33
-Nodes (3): TopKFrequent(), item, minHeap
-
-### Community 60 - "Run 3 Qwen3-Coder-480B-A35B options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 90 - "Run 3 Qwen3-Coder-480B-A35B options"
-Cohesion: 0.33
-Nodes (6): Options, ParseError, ParseOptions(), intPtr(), As(), Unwrap()
-
-### Community 61 - "Run 3 Qwen3-Coder-480B-A35B pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 62 - "Run 3 Qwen3-Coder-480B-A35B topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 97 - "Run 3 Qwen3-Coder-480B-A35B topk"
 Cohesion: 0.31
-Nodes (3): wordFreq, freqHeap, TopKFrequent()
+Nodes (3): freqHeap, TopKFrequent(), wordFreq
 
-### Community 39 - "Run 3 gpt-oss-120b options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 138 - "minHeap"
 
-### Community 114 - "Run 3 gpt-oss-120b options"
-Cohesion: 0.40
-Nodes (3): Options, ParseError, ParseOptions()
-
-### Community 40 - "Run 3 gpt-oss-120b pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 41 - "Run 3 gpt-oss-120b topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 94 - "Run 3 gpt-oss-120b topk"
-Cohesion: 0.31
-Nodes (3): TopKFrequent(), entry, minHeap
-
-### Community 42 - "Run 3 llm-jp-3.1-8x13b4 options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 101 - "Run 3 llm-jp-3.1-8x13b4 options"
-Cohesion: 0.32
-Nodes (4): Options, ParseError, ParseOptions(), main()
-
-### Community 43 - "Run 3 llm-jp-3.1-8x13b4 pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 44 - "Run 3 llm-jp-3.1-8x13b4 topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 11 - "Run 3 Kimi-K2.6 options"
-Cohesion: 0.12
-Nodes (16): id, object, created, model, choices, service_tier, system_fingerprint, usage (+8 more)
-
-### Community 108 - "Run 3 Kimi-K2.6 options"
-Cohesion: 0.43
-Nodes (4): Options, ParseError, ParseOptions(), parse()
-
-### Community 84 - "Run 3 Kimi-K2.6 pmap"
-Cohesion: 0.14
-Nodes (13): model, task, status, elapsed_seconds, usage, prompt_tokens, total_tokens, completion_tokens (+5 more)
-
-### Community 12 - "Run 3 Kimi-K2.6 pmap"
-Cohesion: 0.12
-Nodes (16): id, object, created, model, choices, service_tier, system_fingerprint, usage (+8 more)
-
-### Community 13 - "Run 3 Kimi-K2.6 topk"
-Cohesion: 0.12
-Nodes (16): id, object, created, model, choices, service_tier, system_fingerprint, usage (+8 more)
-
-### Community 95 - "Run 3 Kimi-K2.6 topk"
 Cohesion: 0.31
 Nodes (3): entry, minHeap, TopKFrequent()
 
-### Community 45 - "Run 3 Phi-4-mini options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 139 - "minHeap"
 
-### Community 109 - "Run 3 Phi-4-mini options"
+Cohesion: 0.31
+Nodes (3): entry, minHeap, TopKFrequent()
+
+### Community 140 - "minHeap"
+
+Cohesion: 0.31
+Nodes (3): minHeap, TopKFrequent(), wordCount
+
+### Community 141 - "freqHeap"
+
+Cohesion: 0.31
+Nodes (3): freqHeap, TopKFrequent(), wordFreq
+
+### Community 142 - "minHeap"
+
+Cohesion: 0.31
+Nodes (3): minHeap, TopKFrequent(), entry
+
+### Community 143 - "minHeap"
+
+Cohesion: 0.31
+Nodes (3): minHeap, TopKFrequent(), wordFreq
+
+### Community 144 - "minHeap"
+
+Cohesion: 0.31
+Nodes (3): minHeap, TopKFrequent(), wordCount
+
+### Community 145 - "freqHeap"
+
+Cohesion: 0.31
+Nodes (3): freqHeap, TopKFrequent(), wordFreq
+
+### Community 146 - "minHeap"
+
+Cohesion: 0.31
+Nodes (3): item, minHeap, TopKFrequent()
+
+### Community 147 - "minHeap"
+
+Cohesion: 0.31
+Nodes (3): item, minHeap, TopKFrequent()
+
+### Community 148 - "minHeap"
+
+Cohesion: 0.31
+Nodes (3): minHeap, TopKFrequent(), wordCount
+
+### Community 149 - "freqHeap"
+
+Cohesion: 0.31
+Nodes (3): freqHeap, TopKFrequent(), wordFreq
+
+### Community 150 - "solution_test.go"
+
+Cohesion: 0.36
+Nodes (7): B, T, BenchmarkParseOptions(), TestParseErrorContract(), TestParseOptions(), TestParseOptionsErrors(), TestParseOptionsTypedCause()
+
+### Community 151 - "solution.go"
+
+Cohesion: 0.43
+Nodes (6): intPtr(), Unwrap(), Options, ParseError, As(), ParseOptions()
+
+### Community 152 - "ParseError"
+
+Cohesion: 0.32
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 154 - "ParseError"
+
+Cohesion: 0.32
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 156 - "ParseError"
+
+Cohesion: 0.32
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 158 - "solution.go"
+
+Cohesion: 0.39
+Nodes (5): Options, ParseError, As(), intPtr(), ParseOptions()
+
+### Community 159 - "ParseError"
+
+Cohesion: 0.32
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 161 - "solution.go"
+
+Cohesion: 0.36
+Nodes (5): Options, ParseError, As(), intPtr(), ParseOptions()
+
+### Community 162 - "Five-run comparison"
+
+Cohesion: 0.29
+Nodes (7): Five-run comparison, Sakura AI Go five-run benchmark report, gpt-oss five-run variation, Kimi five-run variation, Quality-gated Pareto front, Qwen3.6 five-run stability, Qwen3-Coder-480B quality-speed balance
+
+### Community 163 - "ParseError"
+
+Cohesion: 0.43
+Nodes (4): findParseError(), Options, ParseError, ParseOptions()
+
+### Community 164 - "ParseError"
+
+Cohesion: 0.48
+Nodes (4): Options, ParseError, parse(), ParseOptions()
+
+### Community 165 - "solution.go"
+
 Cohesion: 0.38
-Nodes (4): Options, ParseError, ParseOptions(), main()
+Nodes (4): Options, ParseError, main(), ParseOptions()
 
-### Community 46 - "Run 3 Phi-4-mini pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 166 - "solution.go"
 
-### Community 47 - "Run 3 Phi-4-mini topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 48 - "Run 3 Phi-4-multimodal options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 110 - "Run 3 Phi-4-multimodal options"
 Cohesion: 0.38
-Nodes (4): Options, ParseError, ParseOptions(), main()
+Nodes (4): Options, ParseError, main(), ParseOptions()
 
-### Community 49 - "Run 3 Phi-4-multimodal pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 167 - "solution.go"
 
-### Community 50 - "Run 3 Phi-4-multimodal topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 51 - "Run 3 Qwen3-0.6B-cpu options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 52 - "Run 3 Qwen3-0.6B-cpu pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 53 - "Run 3 Qwen3-0.6B-cpu topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 54 - "Run 3 Qwen3-VL-30B-A3B-Instruct options"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
-
-### Community 111 - "Run 3 Qwen3-VL-30B-A3B-Instruct options"
 Cohesion: 0.48
 Nodes (4): Options, ParseError, ParseOptions(), parseSpec()
 
-### Community 55 - "Run 3 Qwen3-VL-30B-A3B-Instruct pmap"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 168 - "solution.go"
 
-### Community 133 - "Run 3 Qwen3-VL-30B-A3B-Instruct pmap"
-Cohesion: 0.50
-Nodes (3): ParallelMapOrdered(), Context, result
+Cohesion: 0.43
+Nodes (4): Options, ParseError, parse(), ParseOptions()
 
-### Community 56 - "Run 3 Qwen3-VL-30B-A3B-Instruct topk"
-Cohesion: 0.12
-Nodes (15): id, object, created, model, choices, service_tier, system_fingerprint, usage (+7 more)
+### Community 169 - "solution.go"
 
-### Community 5 - "Run 3 Qwen3.6-35B-A3B options"
-Cohesion: 0.11
-Nodes (17): id, object, created, prompt_routed_experts, model, choices, service_tier, system_fingerprint (+9 more)
+Cohesion: 0.38
+Nodes (4): Options, ParseError, main(), ParseOptions()
 
-### Community 115 - "Run 3 Qwen3.6-35B-A3B options"
+### Community 170 - "solution.go"
+
+Cohesion: 0.38
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 171 - "solution.go"
+
+Cohesion: 0.48
+Nodes (4): Options, ParseError, ParseOptions(), parseSpec()
+
+### Community 172 - "solution.go"
+
+Cohesion: 0.43
+Nodes (4): Options, ParseError, ParseOptions(), parseSpec()
+
+### Community 173 - "solution.go"
+
+Cohesion: 0.38
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 174 - "solution.go"
+
+Cohesion: 0.38
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 175 - "solution.go"
+
+Cohesion: 0.48
+Nodes (4): Options, ParseError, ParseOptions(), parseSpec()
+
+### Community 176 - "solution.go"
+
+Cohesion: 0.43
+Nodes (4): Options, ParseError, ParseOptions(), parseSpec()
+
+### Community 177 - "solution.go"
+
+Cohesion: 0.38
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 178 - "solution.go"
+
+Cohesion: 0.38
+Nodes (4): Options, ParseError, main(), ParseOptions()
+
+### Community 179 - "solution.go"
+
+Cohesion: 0.48
+Nodes (4): Options, ParseError, ParseOptions(), parseSpec()
+
+### Community 180 - "ParseError"
+
 Cohesion: 0.40
 Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 6 - "Run 3 Qwen3.6-35B-A3B pmap"
-Cohesion: 0.11
-Nodes (17): id, object, created, prompt_routed_experts, model, choices, service_tier, system_fingerprint (+9 more)
+### Community 181 - "ParseError"
 
-### Community 7 - "Run 3 Qwen3.6-35B-A3B topk"
-Cohesion: 0.11
-Nodes (17): id, object, created, prompt_routed_experts, model, choices, service_tier, system_fingerprint (+9 more)
-
-### Community 96 - "Run 3 Qwen3.6-35B-A3B topk"
-Cohesion: 0.31
-Nodes (3): wordCount, minHeap, TopKFrequent()
-
-### Community 128 - "Run 1 Summary"
 Cohesion: 0.40
-Nodes (4): date, notes, models, quality_pareto_front
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 122 - "Run 1 Qwen3-0.6B-cpu Metrics"
-Cohesion: 0.33
-Nodes (6): preview/Qwen3-0.6B-cpu, passed, requirements, median_seconds, modern_tasks, price
+### Community 182 - "ParseError"
 
-### Community 120 - "Run 1 Phi-4-mini Metrics"
-Cohesion: 0.33
-Nodes (6): preview/Phi-4-mini-instruct-cpu, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 121 - "Run 1 Phi-4-multimodal Metrics"
-Cohesion: 0.33
-Nodes (6): preview/Phi-4-multimodal-instruct, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 124 - "Run 1 Qwen3-VL-30B-A3B-Instruct Metrics"
-Cohesion: 0.33
-Nodes (6): preview/Qwen3-VL-30B-A3B-Instruct, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 117 - "Run 1 gpt-oss-120b Metrics"
-Cohesion: 0.33
-Nodes (6): gpt-oss-120b, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 125 - "Run 1 Qwen3-Coder-30B-A3B-Instruct Metrics"
-Cohesion: 0.33
-Nodes (6): Qwen3-Coder-30B-A3B-Instruct, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 118 - "Run 1 llm-jp-3.1-8x13b4 Metrics"
-Cohesion: 0.33
-Nodes (6): llm-jp-3.1-8x13b-instruct4, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 123 - "Run 1 Qwen3.6-35B-A3B Metrics"
-Cohesion: 0.33
-Nodes (6): preview/Qwen3.6-35B-A3B, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 126 - "Run 1 Qwen3-Coder-480B-A35B Metrics"
-Cohesion: 0.33
-Nodes (6): Qwen3-Coder-480B-A35B-Instruct-FP8, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 119 - "Run 1 Kimi-K2.6 Metrics"
-Cohesion: 0.33
-Nodes (6): preview/Kimi-K2.6, passed, requirements, median_seconds, modern_tasks, price
-
-### Community 129 - "Run 2 Summary"
 Cohesion: 0.40
-Nodes (4): date, models, pareto_front, quality_pareto_front
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 69 - "Run 2 Qwen3-0.6B-cpu Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Qwen3-0.6B-cpu, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+### Community 183 - "ParseError"
 
-### Community 67 - "Run 2 Phi-4-mini Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Phi-4-mini-instruct-cpu, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 68 - "Run 2 Phi-4-multimodal Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Phi-4-multimodal-instruct, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 71 - "Run 2 Qwen3-VL-30B-A3B-Instruct Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Qwen3-VL-30B-A3B-Instruct, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 64 - "Run 2 gpt-oss-120b Metrics"
-Cohesion: 0.13
-Nodes (15): gpt-oss-120b, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 72 - "Run 2 Qwen3-Coder-30B-A3B-Instruct Metrics"
-Cohesion: 0.13
-Nodes (15): Qwen3-Coder-30B-A3B-Instruct, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 65 - "Run 2 llm-jp-3.1-8x13b4 Metrics"
-Cohesion: 0.13
-Nodes (15): llm-jp-3.1-8x13b-instruct4, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 70 - "Run 2 Qwen3.6-35B-A3B Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Qwen3.6-35B-A3B, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 73 - "Run 2 Qwen3-Coder-480B-A35B Metrics"
-Cohesion: 0.13
-Nodes (15): Qwen3-Coder-480B-A35B-Instruct-FP8, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 66 - "Run 2 Kimi-K2.6 Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Kimi-K2.6, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
-
-### Community 130 - "Run 3 Summary"
 Cohesion: 0.40
-Nodes (4): date, models, pareto_front, quality_pareto_front
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 79 - "Run 3 Qwen3-0.6B-cpu Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Qwen3-0.6B-cpu, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+### Community 184 - "ParseError"
 
-### Community 77 - "Run 3 Phi-4-mini Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Phi-4-mini-instruct-cpu, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+Cohesion: 0.40
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 78 - "Run 3 Phi-4-multimodal Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Phi-4-multimodal-instruct, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+### Community 185 - "ParseError"
 
-### Community 81 - "Run 3 Qwen3-VL-30B-A3B-Instruct Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Qwen3-VL-30B-A3B-Instruct, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+Cohesion: 0.40
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 74 - "Run 3 gpt-oss-120b Metrics"
-Cohesion: 0.13
-Nodes (15): gpt-oss-120b, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+### Community 186 - "ParseError"
 
-### Community 82 - "Run 3 Qwen3-Coder-30B-A3B-Instruct Metrics"
-Cohesion: 0.13
-Nodes (15): Qwen3-Coder-30B-A3B-Instruct, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+Cohesion: 0.40
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 75 - "Run 3 llm-jp-3.1-8x13b4 Metrics"
-Cohesion: 0.13
-Nodes (15): llm-jp-3.1-8x13b-instruct4, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+### Community 187 - "ParseError"
 
-### Community 80 - "Run 3 Qwen3.6-35B-A3B Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Qwen3.6-35B-A3B, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+Cohesion: 0.40
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 83 - "Run 3 Qwen3-Coder-480B-A35B Metrics"
-Cohesion: 0.13
-Nodes (15): Qwen3-Coder-480B-A35B-Instruct-FP8, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+### Community 188 - "ParseError"
 
-### Community 76 - "Run 3 Kimi-K2.6 Metrics"
-Cohesion: 0.13
-Nodes (15): preview/Kimi-K2.6, functionality, effectiveness, reliability, usability, response_seconds, modern, price (+7 more)
+Cohesion: 0.40
+Nodes (3): Options, ParseError, ParseOptions()
 
-### Community 85 - "Benchmark Findings"
-Cohesion: 0.20
-Nodes (12): Sakura.AI Go コーディングモデル比較調査, Pareto Front 候補選定, Functionality 80% 品質ゲート, 7軸評価ベクトル (Functionality/Effectiveness/Reliability/Usability/Responsiveness/Modern Syntax/Cost), Findings: second run, Three-run comparison, TopKFrequent 課題, ParallelMapOrdered 課題 (+4 more)
+### Community 189 - "ParseError"
 
-### Community 131 - "Benchmark Findings"
+Cohesion: 0.40
+Nodes (3): Options, ParseError, ParseOptions()
+
+### Community 190 - "ParseError"
+
+Cohesion: 0.40
+Nodes (3): Options, ParseError, ParseOptions()
+
+### Community 191 - "solution_test.go"
+
+Cohesion: 0.40
+Nodes (4): B, T, BenchmarkTopKFrequent(), TestTopKFrequent()
+
+### Community 192 - "solution.go"
+
 Cohesion: 0.50
-Nodes (4): temperature:0 でも非決定性が残る, preview/Kimi-K2.6, gpt-oss-120b, 単発生成では選定不可（反復試験が必要）
+Nodes (3): Context, result, ParallelMapOrdered()
+
+### Community 193 - "solution.go"
+
+Cohesion: 0.50
+Nodes (3): Context, result, ParallelMapOrdered()
+
+### Community 194 - "solution.go"
+
+Cohesion: 0.50
+Nodes (3): Context, result, ParallelMapOrdered()
+
+### Community 195 - "solution.go"
+
+Cohesion: 0.50
+Nodes (3): Context, result, ParallelMapOrdered()
 
 ## Knowledge Gaps
-- **1289 isolated node(s):** `B`, `B`, `T`, `B`, `ok` (+1284 more)
+
+- **1806 isolated node(s):** `B`, `B`, `T`, `B`, `id` (+1801 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **23 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **48 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
+
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `models` connect `Run 3 Summary` to `Run 3 gpt-oss-120b Metrics`, `Run 3 llm-jp-3.1-8x13b4 Metrics`, `Run 3 Kimi-K2.6 Metrics`, `Run 3 Phi-4-mini Metrics`, `Run 3 Phi-4-multimodal Metrics`, `Run 3 Qwen3-0.6B-cpu Metrics`, `Run 3 Qwen3.6-35B-A3B Metrics`, `Run 3 Qwen3-VL-30B-A3B-Instruct Metrics`, `Run 3 Qwen3-Coder-30B-A3B-Instruct Metrics`, `Run 3 Qwen3-Coder-480B-A35B Metrics`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **Why does `models` connect `Run 2 Summary` to `Run 2 gpt-oss-120b Metrics`, `Run 2 llm-jp-3.1-8x13b4 Metrics`, `Run 2 Kimi-K2.6 Metrics`, `Run 2 Phi-4-mini Metrics`, `Run 2 Phi-4-multimodal Metrics`, `Run 2 Qwen3-0.6B-cpu Metrics`, `Run 2 Qwen3.6-35B-A3B Metrics`, `Run 2 Qwen3-VL-30B-A3B-Instruct Metrics`, `Run 2 Qwen3-Coder-30B-A3B-Instruct Metrics`, `Run 2 Qwen3-Coder-480B-A35B Metrics`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `gpt-oss-120b` connect `Run 3 gpt-oss-120b Metrics` to `Run 3 Summary`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `B`, `B`, `T` to the rest of the system?**
-  _1291 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Run 2 Logs` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
-- **Should `Run 3 Logs` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
-- **Should `Run 2 Qwen3-Coder-30B-A3B-Instruct options` be split into smaller, more focused modules?**
-  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
+  _1807 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `response.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.04994192799070848 - nodes in this community are weakly interconnected._
+- **Should `response.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `response.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `response.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `response.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `response.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._

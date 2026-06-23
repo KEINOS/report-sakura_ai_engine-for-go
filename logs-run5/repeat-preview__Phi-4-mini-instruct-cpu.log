@@ -1,0 +1,27 @@
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapParentCancellation
+panic: boom
+
+goroutine 147 [running]:
+benchmark/pmap.TestParallelMapPanicBecomesError.func1({0xc0001d0230?, 0x0?}, 0x2)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-bzg_f8pa/solution_test.go:84 +0x60
+benchmark/pmap.ParallelMapOrdered.func1(0x0?, 0x2)
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-bzg_f8pa/solution.go:49 +0xc0
+created by benchmark/pmap.ParallelMapOrdered in goroutine 38
+	/private/var/folders/ts/dr1t6k4s679cv8zj45prn9ym0000gn/T/repeat-pmap-bzg_f8pa/solution.go:42 +0x1d8
+FAIL	benchmark/pmap	0.395s
+FAIL

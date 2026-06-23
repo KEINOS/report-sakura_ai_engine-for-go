@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-283cf6ac68fb4824bf0a9ff221b657ef",
+  "object": "chat.completion",
+  "created": 1782144374,
+  "model": "preview/Phi-4-multimodal-instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage main\n\nimport (\n\t\"errors\"\n\t\"fmt\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Options struct {\n\tLimit  *int\n\tLabels map[string]string\n}\n\ntype ParseError struct {\n\tField string\n\tValue string\n\tErr   error\n}\n\nfunc (e *ParseError) Error() string {\n\treturn fmt.Sprintf(\"error parsing field %s: %v\", e.Field, e.Err)\n}\n\nfunc (e *ParseError) Unwrap() error {\n\treturn e.Err\n}\n\nfunc ParseOptions(spec string, cause error) (Options, error) {\n\tvar opts Options\n\tvar err error\n\n\tif err = errors.New(\"cause contains a *ParseError, parsing spec normally\"); cause != nil {\n\t\treturn opts, &ParseError{Field: \"cause\", Value: cause.Error(), Err: cause}\n\t}\n\n\tif spec == \"\" {\n\t\treturn opts, nil\n\t}\n\n\tfields := strings.Split(spec, \",\")\n\tfor _, field := range fields {\n\t\tfield = strings.TrimSpace(field)\n\t\tif field == \"\" {\n\t\t\tcontinue\n\t\t}\n\n\t\tkeyValue := strings.SplitN(field, \"=\", 2)\n\t\tif len(keyValue) != 2 {\n\t\t\treturn opts, &ParseError{Field: field, Value: \"\", Err: errors.New(\"invalid syntax\")}\n\t\t}\n\n\t\tkey := strings.TrimSpace(keyValue[0])\n\t\tvalue := strings.TrimSpace(keyValue[1])\n\n\t\tswitch key {\n\t\tcase \"limit\":\n\t\t\tif limit, err := strconv.Atoi(value); err == nil && limit >= 1 && limit <= 1000 {\n\t\t\t\topts.Limit = &limit\n\t\t\t} else {\n\t\t\t\treturn opts, &ParseError{Field: key, Value: value, Err: errors.New(\"invalid limit\")}\n\t\t\t}\n\t\tcase \"label\":\n\t\t\tif value == \"\" {\n\t\t\t\treturn opts, &ParseError{Field: key, Value: value, Err: errors.New(\"label must be non-empty\")}\n\t\t\t}\n\t\t\topts.Labels[value] = value\n\t\tdefault:\n\t\t\treturn opts, &ParseError{Field: key, Value: value, Err: fmt.Errorf(\"unknown field %s\", key)}\n\t\t}\n\t}\n\n\tif opts.Limit == nil {\n\t\topts.Limit = &100\n\t}\n\n\treturn opts, nil\n}\n\nfunc main() {\n\t// Example usage\n\tspec := \"limit=500,label1=foo,label2=bar\"\n\topts, err := ParseOptions(spec, nil)\n\tif err != nil {\n\t\tfmt.Println(\"Error:\", err)\n\t} else {\n\t\tfmt.Printf(\"Parsed Options: %+v\\n\", opts)\n\t}\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": 200020,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 274,
+    "total_tokens": 816,
+    "completion_tokens": 542,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

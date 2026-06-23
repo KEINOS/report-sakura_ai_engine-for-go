@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-52cbda10005e4026940c6032cff9b0f8",
+  "object": "chat.completion",
+  "created": 1782143261,
+  "model": "Qwen3-Coder-480B-A35B-Instruct-FP8",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage options\n\nimport (\n\t\"fmt\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Options struct {\n\tLimit  *int\n\tLabels map[string]string\n}\n\ntype ParseError struct {\n\tField string\n\tValue string\n\tErr   error\n}\n\nfunc (e *ParseError) Error() string {\n\treturn fmt.Sprintf(\"invalid %s value %q: %v\", e.Field, e.Value, e.Err)\n}\n\nfunc (e *ParseError) Unwrap() error {\n\treturn e.Err\n}\n\nfunc ParseOptions(spec string, cause error) (Options, error) {\n\topts := Options{\n\t\tLabels: make(map[string]string),\n\t}\n\n\t// Check if cause contains a ParseError\n\tvar parseErr *ParseError\n\tif cause != nil && As(cause, &parseErr) {\n\t\t// Parse normally but return the existing ParseError\n\t\t_, _ = parseOptions(spec, &opts)\n\t\treturn opts, parseErr\n\t}\n\n\treturn parseOptions(spec, &opts)\n}\n\nfunc parseOptions(spec string, opts *Options) (Options, error) {\n\tif spec == \"\" {\n\t\topts.Limit = intPtr(100)\n\t\treturn *opts, nil\n\t}\n\n\tvar firstErr error\n\n\tfor _, field := range strings.Split(spec, \",\") {\n\t\tfield = strings.TrimSpace(field)\n\t\tif field == \"\" {\n\t\t\tcontinue\n\t\t}\n\n\t\tparts := strings.SplitN(field, \"=\", 2)\n\t\tif len(parts) != 2 {\n\t\t\tif firstErr == nil {\n\t\t\t\tfirstErr = &ParseError{\n\t\t\t\t\tField: \"field\",\n\t\t\t\t\tValue: field,\n\t\t\t\t\tErr:   fmt.Errorf(\"missing '=' separator\"),\n\t\t\t\t}\n\t\t\t}\n\t\t\tcontinue\n\t\t}\n\n\t\tkey := strings.TrimSpace(parts[0])\n\t\tvalue := strings.TrimSpace(parts[1])\n\n\t\tswitch {\n\t\tcase key == \"limit\":\n\t\t\tif limit, err := strconv.Atoi(value); err != nil || limit < 1 || limit > 1000 {\n\t\t\t\tif firstErr == nil {\n\t\t\t\t\tfirstErr = &ParseError{\n\t\t\t\t\t\tField: \"limit\",\n\t\t\t\t\t\tValue: value,\n\t\t\t\t\t\tErr:   fmt.Errorf(\"must be an integer between 1 and 1000\"),\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t} else {\n\t\t\t\topts.Limit = &limit\n\t\t\t}\n\t\tcase strings.HasPrefix(key, \"label.\"):\n\t\t\tlabelName := key[6:]\n\t\t\tif labelName == \"\" {\n\t\t\t\tif firstErr == nil {\n\t\t\t\t\tfirstErr = &ParseError{\n\t\t\t\t\t\tField: \"label name\",\n\t\t\t\t\t\tValue: key,\n\t\t\t\t\t\tErr:   fmt.Errorf(\"label name cannot be empty\"),\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tcontinue\n\t\t\t}\n\t\t\topts.Labels[labelName] = value\n\t\tdefault:\n\t\t\tif firstErr == nil {\n\t\t\t\tfirstErr = &ParseError{\n\t\t\t\t\tField: key,\n\t\t\t\t\tValue: value,\n\t\t\t\t\tErr:   fmt.Errorf(\"unknown field\"),\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\tif opts.Limit == nil {\n\t\topts.Limit = intPtr(100)\n\t}\n\n\treturn *opts, firstErr\n}\n\nfunc intPtr(i int) *int {\n\treturn &i\n}\n\n// As is a simplified version of errors.As for this specific use case\nfunc As(err error, target interface{}) bool {\n\tif target == nil {\n\t\tpanic(\"errors: target cannot be nil\")\n\t}\n\t\n\tfor err != nil {\n\t\tif perr, ok := err.(*ParseError); ok {\n\t\t\t*target.(**ParseError) = perr\n\t\t\treturn true\n\t\t}\n\t\tif werr, ok := err.(interface{ Unwrap() error }); ok {\n\t\t\terr = werr.Unwrap()\n\t\t} else {\n\t\t\tbreak\n\t\t}\n\t}\n\treturn false\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 286,
+    "total_tokens": 1076,
+    "completion_tokens": 790,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

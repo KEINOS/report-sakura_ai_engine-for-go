@@ -1,0 +1,562 @@
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapValidation (0.00s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapParentCancellation
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 4 3 1 2], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapValidation
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== CONT  TestParallelMapOrdered
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapValidation (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapParentCancellation (0.00s)
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 3 2 4 1], want [25 16 9 4 1]
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapCancelsAndWaits
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 2 4 1 3], want [25 16 9 4 1]
+=== CONT  TestParallelMapValidation
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapParentCancellation (0.00s)
+--- FAIL: TestParallelMapOrdered (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapParentCancellation
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [3 1 4 5 2], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapParentCancellation
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 4 3 2 1], want [25 16 9 4 1]
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapParentCancellation (0.00s)
+--- FAIL: TestParallelMapOrdered (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapCancelsAndWaits
+--- PASS: TestParallelMapParentCancellation (0.00s)
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 4 3 1 2], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapOrdered
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 2 4 3 1], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapValidation
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapCancelsAndWaits
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [2 3 4 1 5], want [25 16 9 4 1]
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapValidation (0.00s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapParentCancellation
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapParentCancellation (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 3 4 2 1], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapCancelsAndWaits
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 3 1 2 4], want [25 16 9 4 1]
+--- PASS: TestParallelMapValidation (0.00s)
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapParentCancellation (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapCancelsAndWaits
+--- PASS: TestParallelMapValidation (0.00s)
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== CONT  TestParallelMapOrdered
+    solution_test.go:26: got [5 2 4 3 1], want [25 16 9 4 1]
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapValidation
+--- PASS: TestParallelMapValidation (0.00s)
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 4 2 3 1], want [25 16 9 4 1]
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapOrdered (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapValidation (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [5 4 2 3 1], want [25 16 9 4 1]
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapOrdered (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapOrdered
+--- PASS: TestParallelMapValidation (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [4 2 5 3 1], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapValidation
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [4 1 2 5 3], want [25 16 9 4 1]
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapOrdered (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapCancelsAndWaits
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapValidation (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [4 3 5 1 2], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapValidation
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapParentCancellation
+--- PASS: TestParallelMapValidation (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [4 5 3 2 1], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapValidation
+--- PASS: TestParallelMapValidation (0.00s)
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapPanicBecomesError
+=== CONT  TestParallelMapParentCancellation
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [1 5 4 3 2], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+=== RUN   TestParallelMapOrdered
+=== PAUSE TestParallelMapOrdered
+=== RUN   TestParallelMapValidation
+=== PAUSE TestParallelMapValidation
+=== RUN   TestParallelMapCancelsAndWaits
+=== PAUSE TestParallelMapCancelsAndWaits
+=== RUN   TestParallelMapPanicBecomesError
+=== PAUSE TestParallelMapPanicBecomesError
+=== RUN   TestParallelMapParentCancellation
+=== PAUSE TestParallelMapParentCancellation
+=== RUN   TestParallelMapDoesNotLeakObviousGoroutines
+--- PASS: TestParallelMapDoesNotLeakObviousGoroutines (0.05s)
+=== CONT  TestParallelMapParentCancellation
+=== CONT  TestParallelMapCancelsAndWaits
+=== CONT  TestParallelMapPanicBecomesError
+--- PASS: TestParallelMapParentCancellation (0.00s)
+=== CONT  TestParallelMapOrdered
+=== CONT  TestParallelMapValidation
+=== NAME  TestParallelMapPanicBecomesError
+    solution_test.go:89: panic must become descriptive error, got <nil>
+--- PASS: TestParallelMapValidation (0.00s)
+--- FAIL: TestParallelMapPanicBecomesError (0.00s)
+=== NAME  TestParallelMapOrdered
+    solution_test.go:26: got [3 5 1 4 2], want [25 16 9 4 1]
+--- FAIL: TestParallelMapOrdered (0.00s)
+=== NAME  TestParallelMapCancelsAndWaits
+    solution_test.go:70: got error <nil>, want wrapping stop
+--- FAIL: TestParallelMapCancelsAndWaits (0.00s)
+FAIL
+FAIL	benchmark/pmap	1.416s
+FAIL

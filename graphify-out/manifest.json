@@ -1,707 +1,1347 @@
 {
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/fixtures/options/solution_test.go": {
-    "mtime": 1782002572.1805558,
+    "mtime": 1782059008.7418334,
     "ast_hash": "970445d12b44ad2f0617ced25164a59a",
     "semantic_hash": "970445d12b44ad2f0617ced25164a59a"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/fixtures/pmap/solution_test.go": {
-    "mtime": 1782002572.1800063,
+    "mtime": 1782059008.7420795,
     "ast_hash": "6c809411f3a423d153e4e1baf76c4436",
     "semantic_hash": "6c809411f3a423d153e4e1baf76c4436"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/fixtures/topk/solution_test.go": {
-    "mtime": 1782002572.1794727,
+    "mtime": 1782059008.7423458,
     "ast_hash": "e6db362243625005e15dfc36fe2762c4",
     "semantic_hash": "e6db362243625005e15dfc36fe2762c4"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run2/evaluation.json": {
-    "mtime": 1782003476.4581337,
+    "mtime": 1782059008.8730698,
     "ast_hash": "046096ecca91f07f5017436f30070408",
     "semantic_hash": "046096ecca91f07f5017436f30070408"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run2/repeat-summary.json": {
-    "mtime": 1782003582.3886049,
+    "mtime": 1782059008.8739784,
     "ast_hash": "6c66ae010e9e3b2938c40a1c1b17943d",
     "semantic_hash": "6c66ae010e9e3b2938c40a1c1b17943d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run2/requests.json": {
-    "mtime": 1782003384.7334054,
+    "mtime": 1782059008.8741305,
     "ast_hash": "435ddf9f2758ffd10a700eb6678ec0a3",
     "semantic_hash": "435ddf9f2758ffd10a700eb6678ec0a3"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run3/evaluation.json": {
-    "mtime": 1782025091.9056647,
+    "mtime": 1782059008.799717,
     "ast_hash": "55c490d9d7124a40b388ffd055b29bd7",
     "semantic_hash": "55c490d9d7124a40b388ffd055b29bd7"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run3/repeat-summary.json": {
-    "mtime": 1782025189.4955544,
+    "mtime": 1782059008.803469,
     "ast_hash": "d490dc2dfcef1d40ec6868d9d5a3fdaa",
     "semantic_hash": "d490dc2dfcef1d40ec6868d9d5a3fdaa"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run3/requests.json": {
-    "mtime": 1782025012.750584,
+    "mtime": 1782059008.803655,
     "ast_hash": "0f08a287ea108164f4bc2c8b446cd637",
     "semantic_hash": "0f08a287ea108164f4bc2c8b446cd637"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/research.py": {
-    "mtime": 1782057604.653651,
-    "ast_hash": "55a2c6a65cefe8e0cd84fa9f4aeb6ee3",
-    "semantic_hash": "55a2c6a65cefe8e0cd84fa9f4aeb6ee3"
+    "mtime": 1782145124.8746524,
+    "ast_hash": "d0d1c0bea34a0fb74a9a80b6aabbf7c5",
+    "semantic_hash": "d0d1c0bea34a0fb74a9a80b6aabbf7c5"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-30B-A3B-Instruct/options/response.json": {
-    "mtime": 1782003268.2640018,
+    "mtime": 1782059008.874608,
     "ast_hash": "269a6207c8fd0b626bee7c0922281173",
     "semantic_hash": "269a6207c8fd0b626bee7c0922281173"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-30B-A3B-Instruct/options/solution.go": {
-    "mtime": 1782003268.2646873,
+    "mtime": 1782059008.8746896,
     "ast_hash": "6b72a53a6e0652518e30f8702d40c559",
     "semantic_hash": "6b72a53a6e0652518e30f8702d40c559"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-30B-A3B-Instruct/pmap/response.json": {
-    "mtime": 1782002987.5226586,
+    "mtime": 1782059008.8748052,
     "ast_hash": "7c72addd31b6dc2b3fc4f8756bb61352",
     "semantic_hash": "7c72addd31b6dc2b3fc4f8756bb61352"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-30B-A3B-Instruct/pmap/solution.go": {
-    "mtime": 1782002987.5231361,
+    "mtime": 1782059008.8748884,
     "ast_hash": "311f8349ca1eb18d5d619481f7007d53",
     "semantic_hash": "311f8349ca1eb18d5d619481f7007d53"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-30B-A3B-Instruct/topk/response.json": {
-    "mtime": 1782003113.5893643,
+    "mtime": 1782059008.8750057,
     "ast_hash": "d4ed0c78eaa00403a75c732d81d9146f",
     "semantic_hash": "d4ed0c78eaa00403a75c732d81d9146f"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-30B-A3B-Instruct/topk/solution.go": {
-    "mtime": 1782003113.5907664,
+    "mtime": 1782059008.8751023,
     "ast_hash": "bfd419bfb02f7eafcf4df484c92d5201",
     "semantic_hash": "bfd419bfb02f7eafcf4df484c92d5201"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-480B-A35B-Instruct-FP8/options/response.json": {
-    "mtime": 1782003005.9556205,
+    "mtime": 1782059008.8752952,
     "ast_hash": "0922708fd81b1e483eed91977e0e4b47",
     "semantic_hash": "0922708fd81b1e483eed91977e0e4b47"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-480B-A35B-Instruct-FP8/options/solution.go": {
-    "mtime": 1782003005.9563994,
+    "mtime": 1782059008.8753967,
     "ast_hash": "290aea7e5a0ef0e5049d9d17b0601381",
     "semantic_hash": "290aea7e5a0ef0e5049d9d17b0601381"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/response.json": {
-    "mtime": 1782002813.032296,
+    "mtime": 1782059008.8755374,
     "ast_hash": "f4a60bd0cbad227003425d3d1585da11",
     "semantic_hash": "f4a60bd0cbad227003425d3d1585da11"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/solution.go": {
-    "mtime": 1782002813.0329275,
+    "mtime": 1782059008.8756313,
     "ast_hash": "1d22eca527ef56a434865ad074c790fb",
     "semantic_hash": "1d22eca527ef56a434865ad074c790fb"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/response.json": {
-    "mtime": 1782002819.1760511,
+    "mtime": 1782059008.8757422,
     "ast_hash": "191db33e6224d9105a5ed47382778877",
     "semantic_hash": "191db33e6224d9105a5ed47382778877"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/solution.go": {
-    "mtime": 1782002819.1764,
+    "mtime": 1782059008.8758223,
     "ast_hash": "a0db7fd68ce1559b5561ac95843e7211",
     "semantic_hash": "a0db7fd68ce1559b5561ac95843e7211"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/gpt-oss-120b/options/response.json": {
-    "mtime": 1782002828.6472094,
+    "mtime": 1782059008.875998,
     "ast_hash": "a8db3201a708de5a7238c391bdffa3aa",
     "semantic_hash": "a8db3201a708de5a7238c391bdffa3aa"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/gpt-oss-120b/options/solution.go": {
-    "mtime": 1782002828.6475966,
+    "mtime": 1782059008.876089,
     "ast_hash": "b985277a05326fb3b513f48228bc0b7c",
     "semantic_hash": "b985277a05326fb3b513f48228bc0b7c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/gpt-oss-120b/pmap/response.json": {
-    "mtime": 1782003264.6201575,
+    "mtime": 1782059008.8762321,
     "ast_hash": "2a52e3a6efe51a1fa54100073e88a050",
     "semantic_hash": "2a52e3a6efe51a1fa54100073e88a050"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/gpt-oss-120b/pmap/solution.go": {
-    "mtime": 1782003264.6206758,
+    "mtime": 1782059008.876335,
     "ast_hash": "9365ed8d5d2735d5488c1ab5a145ef9a",
     "semantic_hash": "9365ed8d5d2735d5488c1ab5a145ef9a"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/gpt-oss-120b/topk/response.json": {
-    "mtime": 1782003255.7080898,
+    "mtime": 1782059008.8764992,
     "ast_hash": "5eab1dff8f53561b7d8b83ce37d56dd0",
     "semantic_hash": "5eab1dff8f53561b7d8b83ce37d56dd0"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/gpt-oss-120b/topk/solution.go": {
-    "mtime": 1782003255.708747,
+    "mtime": 1782059008.8765929,
     "ast_hash": "f03587b5857656290dd6682c15be5cc8",
     "semantic_hash": "f03587b5857656290dd6682c15be5cc8"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/llm-jp-3.1-8x13b-instruct4/options/response.json": {
-    "mtime": 1782002693.5319703,
+    "mtime": 1782059008.8767405,
     "ast_hash": "e53733b979266d4e41485e1b7d84dc5f",
     "semantic_hash": "e53733b979266d4e41485e1b7d84dc5f"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/llm-jp-3.1-8x13b-instruct4/options/solution.go": {
-    "mtime": 1782002693.5325947,
+    "mtime": 1782059008.8768218,
     "ast_hash": "21763c17eedd0dcfa84c9edc79f799ff",
     "semantic_hash": "21763c17eedd0dcfa84c9edc79f799ff"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/llm-jp-3.1-8x13b-instruct4/pmap/response.json": {
-    "mtime": 1782003384.7314758,
+    "mtime": 1782059008.876936,
     "ast_hash": "b33781edc8fd26b0437eac0a528df3fc",
     "semantic_hash": "b33781edc8fd26b0437eac0a528df3fc"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/llm-jp-3.1-8x13b-instruct4/pmap/solution.go": {
-    "mtime": 1782003384.7321482,
+    "mtime": 1782059008.8770168,
     "ast_hash": "936acf70d363bc4c56b59b6e42f7bdad",
     "semantic_hash": "936acf70d363bc4c56b59b6e42f7bdad"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/llm-jp-3.1-8x13b-instruct4/topk/response.json": {
-    "mtime": 1782002849.8958895,
+    "mtime": 1782059008.8771288,
     "ast_hash": "55a4050cab3e65e32fda97a3a2259867",
     "semantic_hash": "55a4050cab3e65e32fda97a3a2259867"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/llm-jp-3.1-8x13b-instruct4/topk/solution.go": {
-    "mtime": 1782002849.89649,
+    "mtime": 1782059008.8772168,
     "ast_hash": "3ec3e8afbb399d3ae11971bade1a4966",
     "semantic_hash": "3ec3e8afbb399d3ae11971bade1a4966"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Kimi-K2.6/options/response.json": {
-    "mtime": 1782003110.3360918,
+    "mtime": 1782059008.8774254,
     "ast_hash": "458e069d58db6a4e8ef037367ffe5877",
     "semantic_hash": "458e069d58db6a4e8ef037367ffe5877"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Kimi-K2.6/options/solution.go": {
-    "mtime": 1782003110.3366914,
+    "mtime": 1782059008.8775299,
     "ast_hash": "8e4eeee25e023dfbe592a9ccf111388f",
     "semantic_hash": "8e4eeee25e023dfbe592a9ccf111388f"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Kimi-K2.6/pmap/response.json": {
-    "mtime": 1782003234.7671278,
+    "mtime": 1782059008.8777075,
     "ast_hash": "a5e515936a6ce9d5edf799592405ca29",
     "semantic_hash": "a5e515936a6ce9d5edf799592405ca29"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Kimi-K2.6/pmap/solution.go": {
-    "mtime": 1782003234.7678173,
+    "mtime": 1782059008.8778124,
     "ast_hash": "093e355985d51b16fed59e644d7f10c1",
     "semantic_hash": "093e355985d51b16fed59e644d7f10c1"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Kimi-K2.6/topk/response.json": {
-    "mtime": 1782002918.7385635,
+    "mtime": 1782059008.8779666,
     "ast_hash": "b3e44787fe22a0b1da208f33e2bed975",
     "semantic_hash": "b3e44787fe22a0b1da208f33e2bed975"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Kimi-K2.6/topk/solution.go": {
-    "mtime": 1782002918.7390554,
+    "mtime": 1782059008.878318,
     "ast_hash": "636ca755b40c44162c9ec2ae6970e84b",
     "semantic_hash": "636ca755b40c44162c9ec2ae6970e84b"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-mini-instruct-cpu/options/response.json": {
-    "mtime": 1782002983.2210245,
+    "mtime": 1782059008.8785024,
     "ast_hash": "caeae6b4fb66d1e7d27ccf7bc950e360",
     "semantic_hash": "caeae6b4fb66d1e7d27ccf7bc950e360"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-mini-instruct-cpu/options/solution.go": {
-    "mtime": 1782002983.2215908,
+    "mtime": 1782059008.8785942,
     "ast_hash": "fb1f68f3692c1e06714c2fc725952c50",
     "semantic_hash": "fb1f68f3692c1e06714c2fc725952c50"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-mini-instruct-cpu/pmap/response.json": {
-    "mtime": 1782003323.3871162,
+    "mtime": 1782059008.8787446,
     "ast_hash": "a56f5a1848906ab301ba47e5a7369c70",
     "semantic_hash": "a56f5a1848906ab301ba47e5a7369c70"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-mini-instruct-cpu/pmap/solution.go": {
-    "mtime": 1782003323.3875225,
+    "mtime": 1782059008.878853,
     "ast_hash": "dedb8b004a221695b2579f03fe7929f8",
     "semantic_hash": "dedb8b004a221695b2579f03fe7929f8"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-mini-instruct-cpu/topk/response.json": {
-    "mtime": 1782002715.4486213,
+    "mtime": 1782059008.87901,
     "ast_hash": "edecb9aa326b5fdc41ee0f079145f641",
     "semantic_hash": "edecb9aa326b5fdc41ee0f079145f641"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-mini-instruct-cpu/topk/solution.go": {
-    "mtime": 1782002715.4492183,
+    "mtime": 1782059008.8791142,
     "ast_hash": "3063acce62e45a38448b07291b030347",
     "semantic_hash": "3063acce62e45a38448b07291b030347"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-multimodal-instruct/options/response.json": {
-    "mtime": 1782003009.2314284,
+    "mtime": 1782059008.879301,
     "ast_hash": "3fe6d0112b0c0c53530b9cb106576d1d",
     "semantic_hash": "3fe6d0112b0c0c53530b9cb106576d1d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-multimodal-instruct/options/solution.go": {
-    "mtime": 1782003009.2321258,
+    "mtime": 1782059008.8793995,
     "ast_hash": "326b5504a846e7f85d63b277a59c0f16",
     "semantic_hash": "326b5504a846e7f85d63b277a59c0f16"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-multimodal-instruct/pmap/response.json": {
-    "mtime": 1782002989.5616233,
+    "mtime": 1782059008.8795357,
     "ast_hash": "17b052483cfbe62b01c093ee076e426c",
     "semantic_hash": "17b052483cfbe62b01c093ee076e426c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-multimodal-instruct/pmap/solution.go": {
-    "mtime": 1782002989.561983,
+    "mtime": 1782059008.879641,
     "ast_hash": "120193b867923429e773a03421b04b24",
     "semantic_hash": "120193b867923429e773a03421b04b24"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-multimodal-instruct/topk/response.json": {
-    "mtime": 1782003236.204451,
+    "mtime": 1782059008.8797886,
     "ast_hash": "2176065718aabe20490ab3059cd57767",
     "semantic_hash": "2176065718aabe20490ab3059cd57767"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Phi-4-multimodal-instruct/topk/solution.go": {
-    "mtime": 1782003236.2048514,
+    "mtime": 1782059008.8798904,
     "ast_hash": "3063acce62e45a38448b07291b030347",
     "semantic_hash": "3063acce62e45a38448b07291b030347"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-0.6B-cpu/options/response.json": {
-    "mtime": 1782002845.3909461,
+    "mtime": 1782059008.8800695,
     "ast_hash": "6566c004e25300f2e3384ff2b5b2125b",
     "semantic_hash": "6566c004e25300f2e3384ff2b5b2125b"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-0.6B-cpu/options/solution.go": {
-    "mtime": 1782002845.3915641,
+    "mtime": 1782059008.8801641,
     "ast_hash": "0990913801fa8eb49785a4236f551e7d",
     "semantic_hash": "0990913801fa8eb49785a4236f551e7d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-0.6B-cpu/pmap/response.json": {
-    "mtime": 1782003278.4407263,
+    "mtime": 1782059008.880287,
     "ast_hash": "e5af1fbeb791646cde3e95898639e44c",
     "semantic_hash": "e5af1fbeb791646cde3e95898639e44c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-0.6B-cpu/pmap/solution.go": {
-    "mtime": 1782003278.4414408,
+    "mtime": 1782059008.8803802,
     "ast_hash": "39800af1fa5f586117732745b40d23f5",
     "semantic_hash": "39800af1fa5f586117732745b40d23f5"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-0.6B-cpu/topk/response.json": {
-    "mtime": 1782003244.1455536,
+    "mtime": 1782059008.8805106,
     "ast_hash": "572b586a3046dfd51391a5b19af913b1",
     "semantic_hash": "572b586a3046dfd51391a5b19af913b1"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-0.6B-cpu/topk/solution.go": {
-    "mtime": 1782003244.1460934,
+    "mtime": 1782059008.880618,
     "ast_hash": "54e6e76aea40a15e9feea869d74c064a",
     "semantic_hash": "54e6e76aea40a15e9feea869d74c064a"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-VL-30B-A3B-Instruct/options/response.json": {
-    "mtime": 1782003118.9008927,
+    "mtime": 1782059008.8808107,
     "ast_hash": "cbf420dd06ca03f83cd7a04d4dcc6305",
     "semantic_hash": "cbf420dd06ca03f83cd7a04d4dcc6305"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-VL-30B-A3B-Instruct/options/solution.go": {
-    "mtime": 1782003118.9016447,
+    "mtime": 1782059008.8809204,
     "ast_hash": "f82a6653203f17120521041a492d6b4d",
     "semantic_hash": "f82a6653203f17120521041a492d6b4d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-VL-30B-A3B-Instruct/pmap/response.json": {
-    "mtime": 1782003248.2397394,
+    "mtime": 1782059008.8810618,
     "ast_hash": "0f83183ce02a27aa6567b5a8df05262b",
     "semantic_hash": "0f83183ce02a27aa6567b5a8df05262b"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-VL-30B-A3B-Instruct/pmap/solution.go": {
-    "mtime": 1782003248.240102,
+    "mtime": 1782059008.8811443,
     "ast_hash": "bb4f6194ae513c7f67c77a759f460801",
     "semantic_hash": "bb4f6194ae513c7f67c77a759f460801"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-VL-30B-A3B-Instruct/topk/response.json": {
-    "mtime": 1782002922.5828598,
+    "mtime": 1782059008.8812556,
     "ast_hash": "4d37a377747cda9bd13744d396ca523f",
     "semantic_hash": "4d37a377747cda9bd13744d396ca523f"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3-VL-30B-A3B-Instruct/topk/solution.go": {
-    "mtime": 1782002922.5836372,
+    "mtime": 1782059008.8813388,
     "ast_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250",
     "semantic_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3.6-35B-A3B/options/response.json": {
-    "mtime": 1782002804.522469,
+    "mtime": 1782059008.8815107,
     "ast_hash": "7f9c1de6e4da1e69bfa7f54e1418905e",
     "semantic_hash": "7f9c1de6e4da1e69bfa7f54e1418905e"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3.6-35B-A3B/options/solution.go": {
-    "mtime": 1782002804.5227609,
+    "mtime": 1782059008.8816118,
     "ast_hash": "df6dc05c5588b352c7b91c0b49aa8662",
     "semantic_hash": "df6dc05c5588b352c7b91c0b49aa8662"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3.6-35B-A3B/pmap/response.json": {
-    "mtime": 1782003376.9988704,
+    "mtime": 1782059008.8817565,
     "ast_hash": "8aa28fee8755f37157786acd7550dd54",
     "semantic_hash": "8aa28fee8755f37157786acd7550dd54"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3.6-35B-A3B/pmap/solution.go": {
-    "mtime": 1782003376.9996674,
+    "mtime": 1782059008.8818572,
     "ast_hash": "6d1259dd94e65fec15204b84a4effd90",
     "semantic_hash": "6d1259dd94e65fec15204b84a4effd90"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3.6-35B-A3B/topk/response.json": {
-    "mtime": 1782002754.384253,
+    "mtime": 1782059008.8820112,
     "ast_hash": "f32ed67fdb4c01d427a389660d26fa5c",
     "semantic_hash": "f32ed67fdb4c01d427a389660d26fa5c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run2/preview__Qwen3.6-35B-A3B/topk/solution.go": {
-    "mtime": 1782002754.3850105,
+    "mtime": 1782059008.8821182,
     "ast_hash": "71ad40cf9dc7e90d2aa00b123ba4305d",
     "semantic_hash": "71ad40cf9dc7e90d2aa00b123ba4305d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-30B-A3B-Instruct/options/response.json": {
-    "mtime": 1782024903.7402556,
+    "mtime": 1782059008.8042207,
     "ast_hash": "dc25785c4313cd0bad051169d231dfb3",
     "semantic_hash": "dc25785c4313cd0bad051169d231dfb3"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-30B-A3B-Instruct/options/solution.go": {
-    "mtime": 1782024903.7408462,
+    "mtime": 1782059008.8043025,
     "ast_hash": "6b72a53a6e0652518e30f8702d40c559",
     "semantic_hash": "6b72a53a6e0652518e30f8702d40c559"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-30B-A3B-Instruct/pmap/response.json": {
-    "mtime": 1782024580.7201355,
+    "mtime": 1782059008.8044984,
     "ast_hash": "1fc6d8cbd275221e537b75b6507ae2ad",
     "semantic_hash": "1fc6d8cbd275221e537b75b6507ae2ad"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-30B-A3B-Instruct/pmap/solution.go": {
-    "mtime": 1782024580.7204964,
+    "mtime": 1782059008.8045893,
     "ast_hash": "311f8349ca1eb18d5d619481f7007d53",
     "semantic_hash": "311f8349ca1eb18d5d619481f7007d53"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-30B-A3B-Instruct/topk/response.json": {
-    "mtime": 1782024702.376295,
+    "mtime": 1782059008.8048935,
     "ast_hash": "58392e18d03eff14f5e24d8f4d7d7389",
     "semantic_hash": "58392e18d03eff14f5e24d8f4d7d7389"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-30B-A3B-Instruct/topk/solution.go": {
-    "mtime": 1782024702.3768048,
+    "mtime": 1782059008.8049824,
     "ast_hash": "bfd419bfb02f7eafcf4df484c92d5201",
     "semantic_hash": "bfd419bfb02f7eafcf4df484c92d5201"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-480B-A35B-Instruct-FP8/options/response.json": {
-    "mtime": 1782024592.2916677,
+    "mtime": 1782059008.8054447,
     "ast_hash": "f5c17b234778010244bb21cc8b150b3a",
     "semantic_hash": "f5c17b234778010244bb21cc8b150b3a"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-480B-A35B-Instruct-FP8/options/solution.go": {
-    "mtime": 1782024592.2920501,
+    "mtime": 1782059008.805605,
     "ast_hash": "b7254ec5fd392f8892f28046e2820d6e",
     "semantic_hash": "b7254ec5fd392f8892f28046e2820d6e"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/response.json": {
-    "mtime": 1782024432.3879309,
+    "mtime": 1782059008.8058221,
     "ast_hash": "fc3ba876acc07e5fb9aa31349320667c",
     "semantic_hash": "fc3ba876acc07e5fb9aa31349320667c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/solution.go": {
-    "mtime": 1782024432.3882577,
+    "mtime": 1782059008.805918,
     "ast_hash": "1d22eca527ef56a434865ad074c790fb",
     "semantic_hash": "1d22eca527ef56a434865ad074c790fb"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/response.json": {
-    "mtime": 1782024438.4860456,
+    "mtime": 1782059008.8065126,
     "ast_hash": "e0d96e850ba76ad7ac7d7562db292483",
     "semantic_hash": "e0d96e850ba76ad7ac7d7562db292483"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/solution.go": {
-    "mtime": 1782024438.4868872,
+    "mtime": 1782059008.8066669,
     "ast_hash": "a0db7fd68ce1559b5561ac95843e7211",
     "semantic_hash": "a0db7fd68ce1559b5561ac95843e7211"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/gpt-oss-120b/options/response.json": {
-    "mtime": 1782024451.0888793,
+    "mtime": 1782059008.8070228,
     "ast_hash": "d6f2b531aa4aac8e3f20c906d4459168",
     "semantic_hash": "d6f2b531aa4aac8e3f20c906d4459168"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/gpt-oss-120b/options/solution.go": {
-    "mtime": 1782024451.089292,
+    "mtime": 1782059008.80714,
     "ast_hash": "00fdf494ae09a402538386d2b2bb52c8",
     "semantic_hash": "00fdf494ae09a402538386d2b2bb52c8"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/gpt-oss-120b/pmap/response.json": {
-    "mtime": 1782024899.6979015,
+    "mtime": 1782059008.8072896,
     "ast_hash": "74b137fbbc4255b13a2865592b066168",
     "semantic_hash": "74b137fbbc4255b13a2865592b066168"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/gpt-oss-120b/pmap/solution.go": {
-    "mtime": 1782024899.6981516,
+    "mtime": 1782059008.807421,
     "ast_hash": "d2d4378bc81aee0bdfc209ff78bbf39e",
     "semantic_hash": "d2d4378bc81aee0bdfc209ff78bbf39e"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/gpt-oss-120b/topk/response.json": {
-    "mtime": 1782024891.0972378,
+    "mtime": 1782059008.807584,
     "ast_hash": "1abb8c7b081723340815937baead48c0",
     "semantic_hash": "1abb8c7b081723340815937baead48c0"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/gpt-oss-120b/topk/solution.go": {
-    "mtime": 1782024891.0975432,
+    "mtime": 1782059008.8076909,
     "ast_hash": "b93d52460e01b14c4ef64dcccd9c9e2d",
     "semantic_hash": "b93d52460e01b14c4ef64dcccd9c9e2d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/llm-jp-3.1-8x13b-instruct4/options/response.json": {
-    "mtime": 1782024307.804418,
+    "mtime": 1782059008.8079484,
     "ast_hash": "e8bbb83a125ca33a34c0077ac3ffd67f",
     "semantic_hash": "e8bbb83a125ca33a34c0077ac3ffd67f"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/llm-jp-3.1-8x13b-instruct4/options/solution.go": {
-    "mtime": 1782024307.8046758,
+    "mtime": 1782059008.808034,
     "ast_hash": "21763c17eedd0dcfa84c9edc79f799ff",
     "semantic_hash": "21763c17eedd0dcfa84c9edc79f799ff"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/llm-jp-3.1-8x13b-instruct4/pmap/response.json": {
-    "mtime": 1782025012.748852,
+    "mtime": 1782059008.808235,
     "ast_hash": "04d9cc745cd761a8f7464493f26ba5b7",
     "semantic_hash": "04d9cc745cd761a8f7464493f26ba5b7"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/llm-jp-3.1-8x13b-instruct4/pmap/solution.go": {
-    "mtime": 1782025012.7492745,
+    "mtime": 1782059008.808316,
     "ast_hash": "936acf70d363bc4c56b59b6e42f7bdad",
     "semantic_hash": "936acf70d363bc4c56b59b6e42f7bdad"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/llm-jp-3.1-8x13b-instruct4/topk/response.json": {
-    "mtime": 1782024471.0155575,
+    "mtime": 1782059008.8085809,
     "ast_hash": "cf91574a7dd1f1e705fbde31b759969c",
     "semantic_hash": "cf91574a7dd1f1e705fbde31b759969c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/llm-jp-3.1-8x13b-instruct4/topk/solution.go": {
-    "mtime": 1782024471.0161827,
+    "mtime": 1782059008.808707,
     "ast_hash": "3ec3e8afbb399d3ae11971bade1a4966",
     "semantic_hash": "3ec3e8afbb399d3ae11971bade1a4966"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Kimi-K2.6/options/response.json": {
-    "mtime": 1782024699.1217797,
+    "mtime": 1782059008.8090594,
     "ast_hash": "0a8a4e77d304b06940f9acf271e168f9",
     "semantic_hash": "0a8a4e77d304b06940f9acf271e168f9"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Kimi-K2.6/options/solution.go": {
-    "mtime": 1782024699.1227474,
+    "mtime": 1782059008.8092284,
     "ast_hash": "8fc0d0837be025e21f3b0d138b32d71b",
     "semantic_hash": "8fc0d0837be025e21f3b0d138b32d71b"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Kimi-K2.6/pmap/error.json": {
-    "mtime": 1782024873.354434,
+    "mtime": 1782059008.8094347,
     "ast_hash": "db635f3a4853145081c0a74cf7023c5c",
     "semantic_hash": "db635f3a4853145081c0a74cf7023c5c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Kimi-K2.6/pmap/response.json": {
-    "mtime": 1782024873.353723,
+    "mtime": 1782059008.8098,
     "ast_hash": "19cddd68a0ca6e4f75568e0c6e6539f8",
     "semantic_hash": "19cddd68a0ca6e4f75568e0c6e6539f8"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Kimi-K2.6/topk/response.json": {
-    "mtime": 1782024522.9892774,
+    "mtime": 1782059008.810203,
     "ast_hash": "999160a66102063c1d40a538f28ebcc0",
     "semantic_hash": "999160a66102063c1d40a538f28ebcc0"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Kimi-K2.6/topk/solution.go": {
-    "mtime": 1782024522.989806,
+    "mtime": 1782059008.810311,
     "ast_hash": "a701c8f2fb9916fce2f3fd33b8e44f34",
     "semantic_hash": "a701c8f2fb9916fce2f3fd33b8e44f34"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-mini-instruct-cpu/options/response.json": {
-    "mtime": 1782024576.4187415,
+    "mtime": 1782059008.8104765,
     "ast_hash": "a535b10d2824239b165edbe876a847f0",
     "semantic_hash": "a535b10d2824239b165edbe876a847f0"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-mini-instruct-cpu/options/solution.go": {
-    "mtime": 1782024576.4193692,
+    "mtime": 1782059008.810559,
     "ast_hash": "fb1f68f3692c1e06714c2fc725952c50",
     "semantic_hash": "fb1f68f3692c1e06714c2fc725952c50"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-mini-instruct-cpu/pmap/response.json": {
-    "mtime": 1782024951.4108737,
+    "mtime": 1782059008.8107033,
     "ast_hash": "d4a4dd9af69efa2f49777a1220a86f82",
     "semantic_hash": "d4a4dd9af69efa2f49777a1220a86f82"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-mini-instruct-cpu/pmap/solution.go": {
-    "mtime": 1782024951.4119034,
+    "mtime": 1782059008.8108363,
     "ast_hash": "dedb8b004a221695b2579f03fe7929f8",
     "semantic_hash": "dedb8b004a221695b2579f03fe7929f8"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-mini-instruct-cpu/topk/response.json": {
-    "mtime": 1782024334.5177157,
+    "mtime": 1782059008.8109915,
     "ast_hash": "cb276a44f618a95101e90255586c4e5f",
     "semantic_hash": "cb276a44f618a95101e90255586c4e5f"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-mini-instruct-cpu/topk/solution.go": {
-    "mtime": 1782024334.5178795,
+    "mtime": 1782059008.8110766,
     "ast_hash": "3063acce62e45a38448b07291b030347",
     "semantic_hash": "3063acce62e45a38448b07291b030347"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-multimodal-instruct/options/response.json": {
-    "mtime": 1782024595.5339012,
+    "mtime": 1782059008.8112915,
     "ast_hash": "676aa22e4e09a82a3d63142e8a372e39",
     "semantic_hash": "676aa22e4e09a82a3d63142e8a372e39"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-multimodal-instruct/options/solution.go": {
-    "mtime": 1782024595.5345368,
+    "mtime": 1782059008.8113828,
     "ast_hash": "326b5504a846e7f85d63b277a59c0f16",
     "semantic_hash": "326b5504a846e7f85d63b277a59c0f16"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-multimodal-instruct/pmap/response.json": {
-    "mtime": 1782024582.7581291,
+    "mtime": 1782059008.8115327,
     "ast_hash": "86a951372eea0052304e2b982e62721a",
     "semantic_hash": "86a951372eea0052304e2b982e62721a"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-multimodal-instruct/pmap/solution.go": {
-    "mtime": 1782024582.7583706,
+    "mtime": 1782059008.8116446,
     "ast_hash": "01ab598c17be947100b34f94b2f27f53",
     "semantic_hash": "01ab598c17be947100b34f94b2f27f53"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-multimodal-instruct/topk/response.json": {
-    "mtime": 1782024874.792913,
+    "mtime": 1782059008.8117914,
     "ast_hash": "7b84ffd0c550d44464add90628383bd3",
     "semantic_hash": "7b84ffd0c550d44464add90628383bd3"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Phi-4-multimodal-instruct/topk/solution.go": {
-    "mtime": 1782024874.7935174,
+    "mtime": 1782059008.811884,
     "ast_hash": "3063acce62e45a38448b07291b030347",
     "semantic_hash": "3063acce62e45a38448b07291b030347"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-0.6B-cpu/options/response.json": {
-    "mtime": 1782024466.5656228,
+    "mtime": 1782059008.812083,
     "ast_hash": "6e9f7ade29e49b3b14a2922476ab7fc8",
     "semantic_hash": "6e9f7ade29e49b3b14a2922476ab7fc8"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-0.6B-cpu/options/solution.go": {
-    "mtime": 1782024466.5662467,
+    "mtime": 1782059008.8121848,
     "ast_hash": "0990913801fa8eb49785a4236f551e7d",
     "semantic_hash": "0990913801fa8eb49785a4236f551e7d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-0.6B-cpu/pmap/response.json": {
-    "mtime": 1782024914.0175946,
+    "mtime": 1782059008.812347,
     "ast_hash": "83a3445fcf0a4a41c6fceb418d76d751",
     "semantic_hash": "83a3445fcf0a4a41c6fceb418d76d751"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-0.6B-cpu/pmap/solution.go": {
-    "mtime": 1782024914.018195,
+    "mtime": 1782059008.812457,
     "ast_hash": "39800af1fa5f586117732745b40d23f5",
     "semantic_hash": "39800af1fa5f586117732745b40d23f5"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-0.6B-cpu/topk/response.json": {
-    "mtime": 1782024882.9034216,
+    "mtime": 1782059008.8126256,
     "ast_hash": "1c7cd68c72bceb448d8c7538c20a92ae",
     "semantic_hash": "1c7cd68c72bceb448d8c7538c20a92ae"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-0.6B-cpu/topk/solution.go": {
-    "mtime": 1782024882.9039767,
+    "mtime": 1782059008.812728,
     "ast_hash": "54e6e76aea40a15e9feea869d74c064a",
     "semantic_hash": "54e6e76aea40a15e9feea869d74c064a"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-VL-30B-A3B-Instruct/options/response.json": {
-    "mtime": 1782024707.6327608,
+    "mtime": 1782059008.8129606,
     "ast_hash": "74096e5ca1dca338bd0825c1b4e1611e",
     "semantic_hash": "74096e5ca1dca338bd0825c1b4e1611e"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-VL-30B-A3B-Instruct/options/solution.go": {
-    "mtime": 1782024707.6333237,
+    "mtime": 1782059008.8130784,
     "ast_hash": "f82a6653203f17120521041a492d6b4d",
     "semantic_hash": "f82a6653203f17120521041a492d6b4d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-VL-30B-A3B-Instruct/pmap/response.json": {
-    "mtime": 1782024886.9615726,
+    "mtime": 1782059008.8132598,
     "ast_hash": "1515ef201d6032ca75289626dedf4b32",
     "semantic_hash": "1515ef201d6032ca75289626dedf4b32"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-VL-30B-A3B-Instruct/pmap/solution.go": {
-    "mtime": 1782024886.9618225,
+    "mtime": 1782059008.8133738,
     "ast_hash": "bb4f6194ae513c7f67c77a759f460801",
     "semantic_hash": "bb4f6194ae513c7f67c77a759f460801"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-VL-30B-A3B-Instruct/topk/response.json": {
-    "mtime": 1782024526.8333106,
+    "mtime": 1782059008.8135638,
     "ast_hash": "eef104bd47395f0c63aa63cad9e061fd",
     "semantic_hash": "eef104bd47395f0c63aa63cad9e061fd"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3-VL-30B-A3B-Instruct/topk/solution.go": {
-    "mtime": 1782024526.8335347,
+    "mtime": 1782059008.8136885,
     "ast_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250",
     "semantic_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3.6-35B-A3B/options/response.json": {
-    "mtime": 1782024423.9278865,
+    "mtime": 1782059008.8141167,
     "ast_hash": "b0ad92c9a76dc77c3acf78d6c187b5c2",
     "semantic_hash": "b0ad92c9a76dc77c3acf78d6c187b5c2"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3.6-35B-A3B/options/solution.go": {
-    "mtime": 1782024423.9284155,
+    "mtime": 1782059008.814256,
     "ast_hash": "df6dc05c5588b352c7b91c0b49aa8662",
     "semantic_hash": "df6dc05c5588b352c7b91c0b49aa8662"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3.6-35B-A3B/pmap/response.json": {
-    "mtime": 1782025004.991882,
+    "mtime": 1782059008.8145778,
     "ast_hash": "1228331532263108d934f595f05b2d14",
     "semantic_hash": "1228331532263108d934f595f05b2d14"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3.6-35B-A3B/pmap/solution.go": {
-    "mtime": 1782025004.9924433,
+    "mtime": 1782059008.814721,
     "ast_hash": "6d1259dd94e65fec15204b84a4effd90",
     "semantic_hash": "6d1259dd94e65fec15204b84a4effd90"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3.6-35B-A3B/topk/response.json": {
-    "mtime": 1782024373.3666904,
+    "mtime": 1782059008.8149428,
     "ast_hash": "8eb0a8b3b8b09ea5604a6d1563c2ecb0",
     "semantic_hash": "8eb0a8b3b8b09ea5604a6d1563c2ecb0"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run3/preview__Qwen3.6-35B-A3B/topk/solution.go": {
-    "mtime": 1782024373.366964,
+    "mtime": 1782059008.8150656,
     "ast_hash": "71ad40cf9dc7e90d2aa00b123ba4305d",
     "semantic_hash": "71ad40cf9dc7e90d2aa00b123ba4305d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/run1-summary.json": {
-    "mtime": 1782002572.1788774,
+    "mtime": 1782059008.8822153,
     "ast_hash": "a433f0e61c6d5620b09fa249f5f2acb3",
     "semantic_hash": "a433f0e61c6d5620b09fa249f5f2acb3"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/run2-summary.json": {
-    "mtime": 1782003582.569074,
+    "mtime": 1782059008.7547634,
     "ast_hash": "cae29701d2ad75deec99f7471719c47d",
     "semantic_hash": "cae29701d2ad75deec99f7471719c47d"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/run3-summary.json": {
-    "mtime": 1782025189.4990654,
+    "mtime": 1782059008.8152456,
     "ast_hash": "cb79ada31b603fadb736840d6f0d82cd",
     "semantic_hash": "cb79ada31b603fadb736840d6f0d82cd"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/.markdownlint-cli2.yaml": {
-    "mtime": 1782016467.3677852,
+    "mtime": 1782059008.7400672,
     "ast_hash": "78e3089bfba89e53e94134256b00cf05",
     "semantic_hash": "78e3089bfba89e53e94134256b00cf05"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/FINDINGS.md": {
-    "mtime": 1782057604.6548042,
+    "mtime": 1782059008.8464386,
     "ast_hash": "ddfc07dcc0f1bbc9b75edff3400d3be2",
     "semantic_hash": "ddfc07dcc0f1bbc9b75edff3400d3be2"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/README.md": {
-    "mtime": 1782057656.1968417,
-    "ast_hash": "1ca57310c51b0be3e74330d94deca280",
-    "semantic_hash": "1ca57310c51b0be3e74330d94deca280"
+    "mtime": 1782145307.8610175,
+    "ast_hash": "d54ca385f498af073389fcb89a171fdb",
+    "semantic_hash": "d54ca385f498af073389fcb89a171fdb"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/comparison.md": {
-    "mtime": 1782025356.1571631,
-    "ast_hash": "18cadf887082d4849c363e6676b252df",
-    "semantic_hash": "18cadf887082d4849c363e6676b252df"
+    "mtime": 1782145347.2869973,
+    "ast_hash": "b5256d0e4d4c49c02c67080381a71533",
+    "semantic_hash": "b5256d0e4d4c49c02c67080381a71533"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run2/file-manifest.txt": {
-    "mtime": 1782057612.8539655,
+    "mtime": 1782059008.8733807,
     "ast_hash": "8b132a5c4c0c2d1748fcb6e08ed54601",
     "semantic_hash": "8b132a5c4c0c2d1748fcb6e08ed54601"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/prompts/options.md": {
-    "mtime": 1782025377.8637376,
-    "ast_hash": "247a2e64d64076f617685dce2b25ee24",
-    "semantic_hash": "247a2e64d64076f617685dce2b25ee24"
+    "mtime": 1782144033.5342538,
+    "ast_hash": "52691c515b9f022c897d1a0a7afc9f7c",
+    "semantic_hash": "52691c515b9f022c897d1a0a7afc9f7c"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/prompts/pmap.md": {
-    "mtime": 1782025377.8637447,
-    "ast_hash": "56d5563a0884a386822879ec6a9276d2",
-    "semantic_hash": "56d5563a0884a386822879ec6a9276d2"
+    "mtime": 1782144033.5339537,
+    "ast_hash": "7ce220ec7259dc3ce79e60741120d80f",
+    "semantic_hash": "7ce220ec7259dc3ce79e60741120d80f"
   },
   "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/prompts/topk.md": {
-    "mtime": 1782025377.8637276,
-    "ast_hash": "b231dd6cea24412b8bcfb84052786d4c",
-    "semantic_hash": "b231dd6cea24412b8bcfb84052786d4c"
+    "mtime": 1782144033.5337868,
+    "ast_hash": "037aa1922f6fa9050b261dda1a87467c",
+    "semantic_hash": "037aa1922f6fa9050b261dda1a87467c"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run4/evaluation.json": {
+    "mtime": 1782143911.728626,
+    "ast_hash": "a74f3469e9e9592a087e24cf3b955531",
+    "semantic_hash": "a74f3469e9e9592a087e24cf3b955531"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run4/repeat-summary.json": {
+    "mtime": 1782144013.8256733,
+    "ast_hash": "99b4e6a7830bea18db88e157c439dbc5",
+    "semantic_hash": "99b4e6a7830bea18db88e157c439dbc5"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run4/requests.json": {
+    "mtime": 1782143823.1334414,
+    "ast_hash": "cdb9bed62db2be2fc32799364ceb24ec",
+    "semantic_hash": "cdb9bed62db2be2fc32799364ceb24ec"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run5/evaluation.json": {
+    "mtime": 1782144968.431126,
+    "ast_hash": "b1a680b0aa8ad822e8cbcbf0f2b67bef",
+    "semantic_hash": "b1a680b0aa8ad822e8cbcbf0f2b67bef"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run5/repeat-summary.json": {
+    "mtime": 1782145072.3356318,
+    "ast_hash": "1bc5e399e7bf40282bf9474a64207d92",
+    "semantic_hash": "1bc5e399e7bf40282bf9474a64207d92"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/logs-run5/requests.json": {
+    "mtime": 1782144872.4413466,
+    "ast_hash": "6eeaeabed2ec9bcbf0931743b569ea5f",
+    "semantic_hash": "6eeaeabed2ec9bcbf0931743b569ea5f"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-30B-A3B-Instruct/options/response.json": {
+    "mtime": 1782143713.6642053,
+    "ast_hash": "16d5dce4fbfebe76f7cabaf0e1b0c7da",
+    "semantic_hash": "16d5dce4fbfebe76f7cabaf0e1b0c7da"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-30B-A3B-Instruct/options/solution.go": {
+    "mtime": 1782143713.66457,
+    "ast_hash": "6b72a53a6e0652518e30f8702d40c559",
+    "semantic_hash": "6b72a53a6e0652518e30f8702d40c559"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-30B-A3B-Instruct/pmap/response.json": {
+    "mtime": 1782143259.7211769,
+    "ast_hash": "94a3c88203af5586aeedfc96579110cd",
+    "semantic_hash": "94a3c88203af5586aeedfc96579110cd"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-30B-A3B-Instruct/pmap/solution.go": {
+    "mtime": 1782143259.7215505,
+    "ast_hash": "311f8349ca1eb18d5d619481f7007d53",
+    "semantic_hash": "311f8349ca1eb18d5d619481f7007d53"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-30B-A3B-Instruct/topk/response.json": {
+    "mtime": 1782143442.7100277,
+    "ast_hash": "3e61658e94c9fb23e05755e00d4634c3",
+    "semantic_hash": "3e61658e94c9fb23e05755e00d4634c3"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-30B-A3B-Instruct/topk/solution.go": {
+    "mtime": 1782143442.7104254,
+    "ast_hash": "d4162f17d46ebc3e42a82b56fa0e64d1",
+    "semantic_hash": "d4162f17d46ebc3e42a82b56fa0e64d1"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-480B-A35B-Instruct-FP8/options/response.json": {
+    "mtime": 1782143310.8196385,
+    "ast_hash": "22fbbd1bb42a49fc6953091b084511ac",
+    "semantic_hash": "22fbbd1bb42a49fc6953091b084511ac"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-480B-A35B-Instruct-FP8/options/solution.go": {
+    "mtime": 1782143310.8203273,
+    "ast_hash": "277fcd579a29a0838f3560af4816c891",
+    "semantic_hash": "277fcd579a29a0838f3560af4816c891"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/response.json": {
+    "mtime": 1782143106.7378247,
+    "ast_hash": "ece73de007ae06d0e208ccda38afd146",
+    "semantic_hash": "ece73de007ae06d0e208ccda38afd146"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/solution.go": {
+    "mtime": 1782143106.73843,
+    "ast_hash": "5649aa79d4cf5dcfa7a57927adee5598",
+    "semantic_hash": "5649aa79d4cf5dcfa7a57927adee5598"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/response.json": {
+    "mtime": 1782143114.6001475,
+    "ast_hash": "21bb7f8188c0721dbd7b4a330fa4abae",
+    "semantic_hash": "21bb7f8188c0721dbd7b4a330fa4abae"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/solution.go": {
+    "mtime": 1782143114.6008964,
+    "ast_hash": "a0db7fd68ce1559b5561ac95843e7211",
+    "semantic_hash": "a0db7fd68ce1559b5561ac95843e7211"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/gpt-oss-120b/options/response.json": {
+    "mtime": 1782143125.2973979,
+    "ast_hash": "b7284e4fb157a07ca4bdc647df7c41da",
+    "semantic_hash": "b7284e4fb157a07ca4bdc647df7c41da"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/gpt-oss-120b/options/solution.go": {
+    "mtime": 1782143125.2979927,
+    "ast_hash": "d3b2b076528246c31e1203d752d86fb0",
+    "semantic_hash": "d3b2b076528246c31e1203d752d86fb0"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/gpt-oss-120b/pmap/response.json": {
+    "mtime": 1782143709.8760884,
+    "ast_hash": "3e1d0ae36b0de4ed25447785650c0e5d",
+    "semantic_hash": "3e1d0ae36b0de4ed25447785650c0e5d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/gpt-oss-120b/pmap/solution.go": {
+    "mtime": 1782143709.876686,
+    "ast_hash": "4ea7cf4e1add4342b3e1ddb2110ebb32",
+    "semantic_hash": "4ea7cf4e1add4342b3e1ddb2110ebb32"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/gpt-oss-120b/topk/response.json": {
+    "mtime": 1782143701.684659,
+    "ast_hash": "1096380d98903f9583dfc7e902627ab0",
+    "semantic_hash": "1096380d98903f9583dfc7e902627ab0"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/gpt-oss-120b/topk/solution.go": {
+    "mtime": 1782143701.6850748,
+    "ast_hash": "ce63f755e64d77a5eb7d5e24279f0994",
+    "semantic_hash": "ce63f755e64d77a5eb7d5e24279f0994"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/llm-jp-3.1-8x13b-instruct4/options/response.json": {
+    "mtime": 1782142972.6980562,
+    "ast_hash": "4b5f14838b1b8332a07b264b1193ef65",
+    "semantic_hash": "4b5f14838b1b8332a07b264b1193ef65"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/llm-jp-3.1-8x13b-instruct4/options/solution.go": {
+    "mtime": 1782142972.698867,
+    "ast_hash": "21763c17eedd0dcfa84c9edc79f799ff",
+    "semantic_hash": "21763c17eedd0dcfa84c9edc79f799ff"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/llm-jp-3.1-8x13b-instruct4/pmap/response.json": {
+    "mtime": 1782143823.1317496,
+    "ast_hash": "b8d4ba892981ae6ea939e51155e1495b",
+    "semantic_hash": "b8d4ba892981ae6ea939e51155e1495b"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/llm-jp-3.1-8x13b-instruct4/pmap/solution.go": {
+    "mtime": 1782143823.1322513,
+    "ast_hash": "936acf70d363bc4c56b59b6e42f7bdad",
+    "semantic_hash": "936acf70d363bc4c56b59b6e42f7bdad"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/llm-jp-3.1-8x13b-instruct4/topk/response.json": {
+    "mtime": 1782143144.9336276,
+    "ast_hash": "326488bf25948ca66bbec39b84486f9f",
+    "semantic_hash": "326488bf25948ca66bbec39b84486f9f"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/llm-jp-3.1-8x13b-instruct4/topk/solution.go": {
+    "mtime": 1782143144.9341085,
+    "ast_hash": "3ec3e8afbb399d3ae11971bade1a4966",
+    "semantic_hash": "3ec3e8afbb399d3ae11971bade1a4966"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Kimi-K2.6/options/response.json": {
+    "mtime": 1782143439.3919058,
+    "ast_hash": "77ea3a9c375571cb5f11b76e31cb0f52",
+    "semantic_hash": "77ea3a9c375571cb5f11b76e31cb0f52"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Kimi-K2.6/options/solution.go": {
+    "mtime": 1782143439.392493,
+    "ast_hash": "d080390fe4c7954d40e040872ff318ae",
+    "semantic_hash": "d080390fe4c7954d40e040872ff318ae"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Kimi-K2.6/pmap/response.json": {
+    "mtime": 1782143679.417653,
+    "ast_hash": "9b23520c73d1c345f60bbadb74b7821d",
+    "semantic_hash": "9b23520c73d1c345f60bbadb74b7821d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Kimi-K2.6/pmap/solution.go": {
+    "mtime": 1782143679.4182727,
+    "ast_hash": "7b444ca444017a6ef7ebab84b785166a",
+    "semantic_hash": "7b444ca444017a6ef7ebab84b785166a"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Kimi-K2.6/topk/response.json": {
+    "mtime": 1782143202.7360404,
+    "ast_hash": "8c80c05286139e79990cd706fc06f49f",
+    "semantic_hash": "8c80c05286139e79990cd706fc06f49f"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Kimi-K2.6/topk/solution.go": {
+    "mtime": 1782143202.736824,
+    "ast_hash": "957645273d0b27173eaebd708dc4c26a",
+    "semantic_hash": "957645273d0b27173eaebd708dc4c26a"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-mini-instruct-cpu/options/response.json": {
+    "mtime": 1782143255.4563591,
+    "ast_hash": "82eca27334c54ebf0c109cd00f4830d4",
+    "semantic_hash": "82eca27334c54ebf0c109cd00f4830d4"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-mini-instruct-cpu/options/solution.go": {
+    "mtime": 1782143255.4570155,
+    "ast_hash": "fb1f68f3692c1e06714c2fc725952c50",
+    "semantic_hash": "fb1f68f3692c1e06714c2fc725952c50"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-mini-instruct-cpu/pmap/response.json": {
+    "mtime": 1782143760.8716855,
+    "ast_hash": "4ad2ab52a2bb9a85b955fb8e64c17ab9",
+    "semantic_hash": "4ad2ab52a2bb9a85b955fb8e64c17ab9"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-mini-instruct-cpu/pmap/solution.go": {
+    "mtime": 1782143760.8720942,
+    "ast_hash": "dedb8b004a221695b2579f03fe7929f8",
+    "semantic_hash": "dedb8b004a221695b2579f03fe7929f8"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-mini-instruct-cpu/topk/response.json": {
+    "mtime": 1782142995.2228842,
+    "ast_hash": "a66baeb4a28f3d210c0e7a69f05b1fac",
+    "semantic_hash": "a66baeb4a28f3d210c0e7a69f05b1fac"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-mini-instruct-cpu/topk/solution.go": {
+    "mtime": 1782142995.2234979,
+    "ast_hash": "3063acce62e45a38448b07291b030347",
+    "semantic_hash": "3063acce62e45a38448b07291b030347"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-multimodal-instruct/options/response.json": {
+    "mtime": 1782143314.0784025,
+    "ast_hash": "4b3d0e1de74106bffffaf38bd048f7c2",
+    "semantic_hash": "4b3d0e1de74106bffffaf38bd048f7c2"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-multimodal-instruct/options/solution.go": {
+    "mtime": 1782143314.0788715,
+    "ast_hash": "326b5504a846e7f85d63b277a59c0f16",
+    "semantic_hash": "326b5504a846e7f85d63b277a59c0f16"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-multimodal-instruct/pmap/response.json": {
+    "mtime": 1782143261.7682676,
+    "ast_hash": "fb7a66066eec12cef628633ac24926bf",
+    "semantic_hash": "fb7a66066eec12cef628633ac24926bf"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-multimodal-instruct/pmap/solution.go": {
+    "mtime": 1782143261.7685344,
+    "ast_hash": "01ab598c17be947100b34f94b2f27f53",
+    "semantic_hash": "01ab598c17be947100b34f94b2f27f53"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-multimodal-instruct/topk/response.json": {
+    "mtime": 1782143681.4308631,
+    "ast_hash": "b71ca74f1c53a27e999b2fce40e7188c",
+    "semantic_hash": "b71ca74f1c53a27e999b2fce40e7188c"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Phi-4-multimodal-instruct/topk/solution.go": {
+    "mtime": 1782143681.4312124,
+    "ast_hash": "3063acce62e45a38448b07291b030347",
+    "semantic_hash": "3063acce62e45a38448b07291b030347"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-0.6B-cpu/options/response.json": {
+    "mtime": 1782143140.428069,
+    "ast_hash": "59da39d6e1021c074e47062c1a39f1db",
+    "semantic_hash": "59da39d6e1021c074e47062c1a39f1db"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-0.6B-cpu/options/solution.go": {
+    "mtime": 1782143140.428904,
+    "ast_hash": "0990913801fa8eb49785a4236f551e7d",
+    "semantic_hash": "0990913801fa8eb49785a4236f551e7d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-0.6B-cpu/pmap/response.json": {
+    "mtime": 1782143724.4173512,
+    "ast_hash": "b3e1fa22514ee56df402624dade1d92e",
+    "semantic_hash": "b3e1fa22514ee56df402624dade1d92e"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-0.6B-cpu/pmap/solution.go": {
+    "mtime": 1782143724.4180515,
+    "ast_hash": "39800af1fa5f586117732745b40d23f5",
+    "semantic_hash": "39800af1fa5f586117732745b40d23f5"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-0.6B-cpu/topk/response.json": {
+    "mtime": 1782143689.4977658,
+    "ast_hash": "fbcef0b2328d927986a3b4e47eef35a4",
+    "semantic_hash": "fbcef0b2328d927986a3b4e47eef35a4"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-0.6B-cpu/topk/solution.go": {
+    "mtime": 1782143689.4981213,
+    "ast_hash": "54e6e76aea40a15e9feea869d74c064a",
+    "semantic_hash": "54e6e76aea40a15e9feea869d74c064a"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-VL-30B-A3B-Instruct/options/response.json": {
+    "mtime": 1782143448.0358546,
+    "ast_hash": "52831e93ec93799b692f14e089ff5423",
+    "semantic_hash": "52831e93ec93799b692f14e089ff5423"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-VL-30B-A3B-Instruct/options/solution.go": {
+    "mtime": 1782143448.0362713,
+    "ast_hash": "f82a6653203f17120521041a492d6b4d",
+    "semantic_hash": "f82a6653203f17120521041a492d6b4d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-VL-30B-A3B-Instruct/pmap/response.json": {
+    "mtime": 1782143694.2077475,
+    "ast_hash": "8f17658887e3b0666659c2d4a4644b9b",
+    "semantic_hash": "8f17658887e3b0666659c2d4a4644b9b"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-VL-30B-A3B-Instruct/pmap/solution.go": {
+    "mtime": 1782143694.208259,
+    "ast_hash": "bb4f6194ae513c7f67c77a759f460801",
+    "semantic_hash": "bb4f6194ae513c7f67c77a759f460801"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-VL-30B-A3B-Instruct/topk/response.json": {
+    "mtime": 1782143206.6679964,
+    "ast_hash": "cc4e07d1af241c25915c895d33d317e1",
+    "semantic_hash": "cc4e07d1af241c25915c895d33d317e1"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3-VL-30B-A3B-Instruct/topk/solution.go": {
+    "mtime": 1782143206.668809,
+    "ast_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250",
+    "semantic_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3.6-35B-A3B/options/response.json": {
+    "mtime": 1782143084.3698256,
+    "ast_hash": "b7026ef88e211b78033d5bb833ce2035",
+    "semantic_hash": "b7026ef88e211b78033d5bb833ce2035"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3.6-35B-A3B/options/solution.go": {
+    "mtime": 1782143084.3702579,
+    "ast_hash": "df6dc05c5588b352c7b91c0b49aa8662",
+    "semantic_hash": "df6dc05c5588b352c7b91c0b49aa8662"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3.6-35B-A3B/pmap/response.json": {
+    "mtime": 1782143815.9914112,
+    "ast_hash": "5aacc2739b608cede7df273140626632",
+    "semantic_hash": "5aacc2739b608cede7df273140626632"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3.6-35B-A3B/pmap/solution.go": {
+    "mtime": 1782143815.992144,
+    "ast_hash": "6d1259dd94e65fec15204b84a4effd90",
+    "semantic_hash": "6d1259dd94e65fec15204b84a4effd90"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3.6-35B-A3B/topk/response.json": {
+    "mtime": 1782143033.855598,
+    "ast_hash": "74017aa212f026f3c94f1e6b545311c3",
+    "semantic_hash": "74017aa212f026f3c94f1e6b545311c3"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run4/preview__Qwen3.6-35B-A3B/topk/solution.go": {
+    "mtime": 1782143033.8563151,
+    "ast_hash": "71ad40cf9dc7e90d2aa00b123ba4305d",
+    "semantic_hash": "71ad40cf9dc7e90d2aa00b123ba4305d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-30B-A3B-Instruct/options/response.json": {
+    "mtime": 1782144756.007849,
+    "ast_hash": "ee8dd7627961e0edb93214df25f7adb7",
+    "semantic_hash": "ee8dd7627961e0edb93214df25f7adb7"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-30B-A3B-Instruct/options/solution.go": {
+    "mtime": 1782144756.0082088,
+    "ast_hash": "6b72a53a6e0652518e30f8702d40c559",
+    "semantic_hash": "6b72a53a6e0652518e30f8702d40c559"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-30B-A3B-Instruct/pmap/response.json": {
+    "mtime": 1782144357.5066822,
+    "ast_hash": "9517921293a1f9a32c1dbe4470e66e6c",
+    "semantic_hash": "9517921293a1f9a32c1dbe4470e66e6c"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-30B-A3B-Instruct/pmap/solution.go": {
+    "mtime": 1782144357.507028,
+    "ast_hash": "311f8349ca1eb18d5d619481f7007d53",
+    "semantic_hash": "311f8349ca1eb18d5d619481f7007d53"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-30B-A3B-Instruct/topk/response.json": {
+    "mtime": 1782144579.2626305,
+    "ast_hash": "63caed9f26a8fcb2e9f1a2ae6e62bc0d",
+    "semantic_hash": "63caed9f26a8fcb2e9f1a2ae6e62bc0d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-30B-A3B-Instruct/topk/solution.go": {
+    "mtime": 1782144579.2629914,
+    "ast_hash": "bfd419bfb02f7eafcf4df484c92d5201",
+    "semantic_hash": "bfd419bfb02f7eafcf4df484c92d5201"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-480B-A35B-Instruct-FP8/options/response.json": {
+    "mtime": 1782144374.4435232,
+    "ast_hash": "c2262446912f6183aae88b54fbbf4812",
+    "semantic_hash": "c2262446912f6183aae88b54fbbf4812"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-480B-A35B-Instruct-FP8/options/solution.go": {
+    "mtime": 1782144374.4440262,
+    "ast_hash": "48161a1f66d16f3cd33bcaa1514263fe",
+    "semantic_hash": "48161a1f66d16f3cd33bcaa1514263fe"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/response.json": {
+    "mtime": 1782144164.9478097,
+    "ast_hash": "c41ea7a92b49f03908a54a52acadd16f",
+    "semantic_hash": "c41ea7a92b49f03908a54a52acadd16f"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-480B-A35B-Instruct-FP8/pmap/solution.go": {
+    "mtime": 1782144164.9484324,
+    "ast_hash": "1d22eca527ef56a434865ad074c790fb",
+    "semantic_hash": "1d22eca527ef56a434865ad074c790fb"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/response.json": {
+    "mtime": 1782144171.0921023,
+    "ast_hash": "7a8c41e512fc00c4059c57f0fed6ee88",
+    "semantic_hash": "7a8c41e512fc00c4059c57f0fed6ee88"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/Qwen3-Coder-480B-A35B-Instruct-FP8/topk/solution.go": {
+    "mtime": 1782144171.0928254,
+    "ast_hash": "a0db7fd68ce1559b5561ac95843e7211",
+    "semantic_hash": "a0db7fd68ce1559b5561ac95843e7211"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/gpt-oss-120b/options/response.json": {
+    "mtime": 1782144180.6739945,
+    "ast_hash": "6e6807d53c0ba4d2e19d6de802e04157",
+    "semantic_hash": "6e6807d53c0ba4d2e19d6de802e04157"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/gpt-oss-120b/options/solution.go": {
+    "mtime": 1782144180.6744318,
+    "ast_hash": "f2d290c2855fffe5a1b3f8fd8d2f4876",
+    "semantic_hash": "f2d290c2855fffe5a1b3f8fd8d2f4876"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/gpt-oss-120b/pmap/response.json": {
+    "mtime": 1782144752.3239522,
+    "ast_hash": "d68e1d4892b946bf593878c3b0f2a4ab",
+    "semantic_hash": "d68e1d4892b946bf593878c3b0f2a4ab"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/gpt-oss-120b/pmap/solution.go": {
+    "mtime": 1782144752.324466,
+    "ast_hash": "d306a16d2a95b7d60e3597c1b91074db",
+    "semantic_hash": "d306a16d2a95b7d60e3597c1b91074db"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/gpt-oss-120b/topk/response.json": {
+    "mtime": 1782144743.9787283,
+    "ast_hash": "380221ecf69f13c30e5034a80947a0dc",
+    "semantic_hash": "380221ecf69f13c30e5034a80947a0dc"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/gpt-oss-120b/topk/solution.go": {
+    "mtime": 1782144743.9791439,
+    "ast_hash": "1d36dbecf3570363e75c7c2622494f7e",
+    "semantic_hash": "1d36dbecf3570363e75c7c2622494f7e"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/llm-jp-3.1-8x13b-instruct4/options/response.json": {
+    "mtime": 1782144040.7382603,
+    "ast_hash": "b412ee7d9b13b0a4da3c7309958ad43c",
+    "semantic_hash": "b412ee7d9b13b0a4da3c7309958ad43c"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/llm-jp-3.1-8x13b-instruct4/options/solution.go": {
+    "mtime": 1782144040.738894,
+    "ast_hash": "21763c17eedd0dcfa84c9edc79f799ff",
+    "semantic_hash": "21763c17eedd0dcfa84c9edc79f799ff"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/llm-jp-3.1-8x13b-instruct4/pmap/response.json": {
+    "mtime": 1782144872.43875,
+    "ast_hash": "ba5dc4f379191c92aeb53a830e76dd03",
+    "semantic_hash": "ba5dc4f379191c92aeb53a830e76dd03"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/llm-jp-3.1-8x13b-instruct4/pmap/solution.go": {
+    "mtime": 1782144872.4394228,
+    "ast_hash": "936acf70d363bc4c56b59b6e42f7bdad",
+    "semantic_hash": "936acf70d363bc4c56b59b6e42f7bdad"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/llm-jp-3.1-8x13b-instruct4/topk/response.json": {
+    "mtime": 1782144201.6077693,
+    "ast_hash": "a4c591989b42e47d874fe440de5a54ce",
+    "semantic_hash": "a4c591989b42e47d874fe440de5a54ce"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/llm-jp-3.1-8x13b-instruct4/topk/solution.go": {
+    "mtime": 1782144201.6082978,
+    "ast_hash": "3ec3e8afbb399d3ae11971bade1a4966",
+    "semantic_hash": "3ec3e8afbb399d3ae11971bade1a4966"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Kimi-K2.6/options/response.json": {
+    "mtime": 1782144575.9414575,
+    "ast_hash": "83b8819dab52f8f6eeec51e257d917a0",
+    "semantic_hash": "83b8819dab52f8f6eeec51e257d917a0"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Kimi-K2.6/options/solution.go": {
+    "mtime": 1782144575.9419913,
+    "ast_hash": "3beaff0803e8ec22a5009929314971a3",
+    "semantic_hash": "3beaff0803e8ec22a5009929314971a3"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Kimi-K2.6/pmap/response.json": {
+    "mtime": 1782144723.473281,
+    "ast_hash": "1f99b1b3eba41d867b59d3035ccb9001",
+    "semantic_hash": "1f99b1b3eba41d867b59d3035ccb9001"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Kimi-K2.6/pmap/solution.go": {
+    "mtime": 1782144723.4737854,
+    "ast_hash": "f4681fcef46f210026be2c17cabc63da",
+    "semantic_hash": "f4681fcef46f210026be2c17cabc63da"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Kimi-K2.6/topk/response.json": {
+    "mtime": 1782144299.019815,
+    "ast_hash": "224c5b13e16c62828dd10624bc649593",
+    "semantic_hash": "224c5b13e16c62828dd10624bc649593"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Kimi-K2.6/topk/solution.go": {
+    "mtime": 1782144299.020257,
+    "ast_hash": "e04421519d22dca9a70b97aa8a6793ff",
+    "semantic_hash": "e04421519d22dca9a70b97aa8a6793ff"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-mini-instruct-cpu/options/response.json": {
+    "mtime": 1782144353.2633307,
+    "ast_hash": "477b3677777babaa89d514a2927cfa0b",
+    "semantic_hash": "477b3677777babaa89d514a2927cfa0b"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-mini-instruct-cpu/options/solution.go": {
+    "mtime": 1782144353.2637472,
+    "ast_hash": "fb1f68f3692c1e06714c2fc725952c50",
+    "semantic_hash": "fb1f68f3692c1e06714c2fc725952c50"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-mini-instruct-cpu/pmap/response.json": {
+    "mtime": 1782144811.9194524,
+    "ast_hash": "a9476a64423c8b9c76325f419da755e8",
+    "semantic_hash": "a9476a64423c8b9c76325f419da755e8"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-mini-instruct-cpu/pmap/solution.go": {
+    "mtime": 1782144811.92006,
+    "ast_hash": "dedb8b004a221695b2579f03fe7929f8",
+    "semantic_hash": "dedb8b004a221695b2579f03fe7929f8"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-mini-instruct-cpu/topk/response.json": {
+    "mtime": 1782144067.8724103,
+    "ast_hash": "58b0ebc39355800062b4c53cb7ff0576",
+    "semantic_hash": "58b0ebc39355800062b4c53cb7ff0576"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-mini-instruct-cpu/topk/solution.go": {
+    "mtime": 1782144067.873086,
+    "ast_hash": "3063acce62e45a38448b07291b030347",
+    "semantic_hash": "3063acce62e45a38448b07291b030347"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-multimodal-instruct/options/response.json": {
+    "mtime": 1782144377.6866481,
+    "ast_hash": "f8b59d8b47fc42f46847c7ff85949877",
+    "semantic_hash": "f8b59d8b47fc42f46847c7ff85949877"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-multimodal-instruct/options/solution.go": {
+    "mtime": 1782144377.686906,
+    "ast_hash": "326b5504a846e7f85d63b277a59c0f16",
+    "semantic_hash": "326b5504a846e7f85d63b277a59c0f16"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-multimodal-instruct/pmap/response.json": {
+    "mtime": 1782144359.5703282,
+    "ast_hash": "ef250eef386ef476d76473fe8f06bcdb",
+    "semantic_hash": "ef250eef386ef476d76473fe8f06bcdb"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-multimodal-instruct/pmap/solution.go": {
+    "mtime": 1782144359.5705457,
+    "ast_hash": "01ab598c17be947100b34f94b2f27f53",
+    "semantic_hash": "01ab598c17be947100b34f94b2f27f53"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-multimodal-instruct/topk/response.json": {
+    "mtime": 1782144724.9122272,
+    "ast_hash": "264d2305a3090621acd893a36e3a7f14",
+    "semantic_hash": "264d2305a3090621acd893a36e3a7f14"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Phi-4-multimodal-instruct/topk/solution.go": {
+    "mtime": 1782144724.9128153,
+    "ast_hash": "3063acce62e45a38448b07291b030347",
+    "semantic_hash": "3063acce62e45a38448b07291b030347"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-0.6B-cpu/options/response.json": {
+    "mtime": 1782144197.1520386,
+    "ast_hash": "1ed1d222414852af4d2b8723af6a00f9",
+    "semantic_hash": "1ed1d222414852af4d2b8723af6a00f9"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-0.6B-cpu/options/solution.go": {
+    "mtime": 1782144197.152416,
+    "ast_hash": "0990913801fa8eb49785a4236f551e7d",
+    "semantic_hash": "0990913801fa8eb49785a4236f551e7d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-0.6B-cpu/pmap/response.json": {
+    "mtime": 1782144766.8734045,
+    "ast_hash": "a5e4d5e7043a2f8d15e0caa9c056c3c5",
+    "semantic_hash": "a5e4d5e7043a2f8d15e0caa9c056c3c5"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-0.6B-cpu/pmap/solution.go": {
+    "mtime": 1782144766.8739297,
+    "ast_hash": "39800af1fa5f586117732745b40d23f5",
+    "semantic_hash": "39800af1fa5f586117732745b40d23f5"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-0.6B-cpu/topk/response.json": {
+    "mtime": 1782144733.4795673,
+    "ast_hash": "d47aa6e175fa4560bf4f8306058682f9",
+    "semantic_hash": "d47aa6e175fa4560bf4f8306058682f9"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-0.6B-cpu/topk/solution.go": {
+    "mtime": 1782144733.4802058,
+    "ast_hash": "54e6e76aea40a15e9feea869d74c064a",
+    "semantic_hash": "54e6e76aea40a15e9feea869d74c064a"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-VL-30B-A3B-Instruct/options/response.json": {
+    "mtime": 1782144584.5901363,
+    "ast_hash": "9de27a74b6b1ddd12ac7ce4dccc8430e",
+    "semantic_hash": "9de27a74b6b1ddd12ac7ce4dccc8430e"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-VL-30B-A3B-Instruct/options/solution.go": {
+    "mtime": 1782144584.590542,
+    "ast_hash": "f82a6653203f17120521041a492d6b4d",
+    "semantic_hash": "f82a6653203f17120521041a492d6b4d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-VL-30B-A3B-Instruct/pmap/response.json": {
+    "mtime": 1782144737.5220616,
+    "ast_hash": "27777e9777aa7e74f2a45df29759d641",
+    "semantic_hash": "27777e9777aa7e74f2a45df29759d641"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-VL-30B-A3B-Instruct/pmap/solution.go": {
+    "mtime": 1782144737.522572,
+    "ast_hash": "bb4f6194ae513c7f67c77a759f460801",
+    "semantic_hash": "bb4f6194ae513c7f67c77a759f460801"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-VL-30B-A3B-Instruct/topk/response.json": {
+    "mtime": 1782144303.4967656,
+    "ast_hash": "c049a96d27577b30deaa52b68a4d92d9",
+    "semantic_hash": "c049a96d27577b30deaa52b68a4d92d9"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3-VL-30B-A3B-Instruct/topk/solution.go": {
+    "mtime": 1782144303.4976375,
+    "ast_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250",
+    "semantic_hash": "1e7a19b04fa6ac6d9ae27783cc9c1250"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3.6-35B-A3B/options/response.json": {
+    "mtime": 1782144156.4604301,
+    "ast_hash": "179eb04060310130e8178267c11e9585",
+    "semantic_hash": "179eb04060310130e8178267c11e9585"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3.6-35B-A3B/options/solution.go": {
+    "mtime": 1782144156.4614885,
+    "ast_hash": "df6dc05c5588b352c7b91c0b49aa8662",
+    "semantic_hash": "df6dc05c5588b352c7b91c0b49aa8662"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3.6-35B-A3B/pmap/response.json": {
+    "mtime": 1782144865.2971008,
+    "ast_hash": "cf6b9a95cfd3aa168a5573c9c24fad45",
+    "semantic_hash": "cf6b9a95cfd3aa168a5573c9c24fad45"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3.6-35B-A3B/pmap/solution.go": {
+    "mtime": 1782144865.2977955,
+    "ast_hash": "6d1259dd94e65fec15204b84a4effd90",
+    "semantic_hash": "6d1259dd94e65fec15204b84a4effd90"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3.6-35B-A3B/topk/response.json": {
+    "mtime": 1782144105.8872266,
+    "ast_hash": "787d61c94528e49bd9693b32e5a5be63",
+    "semantic_hash": "787d61c94528e49bd9693b32e5a5be63"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/responses-run5/preview__Qwen3.6-35B-A3B/topk/solution.go": {
+    "mtime": 1782144105.887595,
+    "ast_hash": "71ad40cf9dc7e90d2aa00b123ba4305d",
+    "semantic_hash": "71ad40cf9dc7e90d2aa00b123ba4305d"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/run4-summary.json": {
+    "mtime": 1782145140.4440246,
+    "ast_hash": "8689a55f5537e8dcd71c46192e99fba2",
+    "semantic_hash": "8689a55f5537e8dcd71c46192e99fba2"
+  },
+  "/Users/keinos/Library/Mobile Documents/com~apple~CloudDocs/Data_Git/GitHub/Gists/2fdf7e154cf9caac0b16ec8e252137e4/run5-summary.json": {
+    "mtime": 1782145140.6645193,
+    "ast_hash": "ebe4cdff9bba1c927e7d205bf4e729b2",
+    "semantic_hash": "ebe4cdff9bba1c927e7d205bf4e729b2"
   }
 }

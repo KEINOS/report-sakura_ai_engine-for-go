@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-657444e2389648548b300bbaaad63d51",
+  "object": "chat.completion",
+  "created": 1782143202,
+  "model": "preview/Qwen3-VL-30B-A3B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage topk\n\nimport (\n\t\"container/heap\"\n\t\"sort\"\n)\n\n// TopKFrequent returns the k most frequent unique words, ordered by descending frequency\n// and ascending lexical order for ties.\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn []string{}\n\t}\n\n\t// Count frequency of each word\n\tfreq := make(map[string]int)\n\tfor _, word := range words {\n\t\tfreq[word]++\n\t}\n\n\t// Use a min-heap to keep track of top k elements\n\t// We use negative frequency to simulate max-heap behavior\n\t// and store (frequency, word) pairs\n\th := &minHeap{}\n\theap.Init(h)\n\n\tfor word, count := range freq {\n\t\theap.Push(h, [2]int{-count, len(word), word}) // negative count for max-heap\n\t\tif h.Len() > k {\n\t\t\theap.Pop(h)\n\t\t}\n\t}\n\n\t// Extract results from heap and sort by frequency (descending) and word (ascending)\n\tresult := make([]string, h.Len())\n\tfor i := h.Len() - 1; i >= 0; i-- {\n\t\tresult[i] = heap.Pop(h).([2]int)[2]\n\t}\n\n\t// Sort by frequency (descending) and then by word (ascending)\n\tsort.Slice(result, func(i, j int) bool {\n\t\tcountI := freq[result[i]]\n\t\tcountJ := freq[result[j]]\n\t\tif countI == countJ {\n\t\t\treturn result[i] < result[j]\n\t\t}\n\t\treturn countI > countJ\n\t})\n\n\treturn result\n}\n\n// minHeap implements heap.Interface for [2]int where the first element is the key\n// We use negative frequency to simulate max-heap behavior\ntype minHeap [][3]int // [negativeFrequency, wordLength, word]\n\nfunc (h minHeap) Len() int           { return len(h) }\nfunc (h minHeap) Less(i, j int) bool { // Min-heap based on negative frequency\n\tif h[i][0] != h[j][0] {\n\t\treturn h[i][0] < h[j][0]\n\t}\n\tif h[i][1] != h[j][1] {\n\t\treturn h[i][1] < h[j][1]\n\t}\n\treturn h[i][2] < h[j][2]\n}\nfunc (h minHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }\nfunc (h *minHeap) Push(x interface{}) { *h = append(*h, x.([3]int)) }\nfunc (h *minHeap) Pop() interface{} {\n\told := *h\n\tn := len(old)\n\tx := old[n-1]\n\t*h = old[0 : n-1]\n\treturn x\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 153,
+    "total_tokens": 759,
+    "completion_tokens": 606,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

@@ -9,7 +9,6 @@ Implement:
     ) ([]int, error)
 
 Requirements:
-
 - Preserve input order in successful output.
 - Run no more than workers calls concurrently.
 - workers <= 0 and nil fn return descriptive errors.

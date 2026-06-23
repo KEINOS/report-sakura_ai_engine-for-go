@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-5c83a354de72434c81f64d0b73e5c72b",
+  "object": "chat.completion",
+  "created": 1782144357,
+  "model": "preview/Phi-4-multimodal-instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage pmap\n\nimport (\n\t\"context\"\n\t\"errors\"\n\t\"sync\"\n)\n\nvar (\n\tErrInvalidWorkers = errors.New(\"workers must be greater than 0\")\n\tErrNilFunction    = errors.New(\"function cannot be nil\")\n)\n\nfunc ParallelMapOrdered(\n\tctx context.Context,\n\tinput []int,\n\tworkers int,\n\tfn func(context.Context, int) (int, error),\n) ([]int, error) {\n\tif workers <= 0 {\n\t\treturn nil, ErrInvalidWorkers\n\t}\n\tif fn == nil {\n\t\treturn nil, ErrNilFunction\n\t}\n\n\tif len(input) == 0 {\n\t\treturn []int{}, nil\n\t}\n\n\tresults := make([]int, len(input))\n\tvar wg sync.WaitGroup\n\terrChan := make(chan error, workers)\n\tresultChan := make(chan int, len(input))\n\n\tfor i, v := range input {\n\t\twg.Add(1)\n\t\tgo func(i int, v int) {\n\t\t\tdefer wg.Done()\n\t\t\tselect {\n\t\t\tcase <-ctx.Done():\n\t\t\t\treturn\n\t\t\tcase resultChan <- v:\n\t\t\t}\n\t\t}(i, v)\n\t}\n\n\tgo func() {\n\t\twg.Wait()\n\t\tclose(resultChan)\n\t\tclose(errChan)\n\t}()\n\n\tfor i := 0; i < len(input); i++ {\n\t\tselect {\n\t\tcase <-ctx.Done():\n\t\t\treturn nil, ctx.Err()\n\t\tcase result := <-resultChan:\n\t\t\tresults[i] = result\n\t\tcase err := <-errChan:\n\t\t\treturn nil, err\n\t\t}\n\t}\n\n\treturn results, nil\n}\n```",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": null
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": 200020,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 217,
+    "total_tokens": 537,
+    "completion_tokens": 320,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}

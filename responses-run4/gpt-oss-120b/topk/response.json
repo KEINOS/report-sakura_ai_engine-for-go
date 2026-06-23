@@ -1,0 +1,36 @@
+{
+  "id": "chatcmpl-913db0f03ea44fa1b514fce5c74f6882",
+  "object": "chat.completion",
+  "created": 1782143694,
+  "model": "gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```go\npackage topk\n\nimport (\n\t\"container/heap\"\n\t\"sort\"\n)\n\n// TopKFrequent returns at most k unique words from the input slice ordered by\n// descending frequency. Words with the same frequency are ordered by ascending\n// lexical order. If k <= 0 or the input slice is empty, a non‑nil empty slice is\n// returned. The input slice is not mutated.\nfunc TopKFrequent(words []string, k int) []string {\n\tif k <= 0 || len(words) == 0 {\n\t\treturn []string{}\n\t}\n\n\t// Count frequencies.\n\tfreq := make(map[string]int, len(words))\n\tfor _, w := range words {\n\t\tfreq[w]++\n\t}\n\n\t// Min‑heap that keeps the current top‑k entries.\n\th := &minHeap{}\n\theap.Init(h)\n\n\tfor w, f := range freq {\n\t\theap.Push(h, entry{word: w, freq: f})\n\t\tif h.Len() > k {\n\t\t\theap.Pop(h) // discard the worst entry\n\t\t}\n\t}\n\n\t// Extract heap contents.\n\ttmp := make([]entry, h.Len())\n\tfor i := len(tmp) - 1; i >= 0; i-- {\n\t\ttmp[i] = heap.Pop(h).(entry)\n\t}\n\n\t// Sort by descending frequency, then ascending lexical order.\n\tsort.Slice(tmp, func(i, j int) bool {\n\t\tif tmp[i].freq != tmp[j].freq {\n\t\t\treturn tmp[i].freq > tmp[j].freq\n\t\t}\n\t\treturn tmp[i].word < tmp[j].word\n\t})\n\n\t// Build the result slice.\n\tout := make([]string, len(tmp))\n\tfor i, e := range tmp {\n\t\tout[i] = e.word\n\t}\n\treturn out\n}\n\n// entry stores a word together with its frequency.\ntype entry struct {\n\tword string\n\tfreq int\n}\n\n// minHeap implements a heap where the \"smallest\" element is the one with the\n// lowest frequency, and for equal frequencies the lexicographically larger\n// word is considered smaller (so it gets evicted first).\ntype minHeap []entry\n\nfunc (h minHeap) Len() int { return len(h) }\n\nfunc (h minHeap) Less(i, j int) bool {\n\tif h[i].freq != h[j].freq {\n\t\treturn h[i].freq < h[j].freq // lower frequency is smaller\n\t}\n\treturn h[i].word > h[j].word // larger word is smaller for tie‑break\n}\n\nfunc (h minHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }\n\nfunc (h *minHeap) Push(x interface{}) {\n\t*h = append(*h, x.(entry))\n}\n\nfunc (h *minHeap) Pop() interface{} {\n\told := *h\n\tn := len(old)\n\tx := old[n-1]\n\t*h = old[:n-1]\n\treturn x\n}\n```\n",
+        "refusal": null,
+        "annotations": null,
+        "audio": null,
+        "function_call": null,
+        "tool_calls": [],
+        "reasoning_content": "We need to write a Go file with package topk, implement TopKFrequent(words []string, k int) []string meeting requirements.\n\nWe need to avoid sorting all occurrences; we can count frequencies using map, then use a min-heap of size k to keep top k. For tie-breaking: higher frequency first, and for equal frequency, lexical ascending order. Since we need descending frequency output, we can use a min-heap where the smallest element (by frequency, then reverse lexical) is at root, and we keep size <= k. At the end, we extract heap into slice and sort according to required order (descending freq, lexical ascending). Since heap size is at most k, sorting that is O(k log k). That's fine.\n\nImplementation details:\n\nDefine a struct entry { word string; freq int }.\n\nDefine type minHeap []entry and implement heap.Interface: Len, Less, Swap, Push, Pop.\n\nLess should define that entry a is \"less\" than b if a.freq < b.freq, or if equal freq, a.word > b.word (since we want lexical ascending later, but for min-heap we want the worst among top k to be smallest freq, and for equal freq, the lexicographically larger word is considered smaller (i.e., worse) because we want to keep lexicographically smaller ones when frequencies tie. Let's think: we want to keep top k by descending freq, lexical ascending for ties. In min-heap we want the element that should be evicted when we exceed k: the one with lowest freq, and among same freq, the lexicographically largest (since we prefer smaller lexical). So we define Less such that entry a is \"less\" (i.e., higher priority to be popped) if a.freq < b.freq OR (a.freq == b.freq && a.word > b.word). That matches.\n\nProcessing: count frequencies via map[string]int.\n\nIterate over map entries, push onto heap, if heap size > k, pop.\n\nAfter iteration, heap contains up to k entries (maybe less if k > unique words). Then we need to produce slice sorted descending freq, lexical ascending. We can pop all entries into slice, then sort.Slice with comparator: higher freq first, if equal, word < other.word.\n\nEdge cases: k <= 0 => return empty slice (non-nil). Also if words empty => empty slice.\n\nDo not mutate words: we only read.\n\nReturn slice of strings.\n\nMake sure to import container/heap, sort.\n\nWrite file with package topk.\n\nAdd comment.\n\nMake sure to use Go 1.26 features (nothing special). Use generic heap? Not needed.\n\nLet's craft code.\n\nPotential pitfalls: When k > number of unique words, we still return all unique words sorted.\n\nImplementation:\n\nfunc TopKFrequent(words []string, k int) []string {\n    if k <= 0 || len(words) == 0 {\n        return []string{}\n    }\n    freqMap := make(map[string]int, len(words))\n    for _, w := range words {\n        freqMap[w]++\n    }\n    h := &minHeap{}\n    heap.Init(h)\n    for w, f := range freqMap {\n        heap.Push(h, entry{word: w, freq: f})\n        if h.Len() > k {\n            heap.Pop(h)\n        }\n    }\n    // extract\n    res := make([]entry, h.Len())\n    for i := len(res) - 1; i >= 0; i-- {\n        // pop gives smallest, we fill from end to get descending order after sorting later\n        e := heap.Pop(h).(entry)\n        res[i] = e\n    }\n    // sort descending freq, lexical ascending\n    sort.Slice(res, func(i, j int) bool {\n        if res[i].freq != res[j].freq {\n            return res[i].freq > res[j].freq\n        }\n        return res[i].word < res[j].word\n    })\n    out := make([]string, len(res))\n    for i, e := range res {\n        out[i] = e.word\n    }\n    return out\n}\n\nDefine heap type:\n\ntype entry struct {\n    word string\n    freq int\n}\n\ntype minHeap []entry\n\nfunc (h minHeap) Len() int { return len(h) }\nfunc (h minHeap) Less(i, j int) bool {\n    if h[i].freq != h[j].freq {\n        return h[i].freq < h[j].freq\n    }\n    return h[i].word > h[j].word // larger word considered less\n}\nfunc (h minHeap) Swap(i, j int) { h[i], h[j] = h[j], h[i] }\n\nfunc (h *minHeap) Push(x interface{}) {\n    *h = append(*h, x.(entry))\n}\nfunc (h *minHeap) Pop() interface{} {\n    old := *h\n    n := len(old)\n    x := old[n-1]\n    *h = old[:n-1]\n    return x\n}\n\nAll good.\n\nMake sure to import container/heap, sort.\n\nReturn empty slice non-nil: []string{}.\n\nOk produce final code."
+      },
+      "logprobs": null,
+      "finish_reason": "stop",
+      "stop_reason": null,
+      "token_ids": null
+    }
+  ],
+  "service_tier": null,
+  "system_fingerprint": null,
+  "usage": {
+    "prompt_tokens": 212,
+    "total_tokens": 1924,
+    "completion_tokens": 1712,
+    "prompt_tokens_details": null
+  },
+  "prompt_logprobs": null,
+  "prompt_token_ids": null,
+  "kv_transfer_params": null
+}
