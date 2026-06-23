@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sakura AI Sub-Agent"
+  short_description: "Use Sakura AI as a portable packet-only worker"
+  default_prompt: "Use $sakura-ai to obtain a bounded independent review of this packet."
