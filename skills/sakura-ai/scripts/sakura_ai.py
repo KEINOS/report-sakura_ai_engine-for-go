@@ -47,9 +47,9 @@ class SakuraAIError(RuntimeError):
 
 
 def resolve_configuration():
-    token = os.getenv("SAKURA_AI_TOKEN", "").strip()
+    token = os.getenv("SAKURA_AI_API_KEY", "").strip()
     if not token:
-        raise SakuraAIError("SAKURA_AI_TOKEN is not set")
+        raise SakuraAIError("SAKURA_AI_API_KEY is not set")
     base_url = os.getenv("SAKURA_AI_BASE_URL", DEFAULT_BASE_URL).strip().rstrip("/")
     if not base_url:
         raise SakuraAIError("SAKURA_AI_BASE_URL is empty")

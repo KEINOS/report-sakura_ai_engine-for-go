@@ -1,15 +1,15 @@
 ---
 name: sakura-ai
-description: Use Sakura AI Engine models through its OpenAI-compatible API as portable packet-only sub-agents for independent review, coding analysis, prompt experiments, or bounded second opinions. Use when an AI Agent has SAKURA_AI_TOKEN available and should route a sanitized self-contained prompt to a model selected for reliability, quality-speed balance, fast low-cost triage, inexpensive diversity, or peak-quality experiments while retaining responsibility for verification and final decisions.
+description: Use Sakura AI Engine models through its OpenAI-compatible API as portable packet-only sub-agents for independent review, coding analysis, prompt experiments, or bounded second opinions. Use when an AI Agent has SAKURA_AI_API_KEY available and should route a sanitized self-contained prompt to a model selected for reliability, quality-speed balance, fast low-cost triage, inexpensive diversity, or peak-quality experiments while retaining responsibility for verification and final decisions.
 ---
 
 # Sakura AI Engine Sub-Agent
 
-Use Sakura AI directly through the bundled Python standard-library client. Require `SAKURA_AI_TOKEN`; do not depend on a particular host agent, credential store, SDK, or repository layout.
+Use Sakura AI directly through the bundled Python standard-library client. Require `SAKURA_AI_API_KEY`; do not depend on a particular host agent, credential store, SDK, or repository layout.
 
 ## Preconditions
 
-1. Confirm that `SAKURA_AI_TOKEN` is set without printing its value.
+1. Confirm that `SAKURA_AI_API_KEY` is set without printing its value.
 2. Resolve this copied skill directory and run the non-inference preflight:
 
 ```sh

@@ -131,7 +131,7 @@ def prepare() -> None:
 
 
 def resolve_token() -> str:
-    if token := os.getenv("SAKURA_AI_TOKEN"):
+    if token := os.getenv("SAKURA_AI_API_KEY"):
         return token
     env = os.environ.copy()
     env["PYTHONPATH"] = str(Path.home() / ".hermes/hermes-agent")
